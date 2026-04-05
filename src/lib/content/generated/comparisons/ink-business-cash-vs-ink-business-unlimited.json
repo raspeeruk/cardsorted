@@ -1,0 +1,38 @@
+{
+  "intro": "Both Chase Ink cards offer no annual fee and identical APR ranges, making them accessible for most business owners. The Cash card rewards category spending heavily—up to 5% back on office supplies and utilities—but caps rewards at $25,000 annually per category. The Unlimited card strips away categories entirely, offering a flat 1.5% cash back on all spending with no caps or limits. The choice depends on whether your business has concentrated spending in specific categories or diverse, uncapped expenses. The Unlimited card includes a higher signup bonus ($500 vs $350), which gives it an extra $150 advantage upfront.",
+  "verdict": "Choose the Ink Business Unlimited if your business spending is diverse or exceeds the category caps. Choose the Ink Business Cash only if you spend heavily on office supplies, utilities, or restaurants within the $25,000 annual limit per category. For most businesses, Unlimited's simplicity and higher bonus make it the better pick.",
+  "chooseAIf": [
+    "You spend more than $25,000 annually in office supplies, internet/cable, or gas—the 5% and 2% rewards in these categories significantly outpace 1.5% flat rate beyond the cap",
+    "Your business has predictable, concentrated spending in bonus categories like restaurants or utilities",
+    "You value the structured rewards model and prefer incentives that push you toward specific purchasing behavior",
+    "You want maximum rewards on categories Chase prioritizes for business operations"
+  ],
+  "chooseBIf": [
+    "Your business has variable, unpredictable spending across multiple categories without heavy concentration in any single area",
+    "You prefer simplicity—no tracking category limits, bonus caps, or rotating bonus categories",
+    "You spend more than $25,000 annually in bonus categories and want unlimited rewards on those purchases",
+    "The $500 signup bonus and flat 1.5% structure appeal to you more than category complexity"
+  ],
+  "faqs": [
+    {
+      "question": "How much would I need to spend in bonus categories for the Cash card to outperform Unlimited?",
+      "answer": "If you spend $25,000 annually in 5% categories (office supplies, internet, cable, phone), you'd earn $1,250 in rewards. At 1.5% on $25,000, Unlimited yields $375. The Cash card wins by $875 on that category alone. However, if your total spending exceeds $25,000 in that category, rewards cap out on the Cash card, making Unlimited competitive again."
+    },
+    {
+      "question": "Does the $500 signup bonus difference matter long-term?",
+      "answer": "The $150 bonus advantage for Unlimited is modest. You'd need to spend roughly $10,000 extra at 1.5% versus average rewards to justify it. For most businesses with category spending, the Cash card's bonus differential becomes irrelevant after a year or two of concentrated rewards."
+    },
+    {
+      "question": "Can I use both cards simultaneously?",
+      "answer": "Yes. Many business owners hold both cards—using Cash for office supplies and utilities up to the cap, then Unlimited for everything else. This maximizes rewards across all spending. Chase allows multiple Ink cards on the same account."
+    },
+    {
+      "question": "Which card is better if I spend equally across all categories?",
+      "answer": "Unlimited wins decisively. With balanced spending, you'll never hit 5% on anything, so the flat 1.5% cash back on all purchases beats the 1% baseline of the Cash card plus minimal bonus rewards."
+    },
+    {
+      "question": "Do the 0% intro APR periods differ between cards?",
+      "answer": "Both cards offer 0% APR on purchases for 12 months, then the same standard APR range applies. There's no advantage either way. This feature is identical and primarily useful for large business purchases you plan to pay off within the promotional period."
+    }
+  ]
+}

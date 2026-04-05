@@ -1,0 +1,38 @@
+{
+  "intro": "The Costco Anywhere Visa and Blue Cash Preferred target different spending patterns with fundamentally different economics. Costco Anywhere requires Costco membership (effectively $60-130/year) but offers stronger rewards on gas and dining without an explicit annual fee. Blue Cash Preferred charges $95 annually but dominates grocery and streaming categories and includes a $250 signup bonus and 12-month 0% intro APR. Your choice depends on whether you're a Costco member and how your spending breaks down between gas, groceries, and restaurants. If you spend $300/month on gas, Costco's 4% (up to the annual cap) is worth roughly $144/year after membership—a significant advantage. If you buy $400/month in groceries, Blue Cash's 6% ($288/year before the annual fee) pulls ahead even after paying $95. The Costco card is essentially free for members who benefit from its bonus categories. Blue Cash suits non-Costco shoppers with heavy grocery and streaming spend.",
+  "verdict": "Choose Costco Anywhere if you're already a Costco member or plan to join. Choose Blue Cash Preferred if you don't have Costco membership, spend heavily on US groceries, or want purchase protection and introductory APR. For pure rewards value, Costco edges out Blue Cash for members because its membership fee often pays for itself through the rewards structure alone, while Blue Cash's $95 fee requires you to spend strategically to break even.",
+  "chooseAIf": [
+    "You're a Costco member or willing to pay for membership—the card's rewards often exceed the membership cost for moderate to heavy Costco shoppers",
+    "You fill up at gas stations regularly. The 4% back (capped at $7,000/year spend) is superior to Blue Cash's 3%, and Costco gas is often cheaper than competitors",
+    "You eat out frequently. Three percent on restaurants beats Blue Cash's lack of dining rewards entirely",
+    "You want zero annual fee beyond Costco membership, making it genuinely cost-free to carry"
+  ],
+  "chooseBIf": [
+    "You don't have Costco membership and don't plan to join—you avoid the $60-130 annual cost entirely",
+    "You buy groceries at regular US supermarkets. Six percent back (up to $6,000/year) generates $360 in rewards, easily covering the $95 fee",
+    "You subscribe to streaming services like Netflix or Hulu. Six percent cash back on these subscriptions is a permanent bonus with no category cap",
+    "You want purchase protection and a 0% intro APR period for 12 months, adding real financial flexibility"
+  ],
+  "faqs": [
+    {
+      "question": "Does the Costco card's $7,000 annual gas cap matter for most people?",
+      "answer": "Yes. The cap equals $280 in maximum annual rewards at the 4% rate. Average US drivers spend $1,500-2,500 on gas yearly, so most people won't hit this limit. However, if you drive frequently or own multiple vehicles, you could max it out and lose the 4% rate on gas beyond that threshold. Blue Cash's 3% on gas has no cap but is lower, making Costco still better for heavy drivers within the limit."
+    },
+    {
+      "question": "Is the Blue Cash $250 signup bonus worth the $95 annual fee in year one?",
+      "answer": "The bonus covers the annual fee immediately, leaving you $155 ahead before earning any cash back. However, you need to meet minimum spending requirements (typically $1,000-3,000 in the first few months), which may not suit occasional spenders. Factor in the ongoing $95 yearly cost when deciding whether to keep the card long-term."
+    },
+    {
+      "question": "Can I use the Costco Anywhere card outside Costco?",
+      "answer": "Yes, it's a Visa accepted everywhere. You get 1% cash back at non-bonus merchants and 4% on gas, 3% on restaurants, and 3% on travel anywhere. This versatility makes it useful beyond Costco, unlike older Costco cards that were restricted to Costco purchases."
+    },
+    {
+      "question": "What's the grocery spending threshold where Blue Cash becomes better than Costco?",
+      "answer": "If you spend $1,600 or more annually on US supermarket groceries, Blue Cash's 6% ($96 in rewards) exceeds its $95 fee, putting it ahead. Costco offers no dedicated grocery bonus, so it relies on the 1% base rate for non-Costco supermarket shopping. For regular grocery shoppers outside Costco, Blue Cash wins."
+    },
+    {
+      "question": "Should I choose based on APR since Costco shows 20.49% flat while Blue Cash ranges 19.24–29.99%?",
+      "answer": "Both rates are high and should only matter if you carry a balance regularly. Neither card is designed for revolving debt; both reward responsible users who pay in full monthly. The APR difference is secondary to rewards structure. Use whichever card's category bonuses match your spending, and never carry a balance."
+    }
+  ]
+}

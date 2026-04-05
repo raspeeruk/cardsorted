@@ -1,0 +1,38 @@
+{
+  "intro": "Chase Freedom Unlimited and Wells Fargo Reflect Card target the same borrower profile—those with fair credit seeking no-fee cards—but solve different financial problems. Freedom Unlimited rewards every purchase at 1.5% cash back with a strong 15-month 0% intro APR period, plus a $200 signup bonus. Reflect Card offers no rewards at all but extends that interest-free window to 21 months, making it purely a balance transfer and debt consolidation play. If you're carrying revolving debt, Reflect's extra six months without interest costs is substantial. If you're looking to build credit while earning rewards on daily spending, Freedom Unlimited wins decisively. The choice depends on whether you need breathing room to pay down existing balances or want to actually benefit from your spending.",
+  "verdict": "Choose Chase Freedom Unlimited unless you're specifically managing high-interest debt. The 1.5% cash back and superior signup bonus make it the obvious choice for anyone who isn't transferring a large balance. Reflect Card only makes sense if you're consolidating debt and the extra six months of 0% APR materially changes your payoff timeline.",
+  "chooseAIf": [
+    "You want to earn cash back on everyday purchases without worrying about category restrictions—1.5% on everything adds up quickly for normal spending",
+    "You're starting from a clean slate or have paid off existing balances and want rewards as you rebuild credit, not just a temporary reprieve from interest",
+    "The $200 signup bonus matters to your decision—that's real money immediately versus nothing with Reflect",
+    "You spend more than $13,000 annually on purchases (at which point 1.5% cash back exceeds the signup bonus value)"
+  ],
+  "chooseBIf": [
+    "You have $5,000+ in high-interest credit card debt you're actively paying down and need maximum breathing room—21 months versus 15 months is six additional months interest-free",
+    "You're consolidating multiple cards and need the longest possible 0% APR window to avoid paying any interest during your payoff plan",
+    "You're risk-averse about credit utilization and don't trust yourself to spend on a cash back card without accumulating new debt",
+    "The cell phone protection feature genuinely matters to you (though it's a minor benefit compared to the core value proposition)"
+  ],
+  "faqs": [
+    {
+      "question": "How much cash back would I earn on $500/month dining spend with Freedom Unlimited?",
+      "answer": "You'd earn $90 annually (1.5% of $6,000). Reflect Card earns nothing. Over two years, Freedom Unlimited delivers $180 in pure value from dining alone, which exceeds its $200 signup bonus and makes it clearly superior for active spenders."
+    },
+    {
+      "question": "Is the 21-month 0% APR on Reflect Card worth choosing over Freedom Unlimited?",
+      "answer": "Only if you're transferring at least $3,000-$5,000 in existing debt. The extra six months saves roughly $200-$400 in interest on a $5,000 balance at 20%+ APR. For anyone not doing a balance transfer, this benefit doesn't apply and Freedom Unlimited's rewards make it strictly better."
+    },
+    {
+      "question": "Can I use Freedom Unlimited to pay off Reflect Card debt?",
+      "answer": "Yes, that's actually a viable strategy. Transfer your balance to Reflect's 21-month window to buy time, then use Freedom Unlimited for new purchases earning 1.5% cash back. Just avoid accumulating new debt on Freedom Unlimited while paying down the transferred balance."
+    },
+    {
+      "question": "What's the credit score requirement difference between these cards?",
+      "answer": "Both require 670+, so they're equivalent on accessibility. This puts both firmly in the fair credit category—neither is designed for excellent credit applicants who'd qualify for premium cards with higher rewards rates."
+    },
+    {
+      "question": "Which card should I choose if I'm uncertain about my spending habits?",
+      "answer": "Choose Freedom Unlimited. Even if you don't spend much, earning 1.5% on whatever you do spend plus the $200 bonus is better than earning nothing with Reflect. Reflect Card only wins if high-interest debt payoff is your explicit goal."
+    }
+  ]
+}

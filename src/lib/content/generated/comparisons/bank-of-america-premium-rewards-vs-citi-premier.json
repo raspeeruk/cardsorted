@@ -1,0 +1,38 @@
+{
+  "intro": "Both cards charge $95 annually and offer identical 60,000-point signup bonuses, but they reward different spending patterns. Bank of America's Premium Rewards focuses on travel and dining with 2x points in those categories, plus valuable travel credits and integration with its Preferred Rewards program. Citi Premier spreads its 3x bonus across five categories—restaurants, supermarkets, gas, air travel, and hotels—making it more versatile for everyday spending. The real difference emerges in how you travel and eat. If you're a frequent diner or prioritize premium travel perks, Bank of America wins. If you fill up at gas stations, buy groceries, and want broader category coverage, Citi delivers better value. Neither card is ideal for general spenders who don't max these categories.",
+  "verdict": "Choose Bank of America Premium Rewards if travel is your priority and you dine out regularly. Choose Citi Premier if you want flexibility across everyday categories like groceries and gas. For most travelers, Bank of America edges ahead due to its superior travel credits and airline perks, but Citi's wider bonus categories make it better for cost-conscious households.",
+  "chooseAIf": [
+    "You fly regularly and value the $100 airline incidental credit plus Global Entry/TSA PreCheck reimbursement—these benefits alone nearly cover the annual fee",
+    "You dine out at least $300+ monthly and want 2x points consistently without category limits",
+    "You're a Bank of America customer eligible for Preferred Rewards, which adds 25-75% point multipliers on top of existing rewards",
+    "You prioritize premium travel protection and don't need rewards on grocery or gas purchases"
+  ],
+  "chooseBIf": [
+    "You spend regularly at supermarkets and gas stations—3x points here versus 1.5x on Bank of America creates meaningful value",
+    "You prefer a single versatile card rather than maximizing specific categories; five bonus categories provide more flexibility",
+    "You value hotel stays with the $100 annual hotel savings benefit and want 3x points on hotel bookings",
+    "You're not a frequent flyer but appreciate the ability to transfer points to 15+ airline partners for eventual redemption"
+  ],
+  "faqs": [
+    {
+      "question": "Which card is better for everyday spending outside bonus categories?",
+      "answer": "Bank of America wins with 1.5x points on all purchases versus Citi's 1x. If you don't consistently hit bonus categories, Bank of America's baseline rewards are 50% stronger. This matters if you spend outside travel, dining, groceries, and gas."
+    },
+    {
+      "question": "How much are the travel credits really worth?",
+      "answer": "Bank of America's $100 airline incidental credit and $100 Global Entry/TSA PreCheck credit are exceptionally valuable. If you use Global Entry ($100 value) and claim the airline credit for seat upgrades or baggage fees, you recover most of the $95 annual fee immediately. Citi's $100 hotel benefit is less universally useful."
+    },
+    {
+      "question": "If I spend $1,000 monthly on dining, which card pays more?",
+      "answer": "Bank of America: 12,000 points yearly ($120 in base rewards assuming 1 point = 1 cent). Citi: 12,000 points yearly (same). They tie on pure dining, but Bank of America's travel credits and Preferred Rewards multipliers tip the advantage."
+    },
+    {
+      "question": "Can I transfer points to airlines with either card?",
+      "answer": "Bank of America points typically redeem through their travel portal at variable rates. Citi ThankYou points transfer directly to 15+ airline partners, often providing better redemption value. Citi's transferability is more transparent and generally worth 1.5-2 cents per point to airline partners."
+    },
+    {
+      "question": "Which card should I choose if I'm not a premium traveler?",
+      "answer": "Choose Citi Premier. Without heavy airline spending, Bank of America's $200 in travel credits mean less. Citi's 3x on supermarkets and gas, combined with lower APR expectations, makes it the safer choice for everyday household expenses over travel-centric benefits."
+    }
+  ]
+}

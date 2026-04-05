@@ -1,0 +1,38 @@
+{
+  "intro": "Both cards target hotel-focused travelers with solid earning potential, but they serve different loyalty ecosystems and spending patterns. The Marriott Boundless charges $95 annually and delivers exceptional value through its guaranteed free night certificate and elite status perks, making it ideal for Marriott loyalists. The Hilton Surpass costs $150 yearly but offers a higher signup bonus, better everyday earning rates, and travel credits that justify the premium for frequent Hilton guests. Your choice depends entirely on which hotel chain you actually use and how much you spend on non-hotel categories.",
+  "verdict": "Choose the Marriott Boundless if you stay at Marriott properties regularly or value the automatic free night benefit. Choose the Hilton Surpass only if you're a committed Hilton member and spend heavily at US restaurants and supermarkets, since the $150 fee demands higher overall spending to break even.",
+  "chooseAIf": [
+    "You stay at Marriott properties at least 3-4 times annually, making the free night award (up to 35,000 points) worth $300-500 alone",
+    "The $95 fee feels manageable and you value automatic Gold Elite status plus 15 night credits without hitting spending thresholds",
+    "You prefer simplicity: 2x baseline earning across all purchases is easier to track than Amex's category restrictions",
+    "You have moderate hotel spending but don't want to justify a $150 annual fee through additional purchases"
+  ],
+  "chooseBIf": [
+    "You spend $1,500+ annually at US restaurants and supermarkets combined, where 6x earning significantly outpaces Marriott's flat 2x",
+    "The $130,000 signup bonus combined with the $100 Global Entry credit brings your effective first-year cost down to $50",
+    "You value Priority Pass lounge access and will use all 10 visits annually, adding $500+ in tangible benefits",
+    "You're a Hilton frequent stayer who will hit the $15,000 annual spend threshold for the free weekend night without difficulty"
+  ],
+  "faqs": [
+    {
+      "question": "Which card has better everyday rewards?",
+      "answer": "Hilton Surpass wins at 3x points per dollar on all purchases versus Marriott's 2x. However, Marriott's hotel category bonus (17x) far exceeds Hilton's 12x, so the better choice depends on your spending mix. For non-hotel spending, Surpass pulls ahead by 50 percent."
+    },
+    {
+      "question": "Can I offset the annual fee with rewards alone?",
+      "answer": "Marriott's free night award typically covers the $95 fee immediately if you'd book a standard room. Hilton's fee requires you to maximize category bonuses or rely on the signup bonus and credit benefits to justify it. Bonvoy is objectively easier to justify as an annual cardholder."
+    },
+    {
+      "question": "What if I don't stay at hotels frequently?",
+      "answer": "Skip both cards. Neither makes sense for casual travelers. A flat-rate cash card like the Capital One Quicksilver eliminates annual fees entirely and avoids locking you into underutilized hotel benefits. These cards are for committed loyalty program members only."
+    },
+    {
+      "question": "How do the signup bonuses compare?",
+      "answer": "Hilton's 130,000 points bonus is mathematically larger than Marriott's 85,000, but Marriott points typically have slightly higher redemption value. The difference is modest, so don't let this bonus alone sway your decision if you're not already loyal to that chain."
+    },
+    {
+      "question": "Which card is better for international travel?",
+      "answer": "Both waive foreign transaction fees, but Marriott's universal 2x earning abroad is more valuable than Hilton's 3x bonus (which only applies to US-based categories). Marriott edges ahead for international travelers since you'll earn consistently regardless of merchant type."
+    }
+  ]
+}

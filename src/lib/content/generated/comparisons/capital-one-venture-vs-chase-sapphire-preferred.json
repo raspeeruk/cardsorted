@@ -1,0 +1,38 @@
+{
+  "intro": "Both cards cost $95 annually and target rewards-focused travelers, but they serve different spending patterns. Capital One Venture wins on simplicity with flat 2x miles on everything, while Chase Sapphire Preferred rewards category spending with 3-5x points on dining, travel, and groceries. Venture's 75,000-mile signup bonus beats Sapphire's 60,000 points, but Sapphire's 25% point multiplier in the Chase Travel portal adds real value. The decision hinges on whether you prefer earning everywhere or maximizing specific categories.",
+  "verdict": "Choose Capital One Venture if you travel frequently and want uncomplicated 2x rewards on all spending. Choose Chase Sapphire Preferred if you dine out regularly, stream services, and want better point flexibility through premium transfer partners. Sapphire edges ahead for most spenders due to category rewards and better travel insurance benefits.",
+  "chooseAIf": [
+    "You spend most money on non-category purchases like groceries, gas, or general retail where 2x miles consistently beats 1x points",
+    "You value simplicity and don't want to track rotating categories or optimize spending across bonus categories",
+    "You travel to countries outside the US frequently and appreciate seamless no-foreign-transaction-fee spending",
+    "You have a strong airline or hotel loyalty program and want to transfer miles freely without the 25% multiplier restriction"
+  ],
+  "chooseBIf": [
+    "You dine out 2+ times weekly or spend $800+ monthly on restaurants and want 3x points on that high-spend category",
+    "You subscribe to streaming services (Netflix, Spotify) and online grocery delivery and want bonus points on both",
+    "You book travel through Chase's portal frequently and benefit from the automatic 25% point value boost on redemptions",
+    "You take occasional trips and value trip cancellation insurance and the $50 annual hotel credit as real cost offsets"
+  ],
+  "faqs": [
+    {
+      "question": "What's the effective earning rate if I spend $2,000 monthly on dining with each card?",
+      "answer": "Venture earns 2% ($40/month) on all dining. Sapphire earns 3% ($60/month) on dining, making it $240 annually better before the annual fee comparison. Over a year, Sapphire generates $720 more in points value from dining alone, far exceeding the $95 fee difference."
+    },
+    {
+      "question": "How do the signup bonuses actually compare in real value?",
+      "answer": "Venture's 75,000 miles equals $750 at the standard 1 cent per mile redemption. Sapphire's 60,000 points equals $600 at minimum, but with the Chase portal multiplier reaches $750 easily. Both are roughly equivalent in practical value despite different numbers."
+    },
+    {
+      "question": "Which card is better for hotel bookings specifically?",
+      "answer": "Sapphire Preferred edges ahead because its 25% portal multiplier makes points worth significantly more on hotel redemptions. Venture's 5x miles bonus only applies through Capital One Travel, which has fewer partner properties than Chase's network."
+    },
+    {
+      "question": "What happens if I carry a balance on either card?",
+      "answer": "Both cards charge 19-28% APR, so carrying a balance is expensive on either option. Neither card is designed for revolving debt, and the interest charges will quickly erase rewards earnings. Use these only if you pay monthly in full."
+    },
+    {
+      "question": "Can I really transfer miles to 15+ partners with Venture?",
+      "answer": "Yes, Capital One partners with airlines like Southwest, United, and Marriott Bonvoy. However, transfer partners sometimes offer poor exchange rates, so the flat 2x earning rate is your most reliable value on everyday spending rather than counting on strategic transfers."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "intro": "Both cards offer no annual fees and rewards on popular spending categories, but they differ fundamentally in structure and value delivery. The Wells Fargo Autograph uses a points system with generous 3x multipliers across six categories, while the Capital One SavorOne delivers straightforward cash back with lower maximums but faster redemption. The Autograph appeals to frequent travelers and those who benefit from category stacking, whereas SavorOne suits everyday spenders who prefer immediate cash value. Capital One's intro 0% APR period and Uber One membership add practical perks, but Wells Fargo's points ecosystem and cell phone protection offer different advantages. Your choice depends on whether you prioritize flexible points accumulation or guaranteed cash rewards.",
+  "verdict": "Choose the Capital One SavorOne if you want simplicity and immediate value; it delivers clearer cash back percentages and a useful intro APR period. Pick the Wells Fargo Autograph only if you're a heavy traveler or frequently use the specific bonus categories and plan to accumulate points strategically with other Wells Fargo cards.",
+  "chooseAIf": [
+    "You spend significantly on travel and dining and want to maximize rewards through points pooling with other Wells Fargo products",
+    "You value cell phone protection and need a safety net for device damage or theft",
+    "You're willing to learn points redemption strategy and prefer flexible point transfers over cash back",
+    "You use multiple Wells Fargo rewards cards and want to combine points for higher redemption value"
+  ],
+  "chooseBIf": [
+    "You want cash back that posts immediately without redemption complexity or points accounting",
+    "You need breathing room on interest charges with the 15-month 0% intro APR period",
+    "You use Uber regularly and value the complimentary 12-month Uber One membership",
+    "You spend heavily on groceries, dining, and entertainment and want predictable 3% cash back in those categories"
+  ],
+  "faqs": [
+    {
+      "question": "Which card is better for restaurants and dining?",
+      "answer": "Both offer 3x rewards in dining (3% cash back for SavorOne, 3x points for Autograph), but SavorOne's cash back is immediately tangible. If you spend $500 monthly on dining, SavorOne delivers $15 in cash back versus Autograph's 1,500 points, whose value depends on redemption rates typically ranging from 0.7–1.5 cents per point."
+    },
+    {
+      "question": "What makes the Capital One SavorOne's intro APR valuable?",
+      "answer": "The 15-month 0% intro APR on purchases and balance transfers lets you carry a balance interest-free during an emergency or planned expense. For someone with $3,000 in unexpected costs, this saves roughly $450+ in interest charges at standard APRs, making it a genuine financial safety net."
+    },
+    {
+      "question": "How do the signup bonuses compare in real value?",
+      "answer": "Capital One's $200 cash bonus is concrete and immediately valuable. Wells Fargo's 20,000 points are worth approximately $140–$300 depending on redemption method, making the actual value comparable but less certain for new cardholders unfamiliar with point valuations."
+    },
+    {
+      "question": "Which card is better if I don't spend much in bonus categories?",
+      "answer": "Capital One SavorOne wins decisively, offering 1% cash back on all purchases versus Wells Fargo's 1x point base rate (approximately 0.8–1.0 cent equivalent). If you're a flat spender outside bonus categories, SavorOne delivers clearer, more reliable value."
+    },
+    {
+      "question": "Can I use points from the Wells Fargo Autograph with other cards?",
+      "answer": "Yes, Wells Fargo allows pooling points from all your Wells Fargo rewards cards into one account, potentially maximizing redemption value if you hold multiple cards. This is valuable only if you actually maintain several Wells Fargo products and use the consolidation strategically."
+    }
+  ]
+}

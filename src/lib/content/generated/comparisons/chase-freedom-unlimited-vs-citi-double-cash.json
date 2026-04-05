@@ -1,0 +1,38 @@
+{
+  "intro": "The Chase Freedom Unlimited and Citi Double Cash Card both offer no-annual-fee cash back with introductory 0% APR periods, but they differ fundamentally in structure. The Freedom Unlimited uses tiered rewards—1.5% base with bonus categories reaching up to 5%—plus a $200 signup bonus. The Double Cash delivers a flat 2% cash back on everything with no signup bonus or bonus categories. Choose based on your spending patterns: the Freedom Unlimited rewards category maximization and pairs well with Chase's premium ecosystem, while the Double Cash appeals to those who want simplicity and don't want to track rotating categories or bonus structures.",
+  "verdict": "The Citi Double Cash Card wins for most people because 2% flat cash back beats 1.5% on everyday spending when bonus categories don't apply. However, the Chase Freedom Unlimited's $200 signup bonus and 5% dining/travel rewards make it superior if you spend heavily in those categories and value a points-based ecosystem. Pick Double Cash for simplicity, Freedom Unlimited for category optimization.",
+  "chooseAIf": [
+    "You spend significantly on dining or travel and want to maximize those categories where 5% and 3% rates dramatically outpace Double Cash's 2%",
+    "You're a Chase Sapphire ecosystem member and want to leverage 5x point multipliers when transferring rewards to premium Chase travel cards",
+    "The $200 signup bonus appeals to you and you can meet spend requirements easily",
+    "You prefer structured rewards and don't mind tracking category bonuses for higher cash back potential"
+  ],
+  "chooseBIf": [
+    "You want the simplest possible rewards structure without tracking rotating categories or bonus spending thresholds",
+    "You spend evenly across categories where 2% flat cash back consistently beats Freedom Unlimited's 1.5% base rate",
+    "You prioritize the longer 18-month balance transfer 0% APR period over the Freedom Unlimited's 15 months",
+    "You have no interest in premium credit card ecosystems and just want straightforward 2% cash back everywhere"
+  ],
+  "faqs": [
+    {
+      "question": "What if I spend $500 monthly on dining and $300 on groceries?",
+      "answer": "Chase Freedom Unlimited delivers $30 monthly on dining at 5% plus $4.50 on groceries at 1.5% for $34.50 total. The Double Cash gives flat 2% on both for $16 total. The Freedom Unlimited wins by $18.50 monthly, or $222 annually, making the $200 signup bonus essentially free value."
+    },
+    {
+      "question": "How do the 0% APR introductory periods compare?",
+      "answer": "The Freedom Unlimited offers 15 months at 0% on purchases and balance transfers. Double Cash offers 18 months on balance transfers only (not purchases). If you need extended interest-free borrowing on a balance transfer, Double Cash's three-month advantage is meaningful. For new purchases, Freedom Unlimited's 15 months is solid for either card."
+    },
+    {
+      "question": "Can I earn ThankYou Points with the Double Cash instead of cash back?",
+      "answer": "Yes, the Double Cash earns ThankYou Points at the same 2% rate, which you can transfer to airline partners. However, you cannot redeem for cash directly through ThankYou Points on this card—you're locked into travel transfers, making the cash back option superior for flexibility."
+    },
+    {
+      "question": "Which card is better if I don't spend much on dining or travel?",
+      "answer": "The Citi Double Cash Card dominates. Without bonus categories working in your favor, the Freedom Unlimited's 1.5% base rate loses to Double Cash's guaranteed 2% on all purchases. You're also forgoing the $200 signup bonus value on the Chase card."
+    },
+    {
+      "question": "Do I need a specific credit score for either card?",
+      "answer": "Both cards require a minimum 670 credit score, so they're equally accessible if your credit history qualifies. The approval odds are similar, but Chase and Citi's individual underwriting criteria may differ slightly based on your specific profile."
+    }
+  ]
+}

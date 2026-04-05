@@ -1,0 +1,38 @@
+{
+  "intro": "The Apple Card and Citi Double Cash represent two fundamentally different reward philosophies. The Apple Card demands you live in Apple's ecosystem to maximize returns, offering up to 3% cash back on select categories but only 1% on most purchases. The Citi Double Cash takes a simpler approach: a flat 2% back on everything, with no category hunting required. The Apple Card edges out slightly on pure rewards if you're a heavy Apple Pay user and shop at bonus merchants, but the Citi Double Cash wins on simplicity and consistency. Both charge no annual fee and target the same credit score range. Your choice depends on whether you value category optimization or predictable, straightforward rewards.",
+  "verdict": "Choose the Citi Double Cash Card for most people. It delivers a superior baseline 2% back on every purchase without requiring you to remember bonus categories or use Apple Pay, making it genuinely useful for broader spending patterns. The Apple Card only wins if you're deeply embedded in Apple's ecosystem and frequent its bonus merchants regularly.",
+  "chooseAIf": [
+    "You use Apple Pay for the majority of your purchases and want 2% back automatically on those transactions",
+    "You spend significantly at Apple's bonus merchants (Nike, Uber, Walgreens) and the App Store, where 3% cash back adds up quickly",
+    "You want tight spending integration with your iPhone and use the Wallet app's budgeting tools actively",
+    "You prefer receiving rewards as Daily Cash that hits your account immediately rather than waiting for statement credits"
+  ],
+  "chooseBIf": [
+    "You want the same 2% cash back on every single purchase with no categories to track or optimize",
+    "You plan to transfer a balance and value the 0% intro APR on balance transfers for 18 months",
+    "You're not a heavy Apple ecosystem user and want a card that works consistently everywhere Mastercard is accepted",
+    "You prefer simplicity and predictability over chasing bonus categories that may not align with your actual spending"
+  ],
+  "faqs": [
+    {
+      "question": "Does the Apple Card actually pay 2% or 3% back most of the time?",
+      "answer": "No. The Apple Card pays 1% on physical card purchases, 2% on Apple Pay, and 3% only at Apple and select merchants. Most people will earn 1-2% on typical spending. The Citi Double Cash guarantees 2% everywhere with no conditions attached."
+    },
+    {
+      "question": "Can you use the Apple Card without an iPhone?",
+      "answer": "Technically yes, but it's extremely limited. The physical titanium card only gives 1% cash back, and you lose the app-based tracking and management features. The card is designed around Apple's ecosystem."
+    },
+    {
+      "question": "Is Daily Cash the same as regular cash back?",
+      "answer": "Nearly identical. Daily Cash deposits to your Apple Cash or linked savings account instantly rather than appearing on your statement. For spending tracking purposes, both cards work the same way."
+    },
+    {
+      "question": "What happens if you carry a balance on either card?",
+      "answer": "Both cards charge variable APR interest (Apple's range is slightly higher at 19.24%–29.49% versus Citi's 18.24%–28.24%), so carrying a balance erodes your rewards value quickly. The Citi Double Cash's 0% intro APR on balance transfers for 18 months makes it substantially better for debt consolidation."
+    },
+    {
+      "question": "Which card has better bonus categories?",
+      "answer": "The Apple Card has more categories (Apple Pay, Apple purchases, Nike, Uber, Walgreens), but the Citi Double Cash's 2% flat rate beats Apple's 1% baseline. You'd need to spend heavily at Apple's bonus merchants to come out ahead with the Apple Card."
+    }
+  ]
+}

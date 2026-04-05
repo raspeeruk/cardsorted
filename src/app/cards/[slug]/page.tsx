@@ -10,6 +10,7 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { FAQAccordion } from "@/components/content/FAQAccordion";
+import { getCardContent } from "@/lib/content/loader";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -35,6 +36,7 @@ export default async function CardReviewPage({ params }: Props) {
   const card = getCardBySlug(slug);
   if (!card) notFound();
 
+  const content = getCardContent(slug);
   const reviewer = AUTHORS[0];
   const relatedCards = getCardsByCategory(card.categories[0])
     .filter((c) => c.slug !== card.slug)
@@ -54,7 +56,7 @@ export default async function CardReviewPage({ params }: Props) {
     },
   };
 
-  const faqs = [
+  const fallbackFaqs = [
     {
       question: `Is the ${card.name} worth it?`,
       answer: card.annualFee === 0
@@ -72,6 +74,8 @@ export default async function CardReviewPage({ params }: Props) {
         : `The ${card.name} does not currently offer a signup bonus. However, card offers change frequently — check back for updates.`,
     },
   ];
+
+  const faqs = content?.faqs ?? fallbackFaqs;
 
   return (
     <>
@@ -149,6 +153,66 @@ export default async function CardReviewPage({ params }: Props) {
             </a>
           </div>
         </header>
+
+        {/* Rich content (AI-generated) */}
+        {content && (
+          <div className="mb-8 space-y-6">
+            {/* Best for + Expert verdict */}
+            <div className="rounded-lg border border-brand/20 bg-brand-light p-5">
+              <p className="font-heading text-sm font-bold text-brand-dark">
+                Best For
+              </p>
+              <p className="mt-1 text-ink">{content.bestFor}</p>
+            </div>
+
+            {/* Summary */}
+            <p className="text-lg leading-relaxed text-ink-light">{content.summary}</p>
+
+            {/* Pros / Cons */}
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="rounded-lg border border-ink-faint bg-white p-5">
+                <h2 className="mb-3 font-heading text-sm font-bold text-green-700">
+                  Pros
+                </h2>
+                <ul className="space-y-2">
+                  {content.pros.map((pro) => (
+                    <li key={pro} className="flex items-start gap-2 text-sm text-ink-light">
+                      <span className="mt-0.5 text-green-600">&#10003;</span>
+                      {pro}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="rounded-lg border border-ink-faint bg-white p-5">
+                <h2 className="mb-3 font-heading text-sm font-bold text-red-700">
+                  Cons
+                </h2>
+                <ul className="space-y-2">
+                  {content.cons.map((con) => (
+                    <li key={con} className="flex items-start gap-2 text-sm text-ink-light">
+                      <span className="mt-0.5 text-red-500">&#10005;</span>
+                      {con}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Full review body */}
+            <div
+              className="prose prose-stone max-w-none prose-headings:font-heading prose-headings:font-bold prose-h2:text-xl prose-h3:text-lg prose-p:text-ink-light prose-li:text-ink-light"
+              dangerouslySetInnerHTML={{ __html: content.body }}
+            />
+
+            {/* Expert verdict */}
+            <div className="rounded-lg border-l-4 border-brand bg-white p-5">
+              <p className="font-heading text-sm font-bold text-ink">
+                Expert Verdict
+              </p>
+              <p className="mt-1 text-ink-light">{content.expertVerdict}</p>
+            </div>
+          </div>
+        )}
 
         {/* Card details */}
         <div className="grid gap-8 lg:grid-cols-3">

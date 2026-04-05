@@ -1,0 +1,38 @@
+{
+  "intro": "The American Express Gold Card and Capital One SavorOne represent fundamentally different philosophies. AmEx Gold is a premium card built for high-spending diners and travelers willing to pay $250 annually for points and credits that effectively subsidize the fee. SavorOne is a no-annual-fee alternative targeting casual spenders who want straightforward cash back without complexity. AmEx Gold offers superior earning potential through transfer partners and uncapped 4x restaurant rewards, while SavorOne provides simplicity and immediate cash value. The choice depends on whether you spend enough to justify AmEx's fee and whether you value points flexibility over guaranteed cash.",
+  "verdict": "American Express Gold Card wins for frequent diners and travelers spending $3,000+ annually on bonus categories. Capital One SavorOne is the better choice for budget-conscious consumers who want no-fee rewards and straightforward cash back without commitment.",
+  "chooseAIf": [
+    "You dine out frequently or travel regularly — the 4x uncapped restaurant rewards and airline transfer partners create exceptional value that justifies the $250 fee",
+    "You value premium travel benefits and flexibility — access to 20+ airline and hotel partners gives you redemption options SavorOne cannot match",
+    "The $120 dining and $120 Uber credits effectively reduce your annual fee — if you use these credits fully, your true cost is zero to $10",
+    "You spend $2,500+ annually on restaurants and flights — the math clearly favors AmEx's bonus categories over flat-rate cash back"
+  ],
+  "chooseBIf": [
+    "You want zero annual fees and simple math — 3% cash back on dining and groceries with no spending threshold is genuinely good value",
+    "You prefer immediate cash over points that require strategic redemption — cash back hits your account automatically without transfer complexity",
+    "You're building or rebuilding credit — the 670 minimum score is lower than AmEx, and the 0% intro APR for 15 months provides breathing room",
+    "Your spending doesn't justify premium card economics — if you spend under $2,000 annually on bonus categories, SavorOne's cash back beats AmEx's point value"
+  ],
+  "faqs": [
+    {
+      "question": "Does the AmEx Gold $250 annual fee actually get covered by credits?",
+      "answer": "Partially. The $120 dining credit and $120 Uber Cash total $240 in value, effectively reducing your net fee to $10 if you use both fully. However, these are use-it-or-lose-it monthly stipends, so they only justify the fee if your spending patterns align with restaurants and Uber."
+    },
+    {
+      "question": "What's the real value of AmEx points versus SavorOne's cash back?",
+      "answer": "AmEx points are worth roughly 0.7-1 cent each when transferred to airline partners, sometimes more with premium redemptions. SavorOne's 3% cash back equals 3 cents per dollar spent. AmEx Gold wins decisively on restaurants (4x points = potentially 2.8-4 cents value versus 1% cash), but SavorOne wins on non-category spending where you earn 1% cash versus 1x AmEx points."
+    },
+    {
+      "question": "Which card is better for international travel?",
+      "answer": "American Express Gold is superior for international dining and flights with no foreign transaction fees and 4x restaurant rewards worldwide. SavorOne offers no foreign transaction fees too, but its earning is capped at 1% on most international purchases, making AmEx's travel benefits significantly more valuable."
+    },
+    {
+      "question": "Can I use both cards strategically?",
+      "answer": "Yes. Many cardholders carry both — using SavorOne for everyday purchases and non-bonus categories to avoid the AmEx annual fee, then deploying AmEx Gold specifically for restaurants, flights, and supermarkets where its rewards shine. This hybrid approach minimizes fees while maximizing earning."
+    },
+    {
+      "question": "What if I don't use the AmEx credits — is the card still worth it?",
+      "answer": "Only if you spend heavily on restaurants and flights. Without utilizing the $240 in credits, you're paying $250 annually, which requires roughly $8,350 in annual restaurant spending at 4x points to break even against SavorOne's 3% cash back. If you don't meet this threshold, SavorOne is objectively cheaper."
+    }
+  ]
+}

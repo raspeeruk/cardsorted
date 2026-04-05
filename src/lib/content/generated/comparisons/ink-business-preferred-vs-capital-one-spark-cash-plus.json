@@ -1,0 +1,38 @@
+{
+  "intro": "The Ink Business Preferred and Capital One Spark Cash Plus target the same audience—business owners—but take fundamentally different approaches. Ink Preferred uses a points system with bonus categories capped at $150,000 annually, requiring you to unlock maximum value through Chase's travel ecosystem. Spark Cash Plus offers straightforward 2% cash back on all spending with a higher annual fee but no category restrictions. The choice hinges on whether you value point flexibility and travel transfers or prefer simplicity and unlimited earning potential. For most business owners, the answer is clear.",
+  "verdict": "Capital One Spark Cash Plus wins for the vast majority of business owners. It delivers better cash-on-hand value, eliminates the bonus category ceiling, and avoids the complexity of point valuations. Only heavy business travelers who max out Ink Preferred's bonus categories and redeem through Chase travel partnerships should consider the alternative.",
+  "chooseBIf": [
+    "You spend more than $150,000 annually on shipping, advertising, or utilities—Spark's 2% applies to everything without caps, while Ink Preferred's bonuses stop accruing past $150K combined",
+    "You want predictable cash value rather than point valuations—2% cash back is worth exactly 2% regardless of redemption method, while Ink points fluctuate between 0.8-1.25 cents per point depending on how you use them",
+    "You don't have the time or interest in managing travel transfer partners—Spark deposits cash directly to your business account, requiring zero optimization",
+    "You're a high-volume spender—the $1,200 bonus exceeds Ink's $1,250 value and you'll recoup the extra $55 annual fee within 11 months of additional 2% earnings"
+  ],
+  "chooseAIf": [
+    "You're a frequent business traveler and actively use airline/hotel loyalty programs—Ink Preferred's 3x on travel plus point transfers to 10+ partners creates opportunities to stretch value to 1.5+ cents per point",
+    "You spend heavily in advertising and want to minimize category overlap—if you're already at the $150K cap with travel and advertising, the 3x return is optimal",
+    "You're willing to be disciplined about redemption—if you consistently redeem through Chase Travel at 1.25 cents per point, the 100K bonus outpaces Spark's $1,200",
+    "You have lower annual spending under $60,000—at that level, the $95 annual fee versus $150 carries more weight, and bonus caps are irrelevant"
+  ],
+  "faqs": [
+    {
+      "question": "What's the actual dollar value difference between these bonuses?",
+      "answer": "Ink Preferred's 100K points = $1,000-$1,250 depending on redemption method; Spark's $1,200 is guaranteed cash. After year one, Spark users earn an extra $1,000+ annually on $500K spending due to unlimited 2% versus Ink's capped 3x categories. Ink only wins if you're both hitting the $150K cap and redeeming through Chase Travel consistently."
+    },
+    {
+      "question": "Does the $55 annual fee difference matter?",
+      "answer": "Yes. On $250K in annual spending, Spark generates $5,000 cash back versus Ink's $4,500-$5,250 in point value (depending on category mix and redemption). That $55 difference is recouped immediately on higher spending tiers, making Spark the default choice for most businesses."
+    },
+    {
+      "question": "Which card is better for non-travel business spending?",
+      "answer": "Capital One Spark Cash Plus by a wide margin. If you're not maximizing travel, shipping, and advertising bonuses, Ink Preferred becomes a 1x point card (worth 0.8% in cash value), making its $95 fee unjustifiable compared to Spark's 2% flat rate."
+    },
+    {
+      "question": "Can I use both cards together?",
+      "answer": "Yes, strategically. Some businesses use Ink Preferred for capped categories (advertising, travel) and Spark Cash Plus for everything else. However, managing multiple business cards adds complexity that most owners don't need. Unless you're spending $250K+ annually across bonus categories, consolidating to Spark simplifies accounting."
+    },
+    {
+      "question": "What if I value airline miles more than cash?",
+      "answer": "Ink Preferred becomes more attractive if you transfer points to airlines at premium rates and have high redemption flexibility. However, you're betting that airline mile valuations remain strong and that you'll consistently achieve 1.25+ cents per point value. For uncertain valuations, Spark's guaranteed cash is the safer play."
+    }
+  ]
+}

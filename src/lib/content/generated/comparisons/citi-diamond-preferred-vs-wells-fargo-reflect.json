@@ -1,0 +1,36 @@
+{
+  "intro": "Both the Citi Diamond Preferred and Wells Fargo Reflect offer identical 21-month 0% introductory APR periods on balance transfers, making them strong contenders for debt consolidation. The key difference lies in how each card structures its intro offer. Citi gives you 21 months interest-free on balance transfers plus a separate 12-month 0% period on new purchases, while Wells Fargo bundles both into a single 21-month window. Neither card offers rewards, signup bonuses, or annual fees, so your choice hinges entirely on how you plan to use the card. Both require a fair credit score of 670 or higher and provide free FICO monitoring. The decision comes down to whether you need purchase protection alongside balance transfer relief, or if your primary goal is moving existing debt.",
+  "verdict": "Citi Diamond Preferred wins for most borrowers because its staggered 0% intro periods give you 12 additional months interest-free on new purchases while tackling balance transfers. Wells Fargo Reflect only makes sense if you need cell phone protection and plan to use the card exclusively for balance transfers during the 21-month window.",
+  "chooseAIf": [
+    "You need to transfer a balance and continue making interest-free purchases for an extended period — Citi's 12-month purchase intro period extends well beyond the 21-month balance transfer window",
+    "You want maximum flexibility with your intro APR — separating balance transfer and purchase intros lets you optimize timing for different financial goals",
+    "You're consolidating debt but also funding a major expense simultaneously — the dual intro periods make this possible without triggering regular APR on purchases"
+  ],
+  "chooseBIf": [
+    "Cell phone protection worth up to $600 is valuable to you and your current card doesn't cover accidental damage or theft",
+    "You're transferring a balance and will absolutely not be making new purchases during the promotional period — Wells Fargo's single 21-month window is simpler if you only need debt consolidation",
+    "You prefer Visa's network over Mastercard for broader international merchant acceptance"
+  ],
+  "faqs": [
+    {
+      "question": "Which card has better ongoing APR rates for regular purchases?",
+      "answer": "Both cards have nearly identical standard APR ranges (Citi 18.24%-28.99% vs Wells Fargo 18.24%-29.99%), with Wells Fargo slightly higher at the top end. Since neither offers rewards, you should avoid carrying balances at regular APR on both cards. Your approval APR depends on creditworthiness, not the card choice."
+    },
+    {
+      "question": "What happens when the 0% intro period ends?",
+      "answer": "Any remaining balance reverts to the regular variable APR, which typically falls between 18-29% on both cards. This makes it crucial to pay down debt during the intro period or transfer to another 0% card before expiration. Neither card offers a grace period beyond the stated intro terms."
+    },
+    {
+      "question": "Can I use both cards to split a balance transfer between them?",
+      "answer": "Yes, you can open both cards and transfer portions of your debt to each, effectively giving yourself a longer runway to pay down debt since Citi adds 12 extra months on purchases. However, managing two accounts means twice the monthly payments to track and potential complexity if you miss a deadline."
+    },
+    {
+      "question": "How does the cell phone protection actually work on the Wells Fargo card?",
+      "answer": "The protection covers damage, theft, or loss of your cell phone when you pay the monthly bill with the card. Coverage maxes out at $600 per claim with a $50 deductible. This is useful primarily if you don't have a separate phone insurance plan, but it's relatively minor compared to the 0% APR offers."
+    },
+    {
+      "question": "Which card is better for someone with a credit score of 670 exactly?",
+      "answer": "Both cards have the same 670 minimum score requirement, so approval odds are equal. However, applicants at the lower end of the credit spectrum typically receive the higher APR tier (around 28-29%), making the intro period even more valuable. Choose based on the intro period structure, not credit score impact."
+    }
+  ]
+}

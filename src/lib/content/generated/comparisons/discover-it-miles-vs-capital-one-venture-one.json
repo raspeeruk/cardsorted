@@ -1,0 +1,38 @@
+{
+  "intro": "Both cards target credit builders with no annual fee and identical 15-month 0% intro APR periods. Discover it Miles offers a flat 1.5x earning rate with the powerful Miles Match bonus that doubles all first-year miles, effectively giving you 3x miles during year one. Capital One VentureOne Rewards provides 1.25x base earning plus a 20,000 mile signup bonus and 5x miles on hotels and rental cars through Capital One Travel. The choice hinges on whether you value simplicity and accelerated first-year earnings or prefer airline transfer flexibility and category bonuses. Discover's Miles Match is the standout feature that can't be ignored for new cardholders.",
+  "verdict": "Discover it Miles wins decisively for most people. The Miles Match bonus makes it mathematically superior in year one, and the flat 1.5x rate eliminates complexity. Choose Capital One only if you're a frequent hotel booker who plans to transfer miles to premium airline partners.",
+  "chooseAIf": [
+    "You want maximum first-year value: Miles Match doubles all miles earned, making effective earning 3x on all purchases during year one",
+    "You prefer simplicity: Flat 1.5x miles on everything beats tracking bonus categories and Capital One's 5x hotels requirement",
+    "You plan to redeem for cash back or Amazon purchases: Discover's flexibility beats airline-only transfer partners",
+    "You spend under $15,000 in year one: The Miles Match bonus ($300-450 value) outweighs Capital One's 20,000 signup bonus"
+  ],
+  "chooseBIf": [
+    "You book hotels frequently through Capital One Travel and want 5x miles on those stays consistently",
+    "You have established relationships with specific airline partners and need transfer flexibility that Discover doesn't offer",
+    "You spend over $25,000 annually and value the 20,000 signup bonus combined with 1.25x earning across all categories",
+    "You regularly carry international balances and want to avoid foreign transaction fees immediately"
+  ],
+  "faqs": [
+    {
+      "question": "How much better is Discover's Miles Match bonus than Capital One's signup bonus?",
+      "answer": "If you spend $2,000 in year one, Discover's Miles Match adds $1,500 miles (2,000 × 1.5 × 50% match). Capital One offers 20,000 fixed miles upfront. Discover wins until spending drops below $13,000 annually, at which point they're roughly equal. Spend more and Discover's advantage grows."
+    },
+    {
+      "question": "Can I redeem Discover miles for actual flights or only cash back?",
+      "answer": "Discover miles don't transfer to airlines like American or United. You can redeem directly for travel through Discover's portal, cash back, or at Amazon checkout. If you want premium airline redemptions, Capital One's transfer partners offer better value, but most casual travelers will find Discover's direct redemption sufficient."
+    },
+    {
+      "question": "What's the difference between these cards and premium travel cards?",
+      "answer": "These are entry-level cards designed for credit builders with $0 annual fees. Premium cards charge $95-$450 annually but offer trip insurance, lounge access, and higher earning rates. Start here, graduate to premium cards once your credit score hits 740+."
+    },
+    {
+      "question": "Do I need to do anything special to claim the Miles Match bonus on Discover?",
+      "answer": "No. Discover automatically matches all miles earned during your first year with no application required. The match appears on your statement at the one-year anniversary, so don't worry if you don't see it immediately after signup."
+    },
+    {
+      "question": "Which card is better if I'm paying off debt and won't use the 0% intro APR?",
+      "answer": "Discover it Miles. The 1.5x earning rate is flat and requires zero category tracking, making it ideal for focused debt payoff where you're spending minimally. Capital One's bonus categories become irrelevant if you're not optimizing spend, and Discover's Miles Match makes every purchase count more."
+    }
+  ]
+}

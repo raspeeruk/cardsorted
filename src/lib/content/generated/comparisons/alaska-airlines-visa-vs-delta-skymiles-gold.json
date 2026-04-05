@@ -1,0 +1,38 @@
+{
+  "intro": "The Alaska Airlines Visa Signature and Delta SkyMiles Gold Amex are both airline-branded cards targeting frequent flyers, but they serve different traveler types. Alaska's $95 annual fee is substantially lower, and its companion fare benefit is genuinely valuable—offering a second ticket for taxes and fees annually. Delta's $150 fee includes a $200 flight credit (after hitting $10K spend), which theoretically adds value, but only if you actually meet that spending threshold and use it. Alaska rewards Alaska Airlines purchases at 3x miles versus Delta's 2x, and Alaska's free checked bags extend to up to 6 guests versus Delta's single cardholder benefit. Both cards charge high APRs (19-29%), making them unsuitable for carrying balances. The signup bonuses differ significantly: Alaska offers 70,000 miles plus a companion fare versus Delta's 40,000 miles alone.",
+  "verdict": "Choose the Alaska Airlines card unless you're a heavy Delta-exclusive traveler. The companion fare alone justifies the lower annual fee, and the 3x bonus on Alaska purchases plus extended checked bag benefits make it the superior choice for most travelers. Delta's $200 credit only materializes after $10K annual spend—a requirement many cardholders won't meet.",
+  "chooseAIf": [
+    "You fly Alaska Airlines regularly and value the annual companion fare certificate worth $200+ in airfare savings alone",
+    "You want to bring guests on flights—Alaska covers checked bags for up to 6 companions versus Delta's cardholder-only benefit",
+    "You prefer lower annual fees ($95 versus $150) and don't want to hit a $10K spending threshold to unlock promised benefits",
+    "You earn 3x miles on Alaska purchases, not just 2x on Delta purchases, making reward accumulation faster"
+  ],
+  "chooseBIf": [
+    "Delta is your exclusive airline and you have the spending volume to reach the $10K threshold that unlocks the $200 annual flight credit",
+    "You want 2x miles on US restaurant and supermarket purchases—Alaska offers no dining category bonus",
+    "Priority boarding matters to you—Delta includes it while Alaska does not",
+    "You're willing to pay $150 annually for the combination of perks, though you should verify the credit actually offsets this cost"
+  ],
+  "faqs": [
+    {
+      "question": "Is the Delta $200 flight credit worth the extra $55 annual fee?",
+      "answer": "Only if you spend at least $10K annually to unlock it and actually use Delta flights that cost $200 or more. Many cardholders won't clear this threshold, making it a false economy. Alaska's companion fare, by contrast, is immediately available regardless of spending and has clear, tangible value."
+    },
+    {
+      "question": "What happens if I don't use the Delta credit or companion fare?",
+      "answer": "You're paying for benefits you don't use—a costly mistake. If you rarely fly Delta or Alaska, neither card makes sense. These cards are designed for loyalty program members, not occasional flyers."
+    },
+    {
+      "question": "Can I use these cards for non-airline spending?",
+      "answer": "Yes, both earn 1x miles on all purchases, so they're usable for everyday spend. However, their value depends entirely on converting miles to flights. If you don't fly frequently enough to redeem miles, the high annual fees make these cards poor choices versus general travel cards."
+    },
+    {
+      "question": "Which card has better sign-up value?",
+      "answer": "Alaska's 70,000 miles plus companion fare is worth roughly $1,200-1,500 in travel value, while Delta's 40,000 miles is worth approximately $600-800. Alaska's offer is substantially stronger upfront."
+    },
+    {
+      "question": "Are these cards worth it if I carry a balance?",
+      "answer": "No. Both cards charge 19-29% APR, which is among the highest in the market. If you can't pay off the balance monthly, these cards will cost you far more in interest than you'll gain in miles. Only apply if you have discipline for full monthly repayment."
+    }
+  ]
+}

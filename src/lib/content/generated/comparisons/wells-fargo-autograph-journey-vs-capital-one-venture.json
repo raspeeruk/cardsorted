@@ -1,0 +1,38 @@
+{
+  "intro": "Both cards charge $95 annually and offer solid travel rewards with similar perks like Global Entry credits and no foreign transaction fees. The key difference is how they reward spending: Wells Fargo's Autograph Journey emphasizes bonus categories (5x hotels, 4x airlines, 3x dining) but only 1x on everyday purchases, while Capital One's Venture offers a flat 2x miles on everything with fewer category bonuses. The Venture's signup bonus (75,000 miles vs 50,000 points) is also more generous. Your choice depends on whether you value category depth or simplicity and baseline earning power.",
+  "verdict": "Capital One Venture wins for most people. Its flat 2x earning on all purchases beats Wells Fargo's 1x baseline, and the higher signup bonus makes it better for casual spenders. Pick Wells Fargo only if you consistently spend heavily in its bonus categories—particularly hotels and dining.",
+  "chooseAIf": [
+    "You book hotels directly (not through travel portals) and want 5x points per dollar spent on luxury accommodations",
+    "You fly frequently and value 4x airline points on direct airline purchases plus the annual $50 airline credit",
+    "You dine out multiple times weekly and can maximize the 3x dining category to offset the 1x baseline rate",
+    "You want to transfer points to premium hotel programs like Hyatt or Marriott that offer better point valuations"
+  ],
+  "chooseBIf": [
+    "You prefer simplicity and don't want to optimize spending around bonus categories—2x miles on everything eliminates mental math",
+    "You spend modestly across multiple categories without concentrating purchases in travel or dining",
+    "The 75,000-mile signup bonus appeals to you, representing more immediate redemption value than 50,000 points",
+    "You value a lower APR (19.24% floor vs 21.24%) and want less aggressive interest charges if you carry a balance"
+  ],
+  "faqs": [
+    {
+      "question": "Which card earns more if I spend $2,000 monthly equally across all categories?",
+      "answer": "Capital One Venture earns 4,000 miles monthly (2x on all purchases). Wells Fargo earns roughly 2,500 points monthly (1x base plus some category bonuses), making Venture approximately 60% better for non-concentrated spenders. The gap widens if you don't intentionally max bonus categories."
+    },
+    {
+      "question": "Can I transfer points/miles to airlines and hotels with both cards?",
+      "answer": "Yes, both allow transfers to partners. Wells Fargo transfers to airline and hotel programs directly. Capital One transfers to 15+ partners including major airlines and hotels. Both offer similar redemption flexibility, though Venture's 1 cent per mile redemption option provides a guaranteed value floor if transfers aren't attractive."
+    },
+    {
+      "question": "What if I travel domestically 3-4 times yearly but rarely dine out?",
+      "answer": "Capital One Venture is your card. You'll earn 2x miles on airfare, hotels, and rental cars through normal spending, plus the 5x bonus on Capital One Travel bookings. Wells Fargo's benefits concentrate in categories you won't use, leaving you earning just 1x on most purchases."
+    },
+    {
+      "question": "How valuable is the annual airline/TSA credit on each card?",
+      "answer": "Both offer up to $100 Global Entry or TSA PreCheck credits, effectively reducing your true annual fee to $0 if you renew every five years (Global Entry costs $100 per five years, TSA PreCheck is $85 for five years). This benefit is identical between cards."
+    },
+    {
+      "question": "Which signup bonus is actually worth more?",
+      "answer": "Capital One's 75,000 miles is typically worth $750-$900 at standard redemption rates (1 cent per mile or airline transfers). Wells Fargo's 50,000 points varies based on transfer partner demand but typically values at $500-$700, making Venture's bonus worth approximately $200-$300 more for most redemption strategies."
+    }
+  ]
+}

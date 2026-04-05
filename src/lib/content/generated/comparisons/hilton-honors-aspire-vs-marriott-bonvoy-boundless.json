@@ -1,0 +1,38 @@
+{
+  "intro": "The Hilton Honors Aspire and Marriott Bonvoy Boundless target loyalty-focused travelers, but serve fundamentally different profiles. Aspire is a premium card with a $550 annual fee, substantial annual credits that offset costs, and aggressive point earning in travel and dining categories. Boundless is a mid-tier card at $95 annually, offering solid earnings on hotel stays and everyday purchases with meaningful elite benefits. Aspire suits frequent luxury hotel guests who value the $250 resort credit and airline fee credit plus complimentary Diamond status. Boundless appeals to value-conscious travelers who want reliable points accumulation without high annual fees. Your choice hinges on annual spending, hotel chain loyalty, and whether premium benefits justify the $455 annual fee difference.",
+  "verdict": "Choose Aspire if you spend $25,000+ annually and stay at Hiltons regularly; the resort and airline credits reduce true cost to roughly $50. Choose Boundless for most other travelers—the lower fee, stronger grocery/dining multiplier, and automatic elite status provide better value unless you consistently redeem Hilton resort credits.",
+  "chooseAIf": [
+    "You stay at Hilton properties 8+ nights annually and will use the $250 annual resort credit, reducing true annual cost to approximately $300 or less",
+    "You spend $500+ monthly on dining and flights—the 7x airline rate and 7x restaurant points generate significantly more rewards than Boundless",
+    "You value complimentary Hilton Diamond status and want Priority Pass lounge access for frequent air travel",
+    "You have high annual spending (over $30,000) where the 3x base rate compounds into substantial point value versus Boundless's 2x rate"
+  ],
+  "chooseBIf": [
+    "You spend under $15,000 annually—Boundless's low fee and absence of unused credits makes it mathematically superior",
+    "You prioritize grocery and gas purchases (6x points at both) more than dining and flights, areas where Boundless outperforms Aspire",
+    "You want automatic elite status without paying for premium features you won't use; Boundless provides Gold Elite and 15 elite night credits at $95",
+    "You prefer Marriott hotels over Hilton, or want flexibility across multiple hotel brands rather than single-brand loyalty commitment"
+  ],
+  "faqs": [
+    {
+      "question": "Will the $250 annual credits actually offset Aspire's $550 fee?",
+      "answer": "Partially, if you use them. The $250 resort credit and $250 airline fee credit reduce your true annual cost to $50, but only if you actively book Hilton hotels and incur airline fees. If these credits go unused, the card costs $550 outright. Boundless has no such credits, so you either use them or lose the advantage."
+    },
+    {
+      "question": "Which card earns faster points on hotel stays?",
+      "answer": "Aspire earns 14x points at Hilton properties versus Boundless's 17x at Marriott properties, so Boundless slightly edges Aspire for hotel-specific earning. However, Aspire's $250 annual resort credit effectively subsidizes hotel costs, which can outweigh the point differential depending on your nightly rates and point redemption value."
+    },
+    {
+      "question": "What's the real annual cost of each card?",
+      "answer": "Boundless costs $95 flat. Aspire costs $550 minus the $250 resort credit and $250 airline fee credit (if used), bringing true cost to $50 for active users, or $550 for those who don't redeem credits. If you don't fly or stay at Hiltons, Aspire becomes prohibitively expensive."
+    },
+    {
+      "question": "Which card is better for groceries and gas?",
+      "answer": "Boundless wins decisively with 6x points on grocery stores and gas stations versus Aspire's base 3x rate. For someone spending $200 monthly on groceries and $150 on gas, Boundless generates 2,100 extra annual points compared to Aspire—equivalent to roughly $21 in value at 1 cent per point redemption."
+    },
+    {
+      "question": "Do I need excellent credit to qualify?",
+      "answer": "Aspire requires 720+ credit score while Boundless requires 700+, a minor difference. Both require excellent credit history. If you're below 720, Boundless is the only option. Both have shorter approval timelines for existing American Express or Chase customers respectively."
+    }
+  ]
+}

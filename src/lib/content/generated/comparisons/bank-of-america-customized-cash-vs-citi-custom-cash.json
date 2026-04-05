@@ -1,0 +1,38 @@
+{
+  "intro": "Both the Bank of America Customized Cash and Citi Custom Cash cards offer identical $200 bonuses, zero annual fees, and 0% intro APR periods. They're aimed at fair-credit borrowers seeking flexible cash back without category restrictions. The core difference lies in how they structure bonus rewards. BofA lets you lock in a 3% category of your choice with a $2,500 quarterly cap, plus automatic 2% at groceries. Citi automatically tracks your spending and rewards your highest-spending category at 5% with a $500 monthly cap. The choice between them depends entirely on your spending patterns and whether you want control or convenience.",
+  "verdict": "Choose Citi Custom Cash if your spending naturally concentrates in one category each month and you want maximum simplicity. Choose Bank of America if you spend heavily in groceries, prefer locking in a predictable category, or want to stack rewards through Preferred Rewards membership.",
+  "chooseAIf": [
+    "You spend more than $500 monthly in a single category (groceries, gas, or dining) — BofA's guaranteed 2-3% beats Citi's $500 monthly cap",
+    "You're a Bank of America customer with Preferred Rewards status — the 25-75% bonus multiplier substantially increases all cash back earned",
+    "You want predictability and control — choosing your 3% category and locking it in avoids guesswork about whether you'll hit category thresholds",
+    "You shop at wholesale clubs frequently — the 2% back on warehouse clubs and supermarkets is valuable and has its own $2,500 cap"
+  ],
+  "chooseBIf": [
+    "Your spending shifts monthly between different categories — Citi automatically rewards your highest spend each cycle without requiring changes",
+    "You want the highest possible cash back rate — 5% on your top category beats BofA's 3%, though the $500 monthly cap limits total earnings",
+    "You value minimal card management — no need to select or change categories; Citi handles it automatically",
+    "You spend modestly in any single category — if you typically spend under $500/month in your top category, Citi's 5% rate maximizes returns"
+  ],
+  "faqs": [
+    {
+      "question": "Which card is better if I spend $600/month on groceries and $400/month on gas?",
+      "answer": "Bank of America wins decisively. You'd earn 2% on the full $600 in groceries ($12/month) plus 3% on the $400 gas if you select gas as your category ($12/month). Citi caps at 5% on $500 of your top category ($25/month max), meaning you'd lose 5% cash back on any spending over $500. BofA's dual caps and guaranteed rates favor higher spenders."
+    },
+    {
+      "question": "What's the intro APR difference between these cards?",
+      "answer": "Citi offers one extra month of 0% APR (15 months versus 15 billing cycles for BofA). If a billing cycle is roughly 30 days, BofA provides approximately 15 months as well, making them effectively equal. Both are exceptional for balance transfers or short-term financing."
+    },
+    {
+      "question": "Can I stack Bank of America's rewards with Preferred Rewards multipliers?",
+      "answer": "Yes. If you have Preferred Rewards Gold or higher status, all cash back earns a 25-75% bonus. This means your 3% category becomes 3.75-5.25%, and your 1% base becomes 1.25-1.75%. Citi has no equivalent program, giving BofA a significant advantage for existing Bank of America customers."
+    },
+    {
+      "question": "Which card is better for inconsistent spending patterns?",
+      "answer": "Citi Custom Cash is superior. Its automatic top-category tracking means you don't need to anticipate or manage changes. BofA requires you to select a category upfront, which is ideal if you know your habits but frustrating if your spending varies wildly month to month."
+    },
+    {
+      "question": "Is the $200 signup bonus the same on both cards?",
+      "answer": "Yes, both offer $200 bonuses with the same $670+ credit score requirement. Neither card has a signup minimum spend, so you'll unlock the bonus regardless of activity. This makes the bonus identical in real terms."
+    }
+  ]
+}

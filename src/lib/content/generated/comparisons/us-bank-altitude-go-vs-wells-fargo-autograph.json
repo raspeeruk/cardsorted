@@ -1,0 +1,38 @@
+{
+  "intro": "Both cards offer no annual fee and solid rewards structures for everyday spending, but they serve different customer profiles. The U.S. Bank Altitude Go excels for dining enthusiasts with its 4x points on restaurants and takeout, plus a generous 15-month 0% intro APR period that saves money on large purchases. The Wells Fargo Autograph casts a wider net with 3x points across six categories including travel, transit, and phone plans, making it more versatile for varied spenders. U.S. Bank requires a lower credit score (670+) and offers better value redemption through Real-Time Rewards, while Wells Fargo adds practical protections like cell phone coverage. The choice depends on whether you prioritize dining rewards or category diversity.",
+  "verdict": "Choose the U.S. Bank Altitude Go if dining is your primary spend category and you value the 0% intro APR benefit. It's the stronger card overall for most people because the 4x dining rate significantly outpaces Autograph's 3x, and the interest-free period provides real financial breathing room. Pick Wells Fargo only if you have balanced spending across multiple categories and value travel redemptions equally.",
+  "chooseAIf": [
+    "You spend $300+ monthly on restaurants, takeout, and food delivery — the 4x points rate saves you roughly $35-40 annually compared to Autograph's 3x",
+    "You want to leverage a 15-month 0% intro APR period to make a large purchase without interest charges",
+    "You prefer redeeming points for travel at a 50% bonus through Real-Time Rewards, which stretches your earning power further",
+    "You don't need cell phone protection or additional protections — you'd rather maximize earning on your core spending category"
+  ],
+  "chooseBIf": [
+    "You split spending evenly between dining (3%), travel (3%), gas (3%), and transit (3%) — the card's broader category coverage works better for diverse budgets",
+    "You take frequent trips and want 3x points on hotels, flights, and transportation booking sites alongside dining rewards",
+    "You value the $600 cell phone protection and want a card with broader lifestyle benefits beyond pure rewards earning",
+    "You use multiple Wells Fargo credit cards and want the flexibility to pool points across accounts"
+  ],
+  "faqs": [
+    {
+      "question": "Which card is better for everyday gas and grocery shopping?",
+      "answer": "U.S. Bank Altitude Go offers 2x on gas and groceries, while Wells Fargo Autograph gives 3x on gas but no bonus on groceries. If you spend equally on both, Autograph edges ahead. However, if groceries represent your larger spend, Altitude Go's 2x still accumulates respectably without sacrificing the superior 4x dining rate."
+    },
+    {
+      "question": "How much is the signup bonus difference worth in real value?",
+      "answer": "The U.S. Bank card offers 25,000 points versus Autograph's 20,000 points. At typical redemption rates of 1 cent per point, that's a $250 versus $200 value — a $50 advantage to U.S. Bank. However, Autograph's Real-Time Rewards redemption path at U.S. Bank adds flexibility."
+    },
+    {
+      "question": "Does the 0% intro APR period make U.S. Bank the obvious choice?",
+      "answer": "The 15-month 0% intro APR is significant only if you plan to carry a balance or make a large purchase you'll pay off gradually. For most rewards-focused cardholders who pay in full monthly, this benefit is irrelevant. Focus on earning rates and bonus categories instead."
+    },
+    {
+      "question": "Which card has better travel benefits?",
+      "answer": "Wells Fargo Autograph wins decisively here with 3x points on all travel purchases and transit, plus no foreign transaction fees. U.S. Bank only matches the no foreign transaction fees but lacks specific travel bonuses. If travel is important, Autograph is the better choice."
+    },
+    {
+      "question": "Can I use both cards strategically?",
+      "answer": "Yes. Use Altitude Go for dining, gas, and groceries where it earns 2-4x points, and keep Autograph for travel, transit, and streaming to maximize 3x rewards across both cards. This requires discipline but captures the best rates from each card's category strengths."
+    }
+  ]
+}

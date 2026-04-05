@@ -1,0 +1,38 @@
+{
+  "intro": "Both cards target students with no annual fee and low credit score requirements, but they take fundamentally different approaches to rewards. Discover it Student offers rotating 5% categories with a first-year cashback match that doubles rewards, plus a GPA incentive. Capital One Quicksilver Student provides a flat 1.5% cash back on everything with no category hunting required. The choice depends on whether you'll actively track rotating categories or prefer simplicity. Discover's higher APR range (17.24%–26.24% vs 19.24%–29.24%) is actually more favorable despite the larger spread, and the first-year match feature significantly boosts value for new cardholders who engage with it.",
+  "verdict": "Discover it Student wins for most students. The combination of the first-year cashback match (effectively 2% on rotating categories, 10% during bonus quarters), the $20 annual GPA bonus, and lower entry APR make it substantially more valuable than Quicksilver's flat 1.5% if you'll spend strategically. Choose Quicksilver only if you value simplicity over optimization and dislike tracking quarterly changes.",
+  "chooseAIf": [
+    "You're willing to activate quarterly categories and spend strategically—during a 5% quarter on restaurants ($500/month), you'd earn $300 annually versus $90 with Quicksilver, even before the first-year match",
+    "You maintain a 3.0+ GPA and want the $20 annual statement credit, which compounds your rewards value over four years of college",
+    "You want the first-year cashback match feature that doubles all rewards automatically, effectively giving you 2% baseline and 10% on rotating categories without extra effort",
+    "You prefer slightly lower APR rates as a borrowing safety net, though neither card should carry a balance"
+  ],
+  "chooseBIf": [
+    "You dislike tracking rotating categories and want to set-and-forget with 1.5% across all spending without quarterly activation",
+    "You value the $25 late payment forgiveness as emergency protection, though this shouldn't be relied upon regularly",
+    "You value the $50 upfront bonus more than ongoing rewards optimization and want immediate value",
+    "You travel internationally and prioritize the no foreign transaction fees feature over domestic rewards maximization"
+  ],
+  "faqs": [
+    {
+      "question": "How much does the first-year cashback match actually save me on the Discover card?",
+      "answer": "If you spend $300 monthly on rotating 5% categories and use regular categories for the remaining $200, you'd earn $18 monthly (doubled to $36 in year one). Over 12 months, that's an extra $216 in free cash back. On Quicksilver, the same spending yields only $54 annually, making Discover's match worth roughly $162 in year one alone."
+    },
+    {
+      "question": "Do I have to activate Discover's rotating categories quarterly?",
+      "answer": "Yes, you must activate each quarter to earn the 5% rate, though the process takes 30 seconds on the app or website. If you forget activation, you'll earn the standard 1% instead. This is the card's main friction point compared to Quicksilver's passive approach."
+    },
+    {
+      "question": "Which card is better if I might carry a balance?",
+      "answer": "Neither card should carry a balance due to high APRs, but Discover's 17.24% entry rate is genuinely lower than Quicksilver's 19.24%. If you're concerned about APR, focus on responsible usage and paying in full monthly—both cards are designed for students who don't carry balances."
+    },
+    {
+      "question": "Is the $20 GPA bonus realistic or just a gimmick?",
+      "answer": "It's legitimate if you're already maintaining a 3.0+ GPA for other reasons. That $20 annually compounds to $80 over a typical four-year degree, plus the first-year doubled rewards add genuine value that goes beyond a marketing hook."
+    },
+    {
+      "question": "Does Capital One's late payment forgiveness mean I should worry less about payments?",
+      "answer": "No. The $25 forgiveness is occasional assistance, not permission to miss payments. Late payments damage credit scores significantly, and relying on this feature suggests financial trouble. Both cards require responsible, on-time payments to build credit properly during your student years."
+    }
+  ]
+}

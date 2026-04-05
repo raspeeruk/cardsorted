@@ -1,0 +1,38 @@
+{
+  "intro": "Both cards target first-time borrowers with no annual fees and minimal credit requirements, but they take different approaches to rewards. Chase Freedom Rise offers a straightforward 1.5% flat cash back on everything with no categories to track. Discover it Student Cash Back delivers 1% base rewards plus rotating 5% categories, and includes a cashback match that doubles all rewards earned in year one. The critical difference is APR: Chase's 24.49%–31.24% range is significantly higher than Discover's 17.24%–26.24%. For students building credit, the lower APR can mean hundreds of dollars in interest savings if you carry a balance. However, the rewards structure and signup incentives favor different spending patterns and financial discipline levels.",
+  "verdict": "Discover it Student Cash Back wins for most first-time borrowers because its lower APR substantially reduces borrowing costs, and the cashback match in year one creates genuine value even at 1% base rewards. Choose Chase Freedom Rise only if you're confident you'll never carry a balance and want the simplicity of flat-rate rewards without tracking rotating categories.",
+  "chooseAIf": [
+    "You're certain you'll pay your balance in full each month and value simplicity over complexity",
+    "You spend heavily on everyday purchases and want consistent cash back without category management",
+    "You want free credit monitoring through Chase's ecosystem and don't qualify for Discover's student perks",
+    "You prefer a single flat rate (1.5%) rather than juggling rotating quarterly categories"
+  ],
+  "chooseBIf": [
+    "You might carry a balance occasionally—the 7-8 percentage point APR advantage saves real money on interest charges",
+    "You're a student with a 3.0+ GPA and can capture the $20 annual bonus plus the rotating 5% categories",
+    "You spend at least $1,500 quarterly in bonus categories (groceries, gas, restaurants vary by quarter)—the 5% rate compounds significantly with cashback match in year one",
+    "You want the cashback match feature, which doubles all earnings in year one, effectively giving you 2% on base purchases"
+  ],
+  "faqs": [
+    {
+      "question": "What's the real impact of the APR difference between these cards?",
+      "answer": "On a $2,000 balance carried for six months, Chase's higher APR could cost you $150–200 more in interest than Discover. For a first-time borrower building credit, this gap matters considerably. If you plan never to carry balances, APR is irrelevant, but most students occasionally miss full payments."
+    },
+    {
+      "question": "Is the 1.5% flat rate or 1% plus rotating 5% categories actually better?",
+      "answer": "It depends on your spending. If you spend $500/month on rotating bonus categories (like groceries), Discover yields $30/month versus Chase's $7.50, a $270 annual difference. But if you rarely spend in bonus categories, Chase's flat 1.5% wins. The cashback match in year one tilts significantly toward Discover for most students."
+    },
+    {
+      "question": "How does the cashback match feature work?",
+      "answer": "Discover doubles all cash back earned during your first year as a cardmember, meaning 1% becomes 2% and 5% categories become 10%. This one-year benefit is substantial for building your cash back foundation without increasing spending. It's effectively $20–40 in free rewards for typical student spending."
+    },
+    {
+      "question": "Who qualifies for Discover's $20 Good Grades bonus?",
+      "answer": "The $20 bonus posts each school year when you maintain a 3.0+ GPA, which most students in good academic standing achieve. Combine this with the cashback match, and Discover delivers tangible first-year benefits that Chase cannot match. Chase offers no enrollment bonuses or academic incentives."
+    },
+    {
+      "question": "Should I choose based on which issuer (Chase vs. Discover) is better?",
+      "answer": "Both issuers have strong reputations, but this comparison hinges on rewards structure and APR, not brand preference. Discover is universally accepted despite historical skepticism, and its lower APR plus student-focused features make it the better choice here. Chase's strength lies elsewhere in their premium card lineup."
+    }
+  ]
+}

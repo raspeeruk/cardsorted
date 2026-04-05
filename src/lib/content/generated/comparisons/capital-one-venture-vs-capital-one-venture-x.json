@@ -1,0 +1,38 @@
+{
+  "intro": "Capital One's Venture and Venture X are both flat-rate 2x miles cards targeting frequent travelers, but they couldn't serve more different customers. The standard Venture charges $95 annually and delivers straightforward value through its bonus categories and travel credits. Venture X demands $395 yearly but compensates with $300 in Capital One Travel credits, 10,000 anniversary miles, and lounge access. The real question isn't which card is better—it's whether you'll actually use premium benefits to justify a $300 annual cost difference. For most people, Venture wins on pure economics. For high-spend road warriors with existing elite airline status, Venture X's perks start to pay for themselves.",
+  "verdict": "Choose Venture for almost everyone. The $95 annual fee makes sense for casual to moderate travelers who want no-nonsense earning. Only upgrade to Venture X if you spend $15,000+ annually on flights booked through Capital One Travel and genuinely value lounge access and anniversary miles.",
+  "chooseAIf": [
+    "You want simple, predictable value without premium tier justification. The $95 fee is reasonable for 2x miles everywhere.",
+    "You spend less than $15,000 per year on travel or prefer to book directly with airlines rather than through Capital One Travel.",
+    "You don't have elite frequent flyer status that would make lounge access redundant or overlap with Priority Pass benefits.",
+    "You want a strong travel card but can't justify spending $300 annually to break even on credits and bonuses."
+  ],
+  "chooseBIf": [
+    "You consistently book flights through Capital One Travel and spend $15,000+ annually on airfare, where 10x miles coverage justifies the higher fee.",
+    "You value airport lounge access and don't already have Priority Pass or elite airline status providing equivalent lounges.",
+    "The 10,000 annual bonus miles ($100 value) plus $300 travel credit offset most of your annual fee, and you'll actually use these benefits.",
+    "You're a premium leisure traveler who books hotels, rental cars, and flights regularly enough to recoup the premium through higher category earnings."
+  ],
+  "faqs": [
+    {
+      "question": "Do these cards actually earn 2x miles the same way?",
+      "answer": "Yes. Both cards earn 2x miles on every purchase with no bonus categories on regular spending. The difference is that Venture X earns 10x miles on flights booked through Capital One Travel versus standard 2x, while Venture only qualifies for the 5x hotel/rental car boost in the Capital One Travel portal. Venture X's 10x category is the primary value lever justifying its premium fee."
+    },
+    {
+      "question": "How much spending do I need to justify Venture X's extra $300 annual fee?",
+      "answer": "You need roughly $15,000 annually in Capital One Travel bookings to break even. That $300 travel credit covers about 40% of the fee; the 10,000 anniversary miles (worth roughly $100) cover another third. The remaining $100 gap closes if you use lounge access even twice or hold the card long-term. Without heavy Capital One Travel usage, Venture X doesn't pay for itself."
+    },
+    {
+      "question": "Can I transfer miles to airlines on both cards?",
+      "answer": "Yes. Both Venture and Venture X transfer miles to 15+ airline and hotel partners at a 1:1 ratio, and both avoid foreign transaction fees. This flexibility is identical between the two cards, so it shouldn't factor into your decision."
+    },
+    {
+      "question": "Is Capital One Lounge access worth the Venture X upgrade?",
+      "answer": "Only if you travel four or more times yearly and don't already have Priority Pass, United Club passes, or airline elite lounge access. The $395 annual fee doesn't include lounge credits like American Express premium cards, so you're paying full price for a benefit that overlaps with most frequent flyer programs."
+    },
+    {
+      "question": "What's the credit score difference between these cards?",
+      "answer": "Venture X requires 720+ versus Venture's 700+ minimum, a modest 20-point gap. This suggests Venture X approval is slightly stricter, but both target prime credit ranges. Your actual approval odds depend more on income and credit profile than this minimum threshold."
+    }
+  ]
+}

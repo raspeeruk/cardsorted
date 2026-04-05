@@ -1,0 +1,38 @@
+{
+  "intro": "The Wells Fargo Autograph and Chase Freedom Flex occupy different reward philosophies. The Autograph locks in consistent 3x points across six popular spending categories—restaurants, travel, gas, transit, streaming, and phone plans—plus 1x everywhere else, making it predictable for everyday spenders. The Freedom Flex pivots toward quarterly 5% rotating categories capped at $1,500 per quarter, 3% dining and drugstores, and 5% travel through Chase, plus a powerful 15-month 0% intro APR on purchases and transfers. Both charge no annual fee and require similar credit scores. The key difference: Autograph rewards consistency and breadth, while Freedom Flex demands quarterly category tracking but offers superior intro APR terms and higher quarterly caps for category maximizers.",
+  "verdict": "Choose the Wells Fargo Autograph if you spend heavily on restaurants, gas, or travel and want zero complexity. Choose Chase Freedom Flex if you're disciplined about rotating categories, plan balance transfer arbitrage, or value the extended 0% APR promotional period.",
+  "chooseAIf": [
+    "You spend $300+ monthly on restaurants or regular travel—3x points consistently beats Freedom Flex's 3% dining cap outside bonus quarters",
+    "You value simplicity and don't want to track rotating quarterly categories or caps",
+    "You need cell phone protection and use streaming or phone plan services regularly",
+    "You're a Wells Fargo customer who wants to pool rewards across multiple Wells Fargo cards"
+  ],
+  "chooseBIf": [
+    "You're disciplined about activating rotating quarterly categories and can max the $1,500 cap—5% cash back substantially outpaces 3x points when redeemed as cash",
+    "You plan a balance transfer or large purchase and need 15 months interest-free breathing room",
+    "You prefer cash back over points and don't want to worry about redemption value fluctuation",
+    "You hold or plan to hold a Chase Sapphire card and want to combine rewards for boosted point values"
+  ],
+  "faqs": [
+    {
+      "question": "Which card has better rewards earning potential annually?",
+      "answer": "It depends on spending patterns. For someone spending $2,000 monthly with $600 in bonus categories, Autograph generates 27,600 points annually (worth roughly $276-414 as travel). Freedom Flex in the same scenario generates $280-320 cash back depending on quarterly activation. Freedom Flex's 5% rotating quarters win for maximized bonus category spenders, but Autograph's consistency wins for moderate spenders."
+    },
+    {
+      "question": "Can I use these cards for balance transfers?",
+      "answer": "Only Freedom Flex explicitly offers a 0% intro APR on balance transfers for 15 months. Autograph provides no balance transfer promotion, making Freedom Flex substantially better if you're consolidating debt or doing credit arbitrage."
+    },
+    {
+      "question": "What's the difference between points and cash back for these cards?",
+      "answer": "Autograph earns points redeemable through Wells Fargo's program (typically 1 point equals 1 cent minimum, but value varies by redemption type). Freedom Flex earns cash back—fixed value, no guessing. Points are theoretically worth more if you book travel through premium portals, but cash back is more straightforward and guaranteed."
+    },
+    {
+      "question": "Which card is better for international travel?",
+      "answer": "Autograph has no foreign transaction fees and earns 3x points on travel purchases globally. Freedom Flex also has no foreign transaction fees and earns 5% through Chase Travel on travel bookings. Autograph edges ahead for international spending outside Chase's travel portal."
+    },
+    {
+      "question": "What if I don't spend much on bonus categories?",
+      "answer": "If you're a 1x/1% earner, Freedom Flex's cash back is slightly clearer in value. However, Autograph's consistent 3x points across six common categories means most people naturally hit at least one, making it more rewarding than the average 1-1.5% category card for typical household spending."
+    }
+  ]
+}

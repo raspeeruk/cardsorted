@@ -1,0 +1,36 @@
+{
+  "intro": "Both the Delta SkyMiles Gold and United Explorer cards are airline-specific rewards cards targeting frequent flyers. The Delta card costs $150 annually with a 40,000-mile signup bonus, while United's offering costs $95 with a 50,000-mile bonus. Delta emphasizes supermarket and restaurant rewards alongside airline purchases, while United broadens its dining category and throws in two Club passes yearly. For most travelers, the $55 annual fee difference and United's superior signup bonus create a meaningful advantage, but your choice ultimately depends on which airline dominates your travel schedule and whether you value everyday spending categories or airline-specific perks.",
+  "verdict": "United Explorer Card wins for most travelers. The $55 lower annual fee, larger signup bonus, and two Club passes annually deliver better value unless you're a Delta-focused frequent flyer who specifically uses supermarkets as a primary spending category. If you fly exclusively Delta and value that first checked bag benefit, the SkyMiles card justifies its premium, but United's generosity elsewhere makes it the smarter default choice.",
+  "chooseAIf": [
+    "You're a Delta loyalist and fly exclusively (or nearly exclusively) with Delta, making the first checked bag benefit essential for multiple annual trips",
+    "You spend heavily at US supermarkets and want to maximize miles per dollar on groceries, a category where Delta offers 2x versus United's standard 1x",
+    "You value the $200 Delta flight credit after meeting the $10K spending threshold, which effectively subsidizes your annual fee if you hit that spend level"
+  ],
+  "chooseBIf": [
+    "You want the lowest net annual cost, as the $95 fee is $55 cheaper than Delta's $150, representing real savings even before factoring rewards differences",
+    "You dine out frequently and want 2x miles on all dining purchases, not just US restaurants, giving you more flexibility than Delta's more restrictive bonus category",
+    "You value the two United Club one-time passes annually, which can offset the annual fee during premium travel periods when Club access costs $50+ per visit"
+  ],
+  "faqs": [
+    {
+      "question": "If I spend $500 monthly on dining ($6,000 yearly), which card gives me more miles?",
+      "answer": "United Explorer wins decisively. At 2x miles on all $6,000 in dining, you earn 12,000 bonus miles. Delta only offers 2x on US restaurants, which typically means less coverage. United's dining reward also tends to overlap with travel and entertainment spending more seamlessly, making the category more valuable in practice."
+    },
+    {
+      "question": "What if I spend $500 monthly at supermarkets?",
+      "answer": "Delta SkyMiles Gold pulls ahead. You'd earn 12,000 bonus miles yearly at 2x on $6,000 in supermarket spend, a category where Delta explicitly rewards you and United doesn't. However, you'd need to value this enough to justify the $55 higher annual fee, which requires about $2,750 in additional annual supermarket spend to break even versus United's other benefits."
+    },
+    {
+      "question": "How much is the signup bonus worth in real airline value?",
+      "answer": "United's 50,000-mile bonus typically values around $500-750 in economy redemptions depending on routes, while Delta's 40,000 miles values similarly at $400-600. United's edge of 10,000 miles equates to roughly $100-150 in additional value, which directly offset about half of the annual fee savings."
+    },
+    {
+      "question": "Do either card's annual credits make them worthwhile even if I don't travel much?",
+      "answer": "United's Club passes are valuable only if you actually use them, making them better for frequent travelers. Delta's $200 flight credit is easier to use but requires $10,000 in annual card spending to unlock. For casual travelers under $10K yearly spend, neither card's credits fully offset the annual fees, making a standard cashback card more sensible."
+    },
+    {
+      "question": "Which card is better for international travel?",
+      "answer": "Both offer no foreign transaction fees, so they're equal here. United has a slight edge because its 2x dining miles apply globally to restaurants, whereas Delta's bonus dining is US-only. Neither card offers travel protections that would meaningfully differentiate them internationally, so your choice should rest on airline preference and spending patterns."
+    }
+  ]
+}

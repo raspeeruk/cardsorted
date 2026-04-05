@@ -1,0 +1,38 @@
+{
+  "intro": "Both cards offer straightforward 2% cash back on all purchases with no annual fee, making them solid choices for straightforward spenders who want to avoid category tracking. The Citi Double Cash edges ahead with an 18-month 0% intro APR on balance transfers versus Wells Fargo's 15 months, plus access to ThankYou Points with airline transfer flexibility. Wells Fargo counters with a $200 signup bonus and slightly better Visa Signature perks including cell phone protection. For someone carrying a balance, the Citi card's longer introductory period saves real money. For someone with a big upcoming transfer and looking for immediate cash, Wells Fargo's bonus is the quick win. Both cards sit at similar credit score minimums (670+) and offer identical baseline rewards, so your choice hinges on whether you value promotional length or upfront incentive.",
+  "verdict": "The Citi Double Cash Card wins for balance transfer strategists and long-term planners due to its superior 18-month 0% APR period and airline transfer options. Wells Fargo Active Cash is the better choice if you want immediate value through a $200 signup bonus and don't need extended balance transfer breathing room.",
+  "chooseAIf": [
+    "You plan to transfer a balance and need the longest possible 0% APR window — Citi's 18-month intro period beats Wells Fargo's 15 months by 3 critical months",
+    "You're interested in flexible rewards redemption through airline partner transfers via ThankYou Points rather than flat cash back",
+    "You travel frequently and value Citi Entertainment presale access for concerts, theater, and sporting events",
+    "You prefer Mastercard acceptance and want to avoid any potential Wells Fargo brand concerns"
+  ],
+  "chooseBIf": [
+    "You want immediate value and can use a $200 signup bonus right away — this offsets roughly 10 months of 2% rewards on a $1,000 monthly spend",
+    "You need cell phone protection coverage up to $600, which Citi doesn't explicitly advertise",
+    "You prefer Visa's broader global acceptance and Signature concierge services including travel protections",
+    "You have no balance transfer plans and only care about maximizing cash back on everyday spending"
+  ],
+  "faqs": [
+    {
+      "question": "How much does the extra 3 months of 0% APR on Citi actually save?",
+      "answer": "If you transfer $5,000 and would normally pay 22% APR after the intro period ends, Citi's three additional months saves roughly $275 in interest. The longer runway matters significantly if you're planning to pay down the balance gradually rather than aggressively."
+    },
+    {
+      "question": "Is the $200 Wells Fargo bonus worth switching?",
+      "answer": "Only if you don't need balance transfer flexibility. The $200 bonus equals roughly 10 months of 2% rewards on $1,000 monthly spending. If a balance transfer is your primary goal, Citi's 18-month runway provides far more value than a one-time $200."
+    },
+    {
+      "question": "Can I use both cards strategically?",
+      "answer": "Yes. Apply for Wells Fargo first to capture the $200 bonus, use it for everyday 2% cash back spending, then apply for Citi separately if you know you'll need to transfer a balance later. Both approvals typically won't hurt your credit if spaced by a few months."
+    },
+    {
+      "question": "Which card is better for someone with no debt?",
+      "answer": "Wells Fargo edges ahead because the $200 signup bonus is pure value for a clean slate. Without balance transfer needs, you'll simply earn identical 2% cash back on both, so the upfront incentive tips the scales to Wells Fargo."
+    },
+    {
+      "question": "What's the catch with 2% cash back on everything?",
+      "answer": "There isn't one — both cards genuinely pay 2% on all purchases with no category limits or rotating bonuses to track. The tradeoff is that neither card offers 3%+ rewards in popular categories like groceries or gas, so high-volume spenders in specific categories might find specialized cards more lucrative."
+    }
+  ]
+}

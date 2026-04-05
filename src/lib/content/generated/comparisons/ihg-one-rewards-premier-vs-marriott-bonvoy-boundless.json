@@ -1,0 +1,38 @@
+{
+  "intro": "Both cards offer solid hotel loyalty programs with $95–$99 annual fees and comparable APRs, but they serve different traveler profiles. The IHG card delivers higher earning rates across the board (3x base vs. 2x) and a more generous signup bonus, making it stronger for frequent spenders. The Marriott card compensates with category-specific bonuses at groceries and gas, plus valuable elite night credits that accelerate status. Neither card will disappoint, but your hotel loyalty and spending patterns should determine which wins for your wallet.",
+  "verdict": "Choose the IHG One Rewards Premier if you want maximum earning flexibility and aggressive point accumulation. The higher base rate and substantially larger signup bonus make it the better choice for most spenders. Pick Marriott Boundless only if you're already invested in Marriott Bonvoy elite status or spend heavily at grocery stores and gas stations.",
+  "chooseAIf": [
+    "You want 3x points on all purchases instead of 2x, giving you 50% more earnings on everyday spending",
+    "You value a 140,000-point signup bonus over 85,000 points — a 65% larger welcome offer that covers longer hotel stays",
+    "You travel primarily through IHG hotels like Holiday Inn, Intercontinental, or Kimpton properties",
+    "You want the flexibility of broader earning categories rather than relying on specific bonus opportunities"
+  ],
+  "chooseBIf": [
+    "You already hold Marriott Bonvoy elite status and want to maintain or accelerate it with 15 elite night credits annually",
+    "You spend $3,000+ yearly at grocery stores and gas stations combined, where 6x points materially outpaces IHG's rates",
+    "You prefer Marriott Bonvoy's diverse portfolio (Ritz-Carlton, W Hotels, Sheraton) over IHG's property mix",
+    "You value the free night award's 35,000-point cap, which applies more frequently to Marriott's standard rooms than IHG's 40,000-point threshold"
+  ],
+  "faqs": [
+    {
+      "question": "Which card's annual free night award is more valuable?",
+      "answer": "The IHG card's free night (up to 40,000 points) edges out Marriott's (up to 35,000 points), but real value depends on your preferred properties. IHG's threshold hits more entry-level luxury hotels, while Marriott's sweet spot lands in premium four-star properties. Both cards often recover their annual fee through this benefit alone if you book one paid night yearly."
+    },
+    {
+      "question": "How much do I need to spend annually for the IHG card to pay for itself?",
+      "answer": "At 3x points per dollar, you'd earn 300 points on a $100 spend. Assuming 0.8 cents per point redemption value, the $99 fee is justified around $4,000–$5,000 in annual spending. Add the free night award (typically worth $100–$200) and the breakeven point drops to roughly $3,000 in total annual spending."
+    },
+    {
+      "question": "Does the Marriott card's 6x grocery and gas bonus offset its lower base earning rate?",
+      "answer": "Only partially. The Marriott card earns 6x at groceries and gas versus IHG's 3x, a 2x advantage on those categories. However, most cardholders spend only $300–$500 monthly on groceries and gas combined, meaning the IHG card's 3x base rate advantage catches up significantly on dining, travel, and general purchases. You'd need $2,500+ monthly grocery and gas spend for Marriott's category to dominate overall."
+    },
+    {
+      "question": "Which card is better for someone who doesn't have elite status?",
+      "answer": "The IHG card wins decisively. Its higher base earning rate and larger signup bonus don't depend on status maintenance. The Marriott card's 15 annual elite night credits only accelerate status if you're willing to commit long-term; for casual users, this benefit is wasted, making the lower earning rate harder to justify."
+    },
+    {
+      "question": "Can I carry both cards to maximize benefits?",
+      "answer": "Absolutely, and many serious hotel travelers do. Stagger annual fees by signing up months apart, and use each card for its strength: IHG for everyday earning and IHG stays, Marriott for grocery/gas spend and Marriott properties. You'd earn two annual free night awards and access both loyalty programs' elite benefits, though the $190+ combined fee requires $6,000+ annual spend to justify both."
+    }
+  ]
+}

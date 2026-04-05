@@ -1,0 +1,38 @@
+{
+  "intro": "Both Chase Sapphire cards deliver premium travel rewards, but they target different spenders. The Preferred charges $95 annually and offers solid value for casual travelers with bonus categories across dining, groceries, and streaming. The Reserve costs $550 yearly but includes $300 in travel credits, Priority Pass lounge access, and Global Entry reimbursement—effectively reducing the net fee to around $100-150 if you use the benefits. The Reserve's 10x points on Chase Travel and 50% point value boost appeal to frequent travelers, while the Preferred suits those who want strong rewards without heavy annual costs. Your choice depends on whether travel perks justify the significant fee difference.",
+  "verdict": "Choose the Sapphire Preferred unless you travel frequently and will use Priority Pass and Global Entry credits. For most people, the $95 fee delivers better value. The Reserve only makes sense if you spend heavily on travel, dine out consistently, and will actually redeem those $300 travel and $100 Global Entry credits annually.",
+  "chooseAIf": [
+    "You spend less than $20,000 annually on travel and dining combined—the Preferred's $95 fee provides better ROI than the Reserve's $550 charge",
+    "You value grocery and streaming rewards, which the Reserve ignores entirely",
+    "You're unlikely to use Priority Pass lounges or apply for Global Entry, making the Reserve's premium features worthless",
+    "You want strong travel rewards without committing to the highest-tier premium card"
+  ],
+  "chooseBIf": [
+    "You travel multiple times yearly and will consistently use the Priority Pass lounge access and $300 automatic travel credit",
+    "You spend $1,000+ monthly on dining and travel, where the Reserve's enhanced multipliers ($1,500+ annual value) exceed the fee",
+    "You need Global Entry or TSA PreCheck anyway—the $100 credit offsets part of the annual fee",
+    "You're optimizing for maximum points when redeeming through Chase Travel, where 50% point value boost beats the Preferred's 25%"
+  ],
+  "faqs": [
+    {
+      "question": "Do the signup bonuses make the Reserve worth it?",
+      "answer": "Both offer identical 60,000-point bonuses, so they're a wash on signup value. The question is ongoing annual value. The Reserve only breaks even if you spend enough on bonus categories to earn $450+ in additional points annually (after subtracting the extra $455 in fees and credits)."
+    },
+    {
+      "question": "What's the effective annual cost of the Reserve after credits?",
+      "answer": "The $550 fee minus the $300 automatic travel credit minus approximately $100 for Global Entry equals roughly $150 net cost. However, you must actually use the travel credit and have genuine use for Global Entry; otherwise you're paying closer to $550."
+    },
+    {
+      "question": "Can I earn enough points to justify the Reserve's fee?",
+      "answer": "Only if you spend $3,000+ monthly on dining and travel combined. At lower spending levels, the Preferred's rewards structure provides better value relative to the $95 fee."
+    },
+    {
+      "question": "How valuable is Priority Pass access?",
+      "answer": "Priority Pass membership alone costs $99-469 annually depending on tier. If you visit airport lounges three or more times yearly, this benefit alone justifies part of the Reserve's premium fee."
+    },
+    {
+      "question": "Should I get both cards?",
+      "answer": "Yes, if you travel frequently and want to maximize rewards across different categories. Use the Reserve for travel and dining to earn 10x and 3x points, and the Preferred for groceries, streaming, and online purchases to earn 3x points. The $95 Preferred fee is easy to justify when layered with the Reserve."
+    }
+  ]
+}

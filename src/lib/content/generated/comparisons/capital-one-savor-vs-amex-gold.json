@@ -1,0 +1,38 @@
+{
+  "intro": "The Capital One Savor and Amex Gold both target customers who spend heavily on dining and entertainment, but they serve different financial profiles. The Savor charges $95 annually with a $300 signup bonus, while the Gold costs $250 but offers $120 in dining credits plus $120 in Uber benefits—effectively reducing the net fee to just $10. The Gold's 4x points on restaurants comes with no spending caps, whereas Savor's category bonuses are capped by the card's restrictions. The Gold requires higher spending to justify its premium positioning, while the Savor appeals to casual spenders and those without elite travel needs. Your choice depends on whether you regularly dine out, use Uber frequently, and value travel point transfers.",
+  "verdict": "The Amex Gold wins for most serious dining enthusiasts and frequent travelers. Its uncapped 4x points on restaurants worldwide, combined with $240 in annual credits that offset most of the fee, makes it superior for anyone spending $2,000+ annually on dining. Choose the Savor only if you spend less than $1,500 yearly on dining and entertainment combined, or if you cannot access Amex's network.",
+  "chooseAIf": [
+    "You spend under $1,500 annually on dining and entertainment—the $95 fee makes more sense than Amex's $250",
+    "You want cash back instead of points and value simplicity over optimization",
+    "You have a credit score just above 700 and prioritize approval odds over premium benefits",
+    "You use Capital One Travel frequently and want the 8% cash back advantage"
+  ],
+  "chooseBIf": [
+    "You spend $200+ monthly on restaurants—the uncapped 4x points and $120 dining credit deliver superior value",
+    "You use Uber regularly; the $120 Uber Cash effectively cuts your annual fee to $130",
+    "You travel internationally or transfer points to airlines and hotels for premium redemptions",
+    "You value the prestige factor and want access to Amex's 20+ airline and hotel partners"
+  ],
+  "faqs": [
+    {
+      "question": "How much do I need to spend on dining for the Gold to break even versus Savor?",
+      "answer": "If you spend $400+ monthly on dining ($4,800 yearly), the Gold's 4x points (worth roughly $480-600 in travel value depending on redemption) easily exceed its $250 fee, especially when combined with the $120 dining credit. For Savor's $95 fee, you'd need about $1,600 in annual dining to match Gold's returns through cash back, assuming 4% rewards."
+    },
+    {
+      "question": "Can I use the Amex Gold's dining credit at any restaurant?",
+      "answer": "The $120 dining credit ($10 monthly) applies to select restaurants through the Amex Dining Program, not all establishments. This limits flexibility compared to Savor's blanket 4% cash back at any dining venue. Check Amex's website to verify your favorite restaurants participate before applying."
+    },
+    {
+      "question": "Which card is better for someone who rarely dines out?",
+      "answer": "The Capital One Savor is clearly better for infrequent diners. The 1% cash back on all purchases plus the $95 fee is manageable, while the Amex Gold's $250 annual fee becomes a burden if you don't maximize category bonuses. Savor only penalizes you $95 instead of $250."
+    },
+    {
+      "question": "Does the Amex Gold's 4x points at US supermarkets have restrictions?",
+      "answer": "Yes—the 4x points at US supermarkets is capped at $25,000 in purchases annually, then reverts to 1x. The Savor's 3% grocery cash back has no stated cap, making it superior for high-volume grocery shoppers. Beyond $25,000 in supermarket spending, Savor becomes the clear winner."
+    },
+    {
+      "question": "What's the real value difference between 4% cash back and 4x points?",
+      "answer": "Savor's 4% cash back equals $4 per $100 spent, with fixed value. Amex's 4x points are worth $0.01-0.02 per point through direct travel bookings, or up to $0.02-0.03 through premium airline transfers. For casual redemption, assume 1.5x points equal 1% cash back; serious travelers can achieve 2x or higher by transferring strategically."
+    }
+  ]
+}

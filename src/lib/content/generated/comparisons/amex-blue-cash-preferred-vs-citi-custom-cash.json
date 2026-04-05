@@ -1,0 +1,38 @@
+{
+  "intro": "The Blue Cash Preferred and Citi Custom Cash both offer solid cash back rewards for everyday spending, but they target different financial situations. American Express's offering demands a $95 annual fee but delivers a generous 6% back at supermarkets and streaming services, plus a $250 signup credit that effectively covers the fee. Citi's card charges nothing upfront and automatically rewards your highest spending category at 5% each month, capping at $500 in annual rewards per category. The choice hinges on whether you can benefit from Amex's category bonuses enough to justify the annual cost, or prefer the flexibility and no-fee simplicity of Citi's rotating approach.",
+  "verdict": "Choose the Citi Custom Cash for most people. The no annual fee structure, longer 0% intro APR on balance transfers, and automatic top-category tracking make it the smarter default. Only choose American Express if you spend $500+ monthly on supermarkets or streaming subscriptions and value the additional purchase protections enough to justify $95 annually.",
+  "chooseAIf": [
+    "You spend more than $500 per month at US supermarkets, since the 6% cash back rate (up to $6,000 annually) far exceeds Citi's 5% category cap of $500 per year",
+    "You subscribe to multiple streaming services and want to consolidate that 6% cash back reward alongside grocery shopping",
+    "You value American Express's superior purchase protection ($300 per item) and return protection for high-value purchases",
+    "The $250 statement credit offsets the annual fee in your first year, making the effective cost manageable"
+  ],
+  "chooseBIf": [
+    "You want zero annual fees and prefer to avoid cards with membership costs, keeping your rewards net positive from day one",
+    "You spend inconsistently across categories month-to-month and appreciate the automatic optimization of 5% back on whatever your highest category is each billing cycle",
+    "You frequently carry balances and need the extra 15 months of 0% intro APR (versus Amex's 12 months) to pay down debt interest-free",
+    "You value simplicity and don't want to calculate whether category spend justifies an annual fee"
+  ],
+  "faqs": [
+    {
+      "question": "How much would I need to spend at supermarkets to make the Amex annual fee worthwhile?",
+      "answer": "You need roughly $1,584 in annual supermarket spending to earn back the $95 fee through the 6% cash back rate. That's about $132 per month. If you regularly spend more than that, the Amex becomes financially superior. Below that threshold, Citi's free card wins financially."
+    },
+    {
+      "question": "Does the Citi card's 5% category limit really cap out that quickly?",
+      "answer": "Yes. The $500 annual cap on 5% cash back in any single category is restrictive. If you spend $1,000 monthly at restaurants, you'd only earn $300 in annual 5% rewards. The Amex's supermarket cap of $6,000 per year is far more generous for high spenders."
+    },
+    {
+      "question": "Which card is better for balance transfers?",
+      "answer": "The Citi Custom Cash edges ahead with 15 months of 0% APR versus Amex's 12 months. If you're consolidating debt, the extra three interest-free months can save meaningful money. Neither charges a balance transfer fee, making both viable options."
+    },
+    {
+      "question": "Are the credit score requirements different between these cards?",
+      "answer": "Both require a 670+ credit score, so they're equally accessible to consumers with fair to good credit. The approval odds and actual APR you receive may vary based on your full credit profile, but the minimum threshold is identical."
+    },
+    {
+      "question": "What if my spending changes month to month?",
+      "answer": "Citi's automatic category tracking favors inconsistent spenders because it always rewards your current highest spend category without manual selection. Amex requires you to strategically align your major purchases with its fixed bonus categories, which works only if your spending patterns remain stable."
+    }
+  ]
+}

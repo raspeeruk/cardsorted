@@ -1,0 +1,38 @@
+{
+  "intro": "Both cards come from Chase with similar signup bonuses and no foreign transaction fees, but they cater to different travelers. The Southwest Rapid Rewards Priority Card focuses on Southwest loyalty with a higher annual fee of $149 but delivers $75 in annual travel credits and valuable perks like free upgraded boardings and Companion Pass earning potential. The United Explorer Card costs less at $95 annually and offers broader earning categories including dining and hotels, plus tangible benefits like free checked bags and United Club passes. Your choice depends entirely on which airline you actually fly and how you spend your money outside of air travel.",
+  "verdict": "Choose Southwest if you're a loyal Southwest flyer planning to eventually reach Companion Pass status or taking 6+ Southwest flights yearly. Choose United if you fly United occasionally, dine out frequently, or value the free checked bag benefit for yourself and travel companions more than airline-specific credits.",
+  "chooseAIf": [
+    "You take multiple Southwest flights annually and want to work toward the valuable Companion Pass, which requires earning 125,000 points within a calendar year",
+    "You value the $75 annual Southwest travel credit that essentially reduces your net fee to $74, plus 7,500 anniversary bonus points yearly",
+    "You commute via public transit or use local transportation regularly, since the 2x points on transit and commuting is rare among travel cards",
+    "You want guaranteed upgraded boarding opportunities through the 4 annual upgrades, which have real monetary value on crowded flights"
+  ],
+  "chooseBIf": [
+    "You fly United 3-4 times per year or less and want a lower annual fee ($95 vs $149) without committing to heavy airline spending",
+    "You dine out frequently and want to earn 2x miles on restaurants, giving you more earning flexibility beyond airline purchases",
+    "You travel with companions and value free checked bags for both yourself and one companion on every United flight, worth $60-70 per round trip",
+    "You stay at hotels booked directly with hotel websites and want 2x miles on those bookings, supplementing airline-focused earning categories"
+  ],
+  "faqs": [
+    {
+      "question": "Which card has better earning potential for casual flyers?",
+      "answer": "United Explorer edges ahead because the 2x dining category applies universally regardless of airline loyalty, while Southwest's bonus categories concentrate heavily on Southwest purchases. If you spend $500 monthly on dining ($6,000 yearly), United generates 12,000 miles versus Southwest's 6,000 points from the same spending. The free checked bag on United also delivers value that doesn't depend on reaching spending thresholds."
+    },
+    {
+      "question": "What's the real cost of each card after benefits?",
+      "answer": "Southwest's effective annual cost is $74 after the $75 travel credit, plus 7,500 anniversary points worth roughly $75-100 in value, making the net cost potentially negative. United's $95 fee is offset primarily by one free checked bag round trip ($60-70 value) plus the 2 Club passes (worth $50-80 combined), yielding a similar net cost but with less certainty about which benefits you'll use."
+    },
+    {
+      "question": "Can I earn the Companion Pass with the Southwest card?",
+      "answer": "Yes, the card explicitly earns toward Companion Pass status, which requires 125,000 points in a calendar year. The 50,000 signup bonus plus 7,500 anniversary points gives you a head start, meaning you'd need another 67,500 points from spending. At 1x base earning, that requires $67,500 in spending, though bonus categories accelerate this timeline significantly."
+    },
+    {
+      "question": "Which card is better if I split my flying between airlines?",
+      "answer": "United Explorer is clearly better for multi-airline travelers because its benefits don't lock you into one carrier. The free checked bag and Club passes work exclusively on United, but the 2x dining rewards and hotel category earnings apply universally regardless of which airline you choose for a given trip. Southwest's card only justifies its fee if Southwest represents your primary carrier."
+    },
+    {
+      "question": "What happens if I don't use the annual airline credits or perks?",
+      "answer": "You're throwing money away with either card. Southwest's $75 credit must be used on Southwest purchases or it expires, while United's $95 fee relies on you actually flying United enough times to use the free checked bags and Club passes. If you don't fly either airline at least 4-5 times per year, consider a no-annual-fee card instead."
+    }
+  ]
+}

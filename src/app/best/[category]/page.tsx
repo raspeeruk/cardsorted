@@ -11,6 +11,7 @@ import { AffiliateDisclosure } from "@/components/content/AffiliateDisclosure";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { FAQAccordion } from "@/components/content/FAQAccordion";
+import { getCategoryContent } from "@/lib/content/loader";
 
 interface Props {
   params: Promise<{ category: string }>;
@@ -39,8 +40,9 @@ export default async function CategoryPage({ params }: Props) {
   const cards = getCardsByCategory(category);
   const scoreRanges = getAllScoreRanges();
   const allCategories = getAllCategories();
+  const content = getCategoryContent(category);
 
-  const faqs = [
+  const fallbackFaqs = [
     {
       question: `What is the best ${cat.name.toLowerCase()} credit card right now?`,
       answer: cards.length > 0
@@ -56,6 +58,8 @@ export default async function CategoryPage({ params }: Props) {
       answer: `Credit score requirements vary by card. Some ${cat.name.toLowerCase()} cards accept scores as low as ${Math.min(...cards.map((c) => c.creditScoreMin))}, while premium options typically require 700+. Use our score filter to see cards you qualify for.`,
     },
   ];
+
+  const faqs = content?.faqs ?? fallbackFaqs;
 
   return (
     <>
@@ -81,6 +85,14 @@ export default async function CategoryPage({ params }: Props) {
           </p>
         </header>
 
+        {/* Rich intro (AI-generated) */}
+        {content && (
+          <div
+            className="mb-6 max-w-3xl text-lg leading-relaxed text-ink-light"
+            dangerouslySetInnerHTML={{ __html: content.intro }}
+          />
+        )}
+
         {/* Score filter links */}
         <div className="mb-8 rounded-lg border border-ink-faint bg-white p-4">
           <p className="mb-2 font-heading text-sm font-semibold text-ink">
@@ -101,6 +113,19 @@ export default async function CategoryPage({ params }: Props) {
 
         {/* Card listing */}
         <CardTable cards={cards} showScore title={`All ${cat.name} Cards`} />
+
+        {/* Buying guide (AI-generated) */}
+        {content && (
+          <section className="mt-12 rounded-lg border border-ink-faint bg-white p-6">
+            <h2 className="mb-4 font-heading text-xl font-bold text-ink">
+              How to Choose the Best {cat.name} Card
+            </h2>
+            <div
+              className="prose prose-stone max-w-none prose-headings:font-heading prose-headings:font-bold prose-h3:text-lg prose-p:text-ink-light prose-li:text-ink-light"
+              dangerouslySetInnerHTML={{ __html: content.buyingGuide }}
+            />
+          </section>
+        )}
 
         {/* FAQ */}
         <section className="mt-12">

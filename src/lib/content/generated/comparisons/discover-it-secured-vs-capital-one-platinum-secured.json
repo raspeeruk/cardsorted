@@ -1,0 +1,37 @@
+{
+  "intro": "Both cards target people rebuilding credit from scratch, requiring only a 300+ score and charging no annual fee. The Discover it Secured stands out immediately with 1% cash back on all purchases plus 2% in bonus categories (gas and restaurants, capped at $1K per quarter), doubled during year one through Cashback Match. Capital One Platinum offers nothing—no rewards, no bonuses, no incentives beyond basic credit building. If you're securing credit anyway, Discover pays you to do it. Capital One is a credit-building tool only, making it obsolete when a clearly superior alternative exists at the same price point.",
+  "verdict": "Discover it Secured wins decisively. Unless you plan to carry a balance and want the fractionally lower APR (meaningless at these rates), there's no reason to choose Capital One. Discover gives you cash back while building credit, making it the rational choice for anyone in this market segment.",
+  "chooseAIf": [
+    "You spend regularly on gas and restaurants—the 2% categories, even with their quarterly caps, compound to meaningful returns over a year",
+    "You want to be rewarded immediately for responsible use rather than simply building credit with nothing to show for it",
+    "You spend $500+ monthly on varied purchases—1% on everything outside bonus categories still generates real cash back that Capital One won't match",
+    "Cashback Match appeals to you—doubling all first-year earnings means a $300 annual spend generates $6 in cash back instead of $3"
+  ],
+  "chooseBIf": [
+    "You believe earning zero rewards is somehow safer or simpler (it isn't)",
+    "You want the absolute lowest APR regardless of other factors (30.74% vs 28.24% is negligible when neither card should carry a balance)",
+    "You prefer Capital One's specific security deposit structure at $49 minimum (though Discover's deposit terms are industry-standard)"
+  ],
+  "faqs": [
+    {
+      "question": "Will the 2% bonus categories actually help me build credit faster?",
+      "answer": "No—both cards report to all three bureaus equally, so higher cash back doesn't accelerate credit building. The advantage is financial, not structural. You're building credit at the same rate either way, but Discover pays you during the process."
+    },
+    {
+      "question": "What happens to my Cashback Match earnings if I don't spend much in year one?",
+      "answer": "You keep whatever you earn. If you spend $600 total and earn $6 in cash back, you get another $6 matched at year-end for $12 total. There's no minimum threshold—every dollar earned gets matched."
+    },
+    {
+      "question": "Is the 28.24% APR manageable on a secured card?",
+      "answer": "You shouldn't carry a balance on either card, so APR is largely irrelevant. Both rates are punitive. Use the card for small purchases you pay off monthly to build credit, not to carry debt."
+    },
+    {
+      "question": "Can I upgrade from either card to an unsecured version?",
+      "answer": "Yes, both offer automatic reviews for upgrades. Discover explicitly markets this, while Capital One does it quietly. Neither guarantees an upgrade timeline, but responsible use typically triggers reviews within 6-12 months."
+    },
+    {
+      "question": "Does the security deposit differ significantly between these cards?",
+      "answer": "Discover doesn't specify minimum deposits (typically $200+), while Capital One starts at $49. However, this minor advantage disappears when you consider you're paying zero rewards with Capital One. The tiny deposit savings isn't worth forgoing cash back entirely."
+    }
+  ]
+}

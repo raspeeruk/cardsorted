@@ -1,0 +1,26 @@
+{
+  "intro": "<p>Secured credit cards are designed for people rebuilding credit or establishing a credit history from scratch. Unlike standard credit cards, they require a refundable security deposit that becomes your credit limit, significantly reducing the issuer's risk. This makes approval possible even with a credit score below 670 or no credit history at all. The deposit is held in a separate account and doesn't fund your purchases—you pay those with the card itself. Most secured cards report to all three major credit bureaus, meaning on-time payments directly boost your credit score. The most effective secured cards now offer rewards, waive annual fees, and graduate you to unsecured accounts after 6 to 12 months of responsible usage, making them a genuine stepping stone rather than a permanent solution.</p>",
+  "buyingGuide": "<h3>What to Look For in a Secured Card</h3><p>Your primary goal with a secured card is building credit, so prioritize cards that report to all three bureaus (Equifax, Experian, and TransUnion). Annual fees matter—aim for $0 if possible, since you're already tying up deposit money. Cash back rewards of 1% or higher provide tangible value without requiring you to manage spending categories. The deposit amount and credit limit should align with your financial situation; most cards offer deposits from $200 to $2,500. Check whether the card offers automatic graduation to an unsecured account—this is a key feature that separates purpose-built credit-building tools from cards designed to keep you trapped paying annual fees.</p><h3>Common Mistakes to Avoid</h3><p>Don't confuse secured cards with prepaid cards. A secured card builds credit through traditional borrowing; a prepaid card does not. Never open multiple secured cards simultaneously, as each application triggers a hard inquiry that temporarily lowers your score. Avoid cards with high annual fees ($35 or more) unless the rewards clearly offset them. Don't delay paying your balance—secured cards require the same responsible payment behavior as any other card, and late payments damage your score more than the security deposit helps.</p><h3>How to Compare Secured Cards</h3><ul><li>Verify the card reports to all three credit bureaus and confirm the reporting timeline</li><li>Calculate total first-year costs: deposit plus annual fees minus any cash back earned</li><li>Check whether the deposit earns interest (rare but valuable when offered)</li><li>Review the automatic graduation policy—ideally automatic, not requiring you to request it</li><li>Compare initial credit limits relative to deposit requirements; higher limits give more spending flexibility</li><li>Look for flexible deposit amounts that match your savings capacity</li></ul><h3>Red Flags to Watch</h3><p>Steer clear of cards requiring deposits above $2,500 unless you have specific strategic reasons. Avoid issuers that don't explicitly state when and how you'll graduate to an unsecured card. Never accept cards requiring you to pay the deposit upfront without a clear timeline for its return. Be suspicious of secured cards charging over $35 annually without substantial rewards. Finally, if an issuer requires a credit inquiry before stating terms, proceed carefully—you want full transparency on fees and conditions before committing.</p>",
+  "faqs": [
+    {
+      "question": "How long should I keep a secured card before graduating?",
+      "answer": "Most cardholders graduate to unsecured cards within 6 to 12 months of consistent on-time payments. The exact timeline depends on your issuer's policy and your credit improvement. Once graduated, your security deposit returns to you, typically within 5 to 7 business days."
+    },
+    {
+      "question": "Does the security deposit count as income or savings?",
+      "answer": "The security deposit is treated as collateral held in a separate account, not as income or a regular savings account. While held, it may accrue minimal interest depending on the issuer. Your credit limit is separate from the deposit amount."
+    },
+    {
+      "question": "Can I lose my security deposit?",
+      "answer": "No, your deposit is refundable and protected by the bank. It will only be held until you graduate to an unsecured card or close the account. It is not used to cover missed payments; those are your responsibility and will be reported to credit bureaus."
+    },
+    {
+      "question": "Is a $0 annual fee always better than a card with rewards?",
+      "answer": "Usually yes. A secured card with 1% cash back and $0 annual fee outperforms one with no rewards and a $35 fee. However, if a higher-fee card offers significantly better rewards or graduation terms, do the math—but $0 annual fees are increasingly common, so there's rarely a reason to compromise."
+    },
+    {
+      "question": "What credit score do I need to apply for a secured card?",
+      "answer": "Secured cards typically accept applicants with scores from 300 to 670, though exact minimums vary by issuer. Some issuers accept people with no credit history. The security deposit compensates for low scores, making approval much more likely than with unsecured cards."
+    }
+  ]
+}

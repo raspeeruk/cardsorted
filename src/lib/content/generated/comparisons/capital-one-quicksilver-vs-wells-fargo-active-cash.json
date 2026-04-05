@@ -1,0 +1,36 @@
+{
+  "intro": "Both the Capital One Quicksilver and Wells Fargo Active Cash offer no annual fees, identical $200 signup bonuses, and 15-month 0% intro APR periods—making them accessible entry-level cash back cards for credit scores of 670+. The critical difference is rewards rate. Wells Fargo delivers a flat 2% cash back on every purchase, while Capital One offers 1.5% across the board with a 5% bonus through its travel portal. For typical spenders, Wells Fargo's straightforward 2% structure wins on everyday purchases. Capital One's appeal hinges on using its travel portal and tolerating slightly lower base rewards. Both cards have high standard APRs (19-30%), so carrying a balance nullifies any rewards benefit.",
+  "verdict": "Wells Fargo Active Cash is the stronger choice for most people. Its 2% flat-rate structure beats Capital One's 1.5% base rate on all spending without requiring category tracking or travel portal redemptions. Only choose Capital One if you frequently book travel through its portal and value the extra rewards hit there.",
+  "chooseAIf": [
+    "You book most travel through Capital One's portal and want to maximize that 5% cash back category",
+    "You prefer Capital One's brand and already use its CreditWise monitoring service",
+    "You value the option to redeem cash back in smaller increments through Capital One's ecosystem"
+  ],
+  "chooseBIf": [
+    "You want the highest base cash back rate and don't want to optimize for bonus categories—2% beats 1.5% on regular spending",
+    "You spend $1,000+ monthly on purchases; the extra 0.5% compounds to $60+ annually versus Capital One alone",
+    "You value cell phone protection ($600 coverage) and Visa Signature benefits like travel insurance and concierge service"
+  ],
+  "faqs": [
+    {
+      "question": "Which card wins on groceries and gas?",
+      "answer": "Wells Fargo Active Cash. It earns 2% flat on all purchases including groceries and gas. Capital One Quicksilver earns only 1.5% on the same categories. On $400 monthly grocery spending, Wells Fargo yields $48 annually versus Capital One's $36."
+    },
+    {
+      "question": "Can I beat Capital One's 1.5% with the travel portal bonus?",
+      "answer": "Only if you book travel exclusively through Capital One's portal, which locks in 5% cash back. For typical spenders who book one or two trips yearly, the portal benefit rarely offsets the 0.5% daily disadvantage on routine purchases."
+    },
+    {
+      "question": "How much does the intro 0% APR matter between these cards?",
+      "answer": "Both offer identical 15-month 0% intro APR on purchases, so this is a tie. However, neither card is worth carrying a balance on long-term given their high standard APRs (19-30%). Use the interest-free period strategically, then pay down aggressively."
+    },
+    {
+      "question": "Are the $200 signup bonuses actually equivalent?",
+      "answer": "Nominally yes, but Wells Fargo's 2% base rate means you earn rewards faster after hitting minimum spend. On a $500 minimum spend requirement, you'd earn an extra $5 with Wells Fargo's rate versus Capital One, making the total value slightly higher."
+    },
+    {
+      "question": "Which card is better for international travel?",
+      "answer": "Wells Fargo Active Cash edges ahead because both waive foreign transaction fees, but Wells Fargo's Visa Signature includes travel insurance and emergency services abroad. Capital One's travel portal bonus only applies to U.S.-booked travel, limiting its international appeal."
+    }
+  ]
+}

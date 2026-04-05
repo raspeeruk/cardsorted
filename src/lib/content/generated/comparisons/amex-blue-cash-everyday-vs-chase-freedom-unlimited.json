@@ -1,0 +1,36 @@
+{
+  "intro": "Both cards offer no annual fee and a $200 bonus, making them accessible entry points to rewards. The Blue Cash Everyday provides 3% cash back on supermarkets, gas, and online purchases up to $6,000 annually, then 1% thereafter, plus a valuable 15-month 0% intro APR. The Freedom Unlimited takes a simpler approach with flat 1.5% cash back on everything, no category caps, and bonus 5% on Chase travel and 3% on dining and drugstores. Your choice depends on whether you prefer category bonuses capped at $6,000 annually or unlimited flat-rate rewards with selective bonus categories.",
+  "verdict": "Choose the Freedom Unlimited for most people. Its uncapped 1.5% flat rate eliminates the arithmetic of tracking category limits, and it rewards higher spending without penalties. The Blue Cash Everyday only wins if you spend more than $3,000 annually at supermarkets, gas stations, or online retail combined—scenarios where its 3% categories outpace 1.5% across the board.",
+  "chooseAIf": [
+    "You spend over $3,000 annually at US supermarkets, gas stations, and online retailers combined—the 3% categories provide meaningful value before the $6K cap hits",
+    "You prioritize American Express merchant acceptance and Amex Offers discounts at your regular retailers",
+    "You want maximum purchase protection and return protection benefits bundled with rewards"
+  ],
+  "chooseBIf": [
+    "You'd rather earn 1.5% on all purchases without tracking category caps or annual spending limits",
+    "You dine out frequently or travel regularly and value the 5% and 3% bonus categories without restrictions",
+    "You want simplicity and don't want to do mental math about whether you've hit $6,000 in category spending"
+  ],
+  "faqs": [
+    {
+      "question": "Does the Blue Cash Everyday's 3% cap mean I stop earning rewards after $6,000 per category?",
+      "answer": "No. You earn 3% cash back up to $6,000 in combined eligible purchases per category annually, then 1% on additional purchases in those categories. This cap effectively limits the high-rate earnings, making the card less attractive for big spenders in those categories."
+    },
+    {
+      "question": "Is the Freedom Unlimited's 1.5% better than Blue Cash Everyday's structure?",
+      "answer": "It depends on spending. If you spend $2,000 annually at supermarkets, you earn $60 with Blue Cash (3%) versus $30 with Freedom (1.5%). But if you spend $500 monthly across all categories, Freedom's uncapped 1.5% ($90/year) beats Blue Cash's average rate once caps kick in."
+    },
+    {
+      "question": "Can I use both cards strategically?",
+      "answer": "Yes. Use Blue Cash Everyday at supermarkets, gas, and online retailers up to the $6,000 annual cap, then switch to Freedom Unlimited for everything else. This maximizes rewards but requires discipline tracking spending."
+    },
+    {
+      "question": "Which card has better fraud protection?",
+      "answer": "Both offer solid purchase protection and fraud monitoring. American Express is known for exceptional customer service on disputes. Chase's protection is competitive but less frequently praised."
+    },
+    {
+      "question": "What if I carry a balance month-to-month?",
+      "answer": "Both cards have similar APRs around 20-30%. Neither is attractive for revolving balances. Use the 15-month 0% intro period strategically to pay down debt, then switch to a card designed for balance transfers if needed."
+    }
+  ]
+}
