@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/andrewspeer/Documents/GitHub/fundingzest log --oneline -20)",
+      "WebFetch(domain:www.capitalbean.com)",
+      "WebFetch(domain:www.pheabs.com)",
+      "WebFetch(domain:capitalbean.com)",
+      "WebFetch(domain:pheabs.com)",
+      "WebFetch(domain:radcred.com)",
+      "Bash(npx create-next-app@latest:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run dev:*)",
+      "Bash(python3:*)",
+      "Bash(curl:*)"
+    ]
+  }
+}

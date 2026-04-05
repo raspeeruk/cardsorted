@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  /* CardSorted — Financial Wire aesthetic */
+  --color-brand: #f97316;
+  --color-brand-dark: #ea580c;
+  --color-brand-light: #fff7ed;
+  --color-brand-lighter: #fffbf5;
+  --color-brand-accent: #fb923c;
+
+  /* Extended palette */
+  --color-surface: #faf5ef;
+  --color-surface-dark: #f0ebe3;
+  --color-ink: #292524;
+  --color-ink-light: #57534e;
+  --color-ink-lighter: #a8a29e;
+  --color-ink-faint: #d6d3d1;
+
+  /* Font families */
+  --font-heading: var(--font-bricolage), system-ui, sans-serif;
+  --font-body: var(--font-newsreader), Georgia, serif;
+  --font-mono: var(--font-ibm-plex), ui-monospace, monospace;
+}
+
+:root {
+  --background: #faf5ef;
+  --foreground: #292524;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Subtle dot grid texture on sections */
+.bg-dotgrid {
+  background-image: radial-gradient(circle, #d6d3d1 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
+}
+
+/* Data/mono styling for numbers, rates */
+.font-data {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
