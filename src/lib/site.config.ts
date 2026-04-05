@@ -119,8 +119,8 @@ export const siteConfig: SiteConfig = {
   },
 
   analytics: {
-    gaId: "",
-    gscProperty: "",
+    gaId: "G-2E96HWXMTE",
+    gscProperty: "sc-domain:cardsorted.com",
   },
 };
 
