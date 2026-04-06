@@ -10,119 +10,135 @@ interface CardTableProps {
 export function CardTable({ cards, showScore = false, title }: CardTableProps) {
   if (cards.length === 0) {
     return (
-      <div className="rounded-lg border border-ink-faint bg-surface-dark p-8 text-center">
-        <p className="text-ink-light">
-          No cards match this criteria. Try a different category or score range.
+      <div className="border border-rule bg-surface-card p-10 text-center">
+        <p className="masthead-label">NO&nbsp;MATCHES&nbsp;FILED</p>
+        <p className="mt-3 font-body text-lg text-ink-mid">
+          No cards match this criteria. Try a different category or score.
         </p>
       </div>
     );
   }
 
   return (
-    <div className="space-y-4">
+    <div>
       {title && (
-        <h2 className="font-heading text-2xl font-extrabold text-ink">
-          {title}
-        </h2>
+        <div className="mb-8 border-b border-rule pb-4">
+          <p className="masthead-label">SECTION</p>
+          <h2 className="mt-1 font-display text-4xl leading-none text-ink">
+            {title}
+          </h2>
+        </div>
       )}
-      <div className="space-y-3">
+
+      <ul>
         {cards.map((card, index) => (
-          <div
+          <li
             key={card.slug}
-            className="group rounded-lg border border-ink-faint bg-white p-5 transition-all hover:border-brand/40 hover:shadow-md"
+            className="group border-b border-rule last:border-b-0"
           >
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-              {/* Left: Card info */}
-              <div className="flex-1">
-                <div className="flex items-center gap-2">
-                  <span className="font-data text-xs font-medium text-ink-lighter">
-                    #{index + 1}
-                  </span>
-                  <Link
-                    href={`/cards/${card.slug}`}
-                    className="font-heading text-lg font-bold text-ink transition-colors group-hover:text-brand"
-                  >
-                    {card.name}
-                  </Link>
-                </div>
-                <p className="mt-1 text-sm text-ink-light">
-                  {card.issuer} &middot; {card.network}
+            <div className="grid gap-6 py-8 lg:grid-cols-12 lg:gap-8 lg:py-10">
+              {/* Rank numeral — monumental */}
+              <div className="lg:col-span-2">
+                <p className="masthead-label">ENTRY</p>
+                <p className="monumental text-7xl text-ink transition-colors group-hover:text-accent lg:text-8xl">
+                  {String(index + 1).padStart(2, "0")}
+                </p>
+              </div>
+
+              {/* Card details */}
+              <div className="lg:col-span-6">
+                <p className="masthead-label">
+                  {card.issuer.toUpperCase()}&nbsp;&middot;&nbsp;
+                  {card.network.toUpperCase()}
+                </p>
+                <Link
+                  href={`/cards/${card.slug}`}
+                  className="mt-2 block font-display text-3xl leading-tight text-ink transition-colors hover:text-accent lg:text-4xl"
+                >
+                  {card.name}
+                </Link>
+
+                {card.signupBonus && (
+                  <p className="mt-3 font-body text-base text-ink-mid">
+                    <span className="font-mono text-xs text-oxblood">
+                      BONUS&nbsp;&rarr;
+                    </span>{" "}
+                    {card.signupBonus}
+                    {card.signupBonusValue && (
+                      <span className="text-ink">
+                        {" "}
+                        ({card.signupBonusValue})
+                      </span>
+                    )}
+                  </p>
+                )}
+
+                <p className="mt-3 font-body text-base text-ink-mid">
+                  {card.rewardsRate}
                 </p>
 
-                {/* Key stats row */}
-                <div className="mt-3 flex flex-wrap gap-4">
-                  <div>
-                    <p className="text-xs text-ink-lighter">Annual Fee</p>
-                    <p className="font-data text-sm font-semibold text-ink">
-                      {card.annualFee === 0 ? "$0" : `$${card.annualFee}`}
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-xs text-ink-lighter">APR</p>
-                    <p className="font-data text-sm font-semibold text-ink">
-                      {card.aprMin}% – {card.aprMax}%
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-xs text-ink-lighter">Rewards</p>
-                    <p className="text-sm font-medium text-ink">
-                      {card.rewardsRate}
-                    </p>
-                  </div>
-                  {showScore && (
-                    <div>
-                      <p className="text-xs text-ink-lighter">Min. Score</p>
-                      <p className="font-data text-sm font-semibold text-ink">
-                        {card.creditScoreMin}+
-                      </p>
-                    </div>
-                  )}
-                </div>
-
-                {/* Signup bonus */}
-                {card.signupBonus && (
-                  <div className="mt-2 inline-block rounded-md bg-brand-light px-2 py-1">
-                    <p className="text-xs font-medium text-brand-dark">
-                      Bonus: {card.signupBonus}
-                      {card.signupBonusValue && ` (worth ${card.signupBonusValue})`}
-                    </p>
+                {/* Key features as inline tags */}
+                {card.keyFeatures.length > 0 && (
+                  <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1">
+                    {card.keyFeatures.slice(0, 3).map((feature) => (
+                      <span
+                        key={feature}
+                        className="font-mono text-[10px] uppercase tracking-wider text-ink-fade"
+                      >
+                        &mdash;&nbsp;{feature}
+                      </span>
+                    ))}
                   </div>
                 )}
               </div>
 
-              {/* Right: CTA */}
-              <div className="flex flex-col items-end gap-2 sm:min-w-[140px]">
+              {/* Stats column */}
+              <div className="lg:col-span-2">
+                <dl className="space-y-3">
+                  <div>
+                    <dt className="masthead-label">FEE</dt>
+                    <dd className="mt-0.5 font-display text-2xl leading-none text-ink">
+                      {card.annualFee === 0 ? "$0" : `$${card.annualFee}`}
+                    </dd>
+                  </div>
+                  <div>
+                    <dt className="masthead-label">APR</dt>
+                    <dd className="mt-0.5 font-mono text-sm text-ink">
+                      {card.aprMin}–{card.aprMax}%
+                    </dd>
+                  </div>
+                  {showScore && (
+                    <div>
+                      <dt className="masthead-label">MIN&nbsp;SCORE</dt>
+                      <dd className="mt-0.5 font-display text-2xl leading-none text-ink">
+                        {card.creditScoreMin}
+                      </dd>
+                    </div>
+                  )}
+                </dl>
+              </div>
+
+              {/* CTA column */}
+              <div className="lg:col-span-2 lg:text-right">
                 <a
                   href={card.affiliateUrl}
                   target="_blank"
                   rel="noopener noreferrer sponsored"
-                  className="inline-block rounded-lg bg-brand px-5 py-2.5 font-heading text-sm font-bold text-white transition-colors hover:bg-brand-dark"
+                  className="inline-block border-2 border-ink bg-ink px-5 py-3 font-mono text-xs font-bold uppercase tracking-wider text-surface transition-colors hover:bg-accent hover:border-accent"
                 >
-                  Apply Now
+                  Apply&nbsp;&rarr;
                 </a>
                 <Link
                   href={`/cards/${card.slug}`}
-                  className="text-xs text-ink-lighter underline hover:text-brand"
+                  className="mt-3 block font-mono text-[11px] text-ink-fade hover:text-accent lg:text-right"
                 >
-                  Full review
+                  READ&nbsp;THE&nbsp;FULL&nbsp;REVIEW&nbsp;&rarr;
                 </Link>
               </div>
             </div>
-
-            {/* Key features */}
-            <div className="mt-3 flex flex-wrap gap-2">
-              {card.keyFeatures.slice(0, 3).map((feature) => (
-                <span
-                  key={feature}
-                  className="rounded-full border border-ink-faint bg-surface px-2.5 py-0.5 text-xs text-ink-light"
-                >
-                  {feature}
-                </span>
-              ))}
-            </div>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 }

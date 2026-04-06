@@ -12,48 +12,48 @@ interface FAQAccordionProps {
 }
 
 export function FAQAccordion({ faqs }: FAQAccordionProps) {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <div className="space-y-3">
-      {faqs.map((faq, index) => (
-        <div key={index} className="rounded-lg border border-gray-200">
-          <button
-            onClick={() => setOpenIndex(openIndex === index ? null : index)}
-            className="flex w-full items-center justify-between px-5 py-4 text-left"
-            aria-expanded={openIndex === index}
-          >
-            <span className="pr-4 font-medium text-gray-900">
-              {faq.question}
-            </span>
-            <span
-              className="flex-shrink-0 text-gray-400 transition-transform"
-              style={{
-                transform:
-                  openIndex === index ? "rotate(180deg)" : "rotate(0deg)",
-              }}
+    <div>
+      {faqs.map((faq, index) => {
+        const isOpen = openIndex === index;
+        return (
+          <div key={index} className="border-b border-rule last:border-b-0">
+            <button
+              type="button"
+              onClick={() => setOpenIndex(isOpen ? null : index)}
+              aria-expanded={isOpen}
+              className="group flex w-full items-baseline justify-between gap-6 py-6 text-left"
             >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="currentColor"
+              <div className="flex items-baseline gap-5">
+                <span className="font-mono text-xs text-ink-fade">
+                  Q.{String(index + 1).padStart(2, "0")}
+                </span>
+                <span className="font-display text-2xl leading-tight text-ink transition-colors group-hover:text-accent">
+                  {faq.question}
+                </span>
+              </div>
+              <span
+                aria-hidden="true"
+                className="font-mono text-2xl text-ink-fade transition-transform group-hover:text-accent"
+                style={{
+                  transform: isOpen ? "rotate(45deg)" : "rotate(0deg)",
+                }}
               >
-                <path
-                  fillRule="evenodd"
-                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </span>
-          </button>
-          {openIndex === index && (
-            <div className="border-t border-gray-200 px-5 py-4 text-gray-600">
-              {faq.answer}
-            </div>
-          )}
-        </div>
-      ))}
+                +
+              </span>
+            </button>
+            {isOpen && (
+              <div className="pb-8 pl-12">
+                <p className="font-body text-lg leading-relaxed text-ink-mid">
+                  {faq.answer}
+                </p>
+              </div>
+            )}
+          </div>
+        );
+      })}
     </div>
   );
 }

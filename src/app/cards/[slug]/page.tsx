@@ -82,7 +82,7 @@ export default async function CardReviewPage({ params }: Props) {
       <JsonLd data={productSchema} />
       <FAQSchema faqs={faqs} />
 
-      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 py-10 lg:px-10">
         <Breadcrumbs
           items={[
             { name: "Card Reviews", href: "/cards" },
@@ -90,264 +90,326 @@ export default async function CardReviewPage({ params }: Props) {
           ]}
         />
 
-        {/* Header */}
-        <header className="mb-8 border-b border-ink-faint pb-8">
-          <p className="font-data text-xs font-medium uppercase tracking-widest text-brand">
-            {card.issuer} &middot; {card.network}
+        {/* Magazine feature header */}
+        <header className="mt-8 border-b-2 border-ink pb-12">
+          <p className="masthead-label masthead-label-accent">
+            CARD&nbsp;REVIEW &middot; {card.issuer.toUpperCase()} &middot;{" "}
+            {card.network.toUpperCase()}
           </p>
-          <h1 className="mt-2 font-heading text-3xl font-extrabold text-ink sm:text-4xl">
+          <h1 className="mt-4 font-display text-5xl leading-[0.92] text-ink lg:text-7xl">
             {card.name}
+            <span className="text-accent">.</span>
           </h1>
 
-          {/* Key stats grid */}
-          <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
-            <div className="rounded-lg border border-ink-faint bg-white p-4">
-              <p className="text-xs text-ink-lighter">Annual Fee</p>
-              <p className="font-data text-xl font-bold text-ink">
+          {/* Monumental APR feature */}
+          <div className="mt-12 grid gap-12 lg:grid-cols-12 lg:gap-16">
+            {/* Left: giant APR */}
+            <div className="lg:col-span-7">
+              <p className="masthead-label">THE&nbsp;NUMBER</p>
+              <p className="mt-2 monumental text-[120px] text-ink lg:text-[200px]">
                 {card.annualFee === 0 ? "$0" : `$${card.annualFee}`}
               </p>
-            </div>
-            <div className="rounded-lg border border-ink-faint bg-white p-4">
-              <p className="text-xs text-ink-lighter">APR</p>
-              <p className="font-data text-xl font-bold text-ink">
-                {card.aprMin}%–{card.aprMax}%
+              <p className="mt-2 font-mono text-xs uppercase tracking-wider text-ink-fade">
+                ANNUAL&nbsp;FEE &middot;{" "}
+                {card.annualFee === 0
+                  ? "FREE FOREVER"
+                  : "BILLED ONCE PER YEAR"}
               </p>
             </div>
-            <div className="rounded-lg border border-ink-faint bg-white p-4">
-              <p className="text-xs text-ink-lighter">Rewards</p>
-              <p className="text-sm font-bold text-ink">{card.rewardsRate}</p>
-            </div>
-            <div className="rounded-lg border border-ink-faint bg-white p-4">
-              <p className="text-xs text-ink-lighter">Min. Score</p>
-              <p className="font-data text-xl font-bold text-ink">
-                {card.creditScoreMin}+
-              </p>
-            </div>
-          </div>
 
-          {/* Signup bonus banner */}
-          {card.signupBonus && (
-            <div className="mt-4 rounded-lg bg-brand-light p-4">
-              <p className="font-heading text-sm font-bold text-brand-dark">
-                Signup Bonus: {card.signupBonus}
-                {card.signupBonusValue && ` (worth ${card.signupBonusValue})`}
-              </p>
-              {card.signupBonusSpend && (
-                <p className="mt-1 text-sm text-ink-light">
-                  Spend ${card.signupBonusSpend.toLocaleString()} in the first{" "}
-                  {card.signupBonusPeriod} months
-                </p>
-              )}
-            </div>
-          )}
+            {/* Right: data column */}
+            <div className="lg:col-span-5">
+              <dl className="border-t border-rule">
+                <div className="border-b border-rule py-4">
+                  <dt className="masthead-label">APR&nbsp;RANGE</dt>
+                  <dd className="mt-1 font-display text-3xl text-ink">
+                    {card.aprMin}–{card.aprMax}%
+                  </dd>
+                </div>
+                <div className="border-b border-rule py-4">
+                  <dt className="masthead-label">REWARDS</dt>
+                  <dd className="mt-1 font-body text-base text-ink">
+                    {card.rewardsRate}
+                  </dd>
+                </div>
+                <div className="border-b border-rule py-4">
+                  <dt className="masthead-label">MIN&nbsp;CREDIT&nbsp;SCORE</dt>
+                  <dd className="mt-1 font-display text-3xl text-ink">
+                    {card.creditScoreMin}
+                  </dd>
+                </div>
+                {card.signupBonus && (
+                  <div className="border-b border-rule py-4">
+                    <dt className="masthead-label masthead-label-oxblood">
+                      SIGNUP&nbsp;BONUS
+                    </dt>
+                    <dd className="mt-1 font-body text-base text-ink">
+                      {card.signupBonus}
+                      {card.signupBonusValue && (
+                        <span className="text-ink-mid">
+                          {" "}
+                          &middot; worth {card.signupBonusValue}
+                        </span>
+                      )}
+                    </dd>
+                    {card.signupBonusSpend && (
+                      <p className="mt-1 font-mono text-xs text-ink-fade">
+                        SPEND&nbsp;${card.signupBonusSpend.toLocaleString()}
+                        &nbsp;IN&nbsp;{card.signupBonusPeriod}
+                        &nbsp;MO.
+                      </p>
+                    )}
+                  </div>
+                )}
+              </dl>
 
-          {/* CTA */}
-          <div className="mt-6">
-            <a
-              href={card.affiliateUrl}
-              target="_blank"
-              rel="noopener noreferrer sponsored"
-              className="inline-block rounded-lg bg-brand px-8 py-3 font-heading text-base font-bold text-white transition-colors hover:bg-brand-dark"
-            >
-              Apply for {card.name.split(" ").slice(0, 3).join(" ")}
-            </a>
+              {/* CTA */}
+              <a
+                href={card.affiliateUrl}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="mt-8 block w-full border-2 border-ink bg-ink py-5 text-center font-mono text-sm font-bold uppercase tracking-wider text-surface transition-colors hover:bg-accent hover:border-accent"
+              >
+                Apply at {card.issuer}&nbsp;&rarr;
+              </a>
+              <p className="mt-3 text-center font-mono text-[10px] text-ink-fade">
+                APPLICATION&nbsp;OPENS&nbsp;ON&nbsp;{card.issuer.toUpperCase()}
+                &apos;S&nbsp;SECURE&nbsp;SITE
+              </p>
+            </div>
           </div>
         </header>
 
-        {/* Rich content (AI-generated) */}
+        {/* Rich content (AI-generated) — magazine feature body */}
         {content && (
-          <div className="mb-8 space-y-6">
-            {/* Best for + Expert verdict */}
-            <div className="rounded-lg border border-brand/20 bg-brand-light p-5">
-              <p className="font-heading text-sm font-bold text-brand-dark">
-                Best For
-              </p>
-              <p className="mt-1 text-ink">{content.bestFor}</p>
-            </div>
+          <article className="mt-12 grid gap-12 lg:grid-cols-12 lg:gap-16">
+            {/* Sidebar — Best For, Pros, Cons */}
+            <aside className="lg:col-span-4 lg:order-2">
+              {/* Best For */}
+              <div className="border-t-2 border-oxblood pt-4">
+                <p className="masthead-label masthead-label-oxblood">
+                  BEST&nbsp;FOR
+                </p>
+                <p className="mt-2 font-body text-base leading-snug text-ink">
+                  {content.bestFor}
+                </p>
+              </div>
 
-            {/* Summary */}
-            <p className="text-lg leading-relaxed text-ink-light">{content.summary}</p>
-
-            {/* Pros / Cons */}
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-lg border border-ink-faint bg-white p-5">
-                <h2 className="mb-3 font-heading text-sm font-bold text-green-700">
-                  Pros
-                </h2>
-                <ul className="space-y-2">
+              {/* Pros */}
+              <div className="mt-10 border-t border-rule pt-4">
+                <p className="masthead-label">IN&nbsp;FAVOUR</p>
+                <ul className="mt-3 space-y-2.5">
                   {content.pros.map((pro) => (
-                    <li key={pro} className="flex items-start gap-2 text-sm text-ink-light">
-                      <span className="mt-0.5 text-green-600">&#10003;</span>
+                    <li
+                      key={pro}
+                      className="flex items-start gap-3 font-body text-sm leading-snug text-ink-mid"
+                    >
+                      <span className="font-mono text-xs text-accent">+</span>
                       {pro}
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="rounded-lg border border-ink-faint bg-white p-5">
-                <h2 className="mb-3 font-heading text-sm font-bold text-red-700">
-                  Cons
-                </h2>
-                <ul className="space-y-2">
+
+              {/* Cons */}
+              <div className="mt-8 border-t border-rule pt-4">
+                <p className="masthead-label">AGAINST</p>
+                <ul className="mt-3 space-y-2.5">
                   {content.cons.map((con) => (
-                    <li key={con} className="flex items-start gap-2 text-sm text-ink-light">
-                      <span className="mt-0.5 text-red-500">&#10005;</span>
+                    <li
+                      key={con}
+                      className="flex items-start gap-3 font-body text-sm leading-snug text-ink-mid"
+                    >
+                      <span className="font-mono text-xs text-oxblood">
+                        &minus;
+                      </span>
                       {con}
                     </li>
                   ))}
                 </ul>
               </div>
-            </div>
 
-            {/* Full review body */}
-            <div
-              className="prose prose-stone max-w-none prose-headings:font-heading prose-headings:font-bold prose-h2:text-xl prose-h3:text-lg prose-p:text-ink-light prose-li:text-ink-light"
-              dangerouslySetInnerHTML={{ __html: content.body }}
-            />
+              {/* Expert verdict pull-quote */}
+              <div className="mt-10 border-t-2 border-ink pt-4">
+                <p className="masthead-label masthead-label-accent">
+                  EDITORS&apos;&nbsp;VERDICT
+                </p>
+                <p className="mt-3 font-display text-2xl leading-tight text-ink">
+                  &ldquo;{content.expertVerdict}&rdquo;
+                </p>
+              </div>
+            </aside>
 
-            {/* Expert verdict */}
-            <div className="rounded-lg border-l-4 border-brand bg-white p-5">
-              <p className="font-heading text-sm font-bold text-ink">
-                Expert Verdict
+            {/* Main editorial body */}
+            <div className="lg:col-span-8 lg:order-1">
+              {/* Standfirst */}
+              <p className="font-body text-2xl leading-snug text-ink">
+                {content.summary}
               </p>
-              <p className="mt-1 text-ink-light">{content.expertVerdict}</p>
+
+              <hr className="editorial-rule mt-8 mb-8" />
+
+              <div
+                className="editorial-body"
+                dangerouslySetInnerHTML={{ __html: content.body }}
+              />
             </div>
-          </div>
+          </article>
         )}
 
-        {/* Card details */}
-        <div className="grid gap-8 lg:grid-cols-3">
-          <div className="lg:col-span-2">
+        {/* Detailed sections — bonus categories, key features, intro APR */}
+        <section className="mt-20 border-t-2 border-ink pt-12">
+          <p className="masthead-label masthead-label-accent">
+            DEPARTMENT &middot; THE&nbsp;FINE&nbsp;PRINT
+          </p>
+          <h2 className="mt-2 font-display text-4xl leading-none text-ink lg:text-5xl">
+            Everything else
+            <br />
+            on this card<span className="text-accent">.</span>
+          </h2>
+
+          <div className="mt-12 grid gap-12 lg:grid-cols-12 lg:gap-16">
             {/* Bonus categories */}
             {card.bonusCategories.length > 0 && (
-              <section className="mb-8">
-                <h2 className="mb-3 font-heading text-xl font-bold text-ink">
-                  Bonus Rewards Categories
-                </h2>
-                <div className="space-y-2">
+              <div className="lg:col-span-6">
+                <p className="masthead-label">BONUS&nbsp;REWARDS</p>
+                <h3 className="mt-2 font-display text-2xl text-ink">
+                  Where the rates spike
+                </h3>
+                <ul className="mt-6">
                   {card.bonusCategories.map((bc) => (
-                    <div
+                    <li
                       key={bc.category}
-                      className="flex items-center justify-between rounded-lg border border-ink-faint bg-white px-4 py-3"
+                      className="flex items-baseline justify-between gap-4 border-b border-rule py-4"
                     >
-                      <span className="text-sm text-ink">{bc.category}</span>
-                      <span className="font-data text-sm font-bold text-brand">
+                      <span className="font-body text-base text-ink">
+                        {bc.category}
+                      </span>
+                      <span className="font-display text-2xl text-accent">
                         {bc.rate}
                       </span>
-                    </div>
+                    </li>
                   ))}
-                </div>
-              </section>
+                </ul>
+              </div>
             )}
 
             {/* Key features */}
-            <section className="mb-8">
-              <h2 className="mb-3 font-heading text-xl font-bold text-ink">
-                Key Features
-              </h2>
-              <ul className="space-y-2">
+            <div
+              className={
+                card.bonusCategories.length > 0
+                  ? "lg:col-span-6"
+                  : "lg:col-span-12"
+              }
+            >
+              <p className="masthead-label">KEY&nbsp;FEATURES</p>
+              <h3 className="mt-2 font-display text-2xl text-ink">
+                What you actually get
+              </h3>
+              <ul className="mt-6 space-y-3">
                 {card.keyFeatures.map((feature) => (
-                  <li key={feature} className="flex items-start gap-2 text-ink-light">
-                    <span className="mt-1 text-brand">&#10003;</span>
+                  <li
+                    key={feature}
+                    className="flex items-start gap-3 border-b border-rule pb-3 font-body text-base text-ink-mid"
+                  >
+                    <span className="font-mono text-xs text-accent">
+                      &mdash;
+                    </span>
                     {feature}
                   </li>
                 ))}
               </ul>
-            </section>
+            </div>
 
             {/* Intro APR */}
             {(card.introAprPurchase || card.introAprBalance) && (
-              <section className="mb-8">
-                <h2 className="mb-3 font-heading text-xl font-bold text-ink">
-                  Intro APR Offers
-                </h2>
-                <div className="space-y-2">
+              <div className="lg:col-span-6">
+                <p className="masthead-label">INTRO&nbsp;APR&nbsp;OFFERS</p>
+                <h3 className="mt-2 font-display text-2xl text-ink">
+                  The honeymoon period
+                </h3>
+                <dl className="mt-6">
                   {card.introAprPurchase && (
-                    <div className="rounded-lg border border-ink-faint bg-white px-4 py-3">
-                      <p className="text-xs text-ink-lighter">Purchases</p>
-                      <p className="font-data text-sm font-semibold text-ink">
+                    <div className="border-b border-rule py-4">
+                      <dt className="masthead-label">PURCHASES</dt>
+                      <dd className="mt-1 font-display text-xl text-ink">
                         {card.introAprPurchase}
-                      </p>
+                      </dd>
                     </div>
                   )}
                   {card.introAprBalance && (
-                    <div className="rounded-lg border border-ink-faint bg-white px-4 py-3">
-                      <p className="text-xs text-ink-lighter">
-                        Balance Transfers
-                      </p>
-                      <p className="font-data text-sm font-semibold text-ink">
+                    <div className="border-b border-rule py-4">
+                      <dt className="masthead-label">BALANCE&nbsp;TRANSFERS</dt>
+                      <dd className="mt-1 font-display text-xl text-ink">
                         {card.introAprBalance}
-                      </p>
+                      </dd>
                     </div>
                   )}
-                </div>
-              </section>
+                </dl>
+              </div>
             )}
 
-            {/* FAQ */}
-            <section className="mb-8">
-              <h2 className="mb-4 font-heading text-xl font-bold text-ink">
-                Frequently Asked Questions
-              </h2>
-              <FAQAccordion faqs={faqs} />
-            </section>
-          </div>
-
-          {/* Sidebar */}
-          <div className="space-y-6">
-            {/* Quick facts */}
-            <div className="rounded-lg border border-ink-faint bg-white p-5">
-              <h3 className="mb-3 font-heading text-sm font-bold text-ink">
-                Card Details
+            {/* Factsheet */}
+            <div className="lg:col-span-6">
+              <p className="masthead-label">FACTSHEET</p>
+              <h3 className="mt-2 font-display text-2xl text-ink">
+                The card on paper
               </h3>
-              <dl className="space-y-2 text-sm">
-                <div className="flex justify-between">
-                  <dt className="text-ink-lighter">Issuer</dt>
-                  <dd className="font-medium text-ink">{card.issuer}</dd>
-                </div>
-                <div className="flex justify-between">
-                  <dt className="text-ink-lighter">Network</dt>
-                  <dd className="font-medium text-ink">{card.network}</dd>
-                </div>
-                <div className="flex justify-between">
-                  <dt className="text-ink-lighter">Foreign Txn Fee</dt>
-                  <dd className="font-medium text-ink">
-                    {card.foreignTransactionFee ? "3%" : "None"}
-                  </dd>
-                </div>
-                <div className="flex justify-between">
-                  <dt className="text-ink-lighter">Rewards Type</dt>
-                  <dd className="font-medium text-ink capitalize">
-                    {card.rewardsType}
-                  </dd>
-                </div>
-                <div className="flex justify-between">
-                  <dt className="text-ink-lighter">Score Range</dt>
-                  <dd className="font-data font-medium text-ink">
-                    {card.creditScoreMin}–{card.creditScoreMax}
-                  </dd>
-                </div>
-              </dl>
-            </div>
-
-            {/* Categories */}
-            <div className="rounded-lg border border-ink-faint bg-white p-5">
-              <h3 className="mb-3 font-heading text-sm font-bold text-ink">
-                Categories
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {card.categories.map((cat) => (
-                  <Link
-                    key={cat}
-                    href={`/best/${cat}`}
-                    className="rounded-full border border-ink-faint px-2.5 py-0.5 text-xs text-ink-light hover:border-brand hover:text-brand"
+              <dl className="mt-6">
+                {[
+                  ["Issuer", card.issuer],
+                  ["Network", card.network],
+                  [
+                    "Foreign Txn Fee",
+                    card.foreignTransactionFee ? "3%" : "None",
+                  ],
+                  ["Rewards Type", card.rewardsType],
+                  [
+                    "Score Range",
+                    `${card.creditScoreMin}–${card.creditScoreMax}`,
+                  ],
+                ].map(([label, value]) => (
+                  <div
+                    key={label}
+                    className="flex items-baseline justify-between border-b border-rule py-3"
                   >
-                    {cat.replace(/-/g, " ")}
-                  </Link>
+                    <dt className="masthead-label">{label.toUpperCase()}</dt>
+                    <dd className="font-mono text-sm text-ink">{value}</dd>
+                  </div>
                 ))}
+              </dl>
+
+              {/* Filed under */}
+              <div className="mt-6">
+                <p className="masthead-label">FILED&nbsp;UNDER</p>
+                <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1">
+                  {card.categories.map((cat) => (
+                    <Link
+                      key={cat}
+                      href={`/best/${cat}`}
+                      className="font-mono text-xs uppercase tracking-wider text-ink-mid hover:text-accent"
+                    >
+                      &mdash;&nbsp;{cat.replace(/-/g, " ")}
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="mt-20 border-t-2 border-ink pt-12">
+          <p className="masthead-label masthead-label-oxblood">
+            DEPARTMENT &middot; QUESTIONS&nbsp;AT&nbsp;THE&nbsp;DESK
+          </p>
+          <h2 className="mt-2 font-display text-4xl leading-none text-ink lg:text-5xl">
+            Frequently asked<span className="text-accent">.</span>
+          </h2>
+          <div className="mt-10">
+            <FAQAccordion faqs={faqs} />
+          </div>
+        </section>
 
         <AuthorByline
           name={reviewer.name}
@@ -360,30 +422,38 @@ export default async function CardReviewPage({ params }: Props) {
 
         {/* Related cards */}
         {relatedCards.length > 0 && (
-          <section className="mt-12 border-t border-ink-faint pt-8">
-            <h2 className="mb-4 font-heading text-lg font-bold text-ink">
-              Similar Cards
+          <section className="mt-20 border-t-2 border-ink pt-12">
+            <p className="masthead-label">ALSO&nbsp;ON&nbsp;FILE</p>
+            <h2 className="mt-2 font-display text-4xl leading-none text-ink lg:text-5xl">
+              Cards from the same drawer
+              <span className="text-accent">.</span>
             </h2>
-            <div className="grid gap-3 sm:grid-cols-2">
-              {relatedCards.map((rc) => (
-                <Link
-                  key={rc.slug}
-                  href={`/cards/${rc.slug}`}
-                  className="rounded-lg border border-ink-faint bg-white p-4 transition-all hover:border-brand/40 hover:shadow-md"
-                >
-                  <h3 className="font-heading text-sm font-bold text-ink">
-                    {rc.name}
-                  </h3>
-                  <div className="mt-1 flex gap-3 text-xs text-ink-light">
-                    <span className="font-data">
-                      {rc.annualFee === 0 ? "$0 fee" : `$${rc.annualFee}/yr`}
-                    </span>
-                    <span>&middot;</span>
-                    <span>{rc.rewardsRate}</span>
-                  </div>
-                </Link>
+            <ul className="mt-10 grid gap-px bg-rule sm:grid-cols-2">
+              {relatedCards.map((rc, i) => (
+                <li key={rc.slug}>
+                  <Link
+                    href={`/cards/${rc.slug}`}
+                    className="group block bg-surface-card p-6 transition-colors hover:bg-accent-light"
+                  >
+                    <p className="font-mono text-xs text-ink-fade">
+                      {String(i + 1).padStart(2, "0")} &middot;{" "}
+                      {rc.issuer.toUpperCase()}
+                    </p>
+                    <h3 className="mt-2 font-display text-2xl leading-tight text-ink group-hover:text-accent-deep">
+                      {rc.name}
+                    </h3>
+                    <p className="mt-3 font-body text-sm text-ink-mid">
+                      <span className="font-mono text-xs text-ink-fade">
+                        {rc.annualFee === 0
+                          ? "$0/YR"
+                          : `$${rc.annualFee}/YR`}
+                      </span>{" "}
+                      &middot; {rc.rewardsRate}
+                    </p>
+                  </Link>
+                </li>
               ))}
-            </div>
+            </ul>
           </section>
         )}
       </div>

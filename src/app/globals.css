@@ -1,51 +1,284 @@
 @import "tailwindcss";
 
 @theme {
-  /* CardSorted — Financial Wire aesthetic */
-  --color-brand: #f97316;
-  --color-brand-dark: #ea580c;
-  --color-brand-light: #fff7ed;
-  --color-brand-lighter: #fffbf5;
-  --color-brand-accent: #fb923c;
+  /* CardSorted — Plastic Quarterly aesthetic */
+  /* ---------------------------------------------- */
 
-  /* Extended palette */
-  --color-surface: #faf5ef;
-  --color-surface-dark: #f0ebe3;
-  --color-ink: #292524;
-  --color-ink-light: #57534e;
-  --color-ink-lighter: #a8a29e;
-  --color-ink-faint: #d6d3d1;
+  /* Surface — warm aged paper */
+  --color-surface: #f4ece0;
+  --color-surface-deep: #eadfcb;
+  --color-surface-card: #fbf6ec;
+
+  /* Ink — warm coffee blacks (never pure black) */
+  --color-ink: #1a1411;
+  --color-ink-mid: #5a4e3f;
+  --color-ink-fade: #9a8f7e;
+
+  /* Hairlines and rules */
+  --color-rule: #d6c9b2;
+  --color-rule-strong: #b8a784;
+
+  /* Accent — tangerine ink (one word per heading) */
+  --color-accent: #f26b1d;
+  --color-accent-deep: #a8390a;
+  --color-accent-light: #fbe8d4;
+
+  /* Editorial flourish — oxblood */
+  --color-oxblood: #5c1a1a;
+
+  /* Legacy aliases (so existing markup still works during migration) */
+  --color-brand: #f26b1d;
+  --color-brand-dark: #a8390a;
+  --color-brand-light: #fbe8d4;
+  --color-brand-lighter: #fbe8d4;
+  --color-brand-accent: #f26b1d;
+  --color-surface-dark: #eadfcb;
+  --color-ink-light: #5a4e3f;
+  --color-ink-lighter: #9a8f7e;
+  --color-ink-faint: #d6c9b2;
 
   /* Font families */
-  --font-heading: var(--font-bricolage), system-ui, sans-serif;
-  --font-body: var(--font-newsreader), Georgia, serif;
-  --font-mono: var(--font-ibm-plex), ui-monospace, monospace;
+  --font-display: var(--font-display), Georgia, "Times New Roman", serif;
+  --font-heading: var(--font-display), Georgia, "Times New Roman", serif;
+  --font-body: var(--font-body), Georgia, "Times New Roman", serif;
+  --font-mono: var(--font-mono), ui-monospace, "SF Mono", monospace;
 }
 
 :root {
-  --background: #faf5ef;
-  --foreground: #292524;
+  --background: #f4ece0;
+  --foreground: #1a1411;
+}
+
+/* ---------------------------------------------- */
+/* Base type rules                                */
+/* ---------------------------------------------- */
+
+html {
+  background: var(--background);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  font-feature-settings: "onum" 1, "kern" 1, "liga" 1;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Subtle paper grain across the entire surface */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.92' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.10 0 0 0 0 0.08 0 0 0 0 0.06 0 0 0 0.13 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+}
+
+main, header, footer {
+  position: relative;
+  z-index: 1;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
+  font-family: var(--font-display);
+  color: var(--color-ink);
+  font-weight: 400;
+  letter-spacing: -0.012em;
+  line-height: 0.92;
 }
 
-/* Subtle dot grid texture on sections */
-.bg-dotgrid {
-  background-image: radial-gradient(circle, #d6d3d1 0.5px, transparent 0.5px);
-  background-size: 24px 24px;
+/* Tabular numerals inside data tables and stat blocks */
+table, .tabular {
+  font-variant-numeric: tabular-nums;
 }
 
-/* Data/mono styling for numbers, rates */
+/* ---------------------------------------------- */
+/* Utility classes                                */
+/* ---------------------------------------------- */
+
+/* Mono utility — Reddit Mono with tight tracking */
+.font-mono,
 .font-data {
   font-family: var(--font-mono);
-  font-variant-numeric: tabular-nums;
-  letter-spacing: -0.02em;
+  font-feature-settings: "tnum" 1, "ss01" 1;
+  letter-spacing: -0.01em;
+}
+
+/* Masthead label — kicker above section headlines */
+.masthead-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-ink-fade);
+}
+
+.masthead-label-accent {
+  color: var(--color-accent);
+}
+
+.masthead-label-oxblood {
+  color: var(--color-oxblood);
+}
+
+/* Editorial hairline rule */
+.editorial-rule {
+  height: 1px;
+  background: var(--color-rule);
+  border: 0;
+  width: 100%;
+}
+
+.editorial-rule-strong {
+  height: 1px;
+  background: var(--color-rule-strong);
+}
+
+.editorial-rule-double {
+  border: 0;
+  border-top: 1px solid var(--color-rule);
+  border-bottom: 1px solid var(--color-rule);
+  height: 5px;
+  background: transparent;
+}
+
+/* Monumental numeral — the hero pattern */
+.monumental {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 0.78;
+  letter-spacing: -0.04em;
+  color: var(--color-ink);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.monumental-accent {
+  color: var(--color-accent);
+}
+
+/* Accent word inside headings */
+.ink-accent {
+  color: var(--color-accent);
+}
+
+.ink-oxblood {
+  color: var(--color-oxblood);
+}
+
+/* Old-style figures inside body copy (default) */
+.lining-nums {
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+/* Sunken paper panel */
+.panel-sunken {
+  background: var(--color-surface-deep);
+  position: relative;
+}
+
+.panel-sunken::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.4' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.10 0 0 0 0 0.08 0 0 0 0 0.06 0 0 0 0.18 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+  opacity: 0.6;
+}
+
+/* Raised paper card (for elevated content) */
+.paper-card {
+  background: var(--color-surface-card);
+  border: 1px solid var(--color-rule);
+}
+
+/* Editorial body copy styling for AI-generated HTML */
+.editorial-body {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--color-ink-mid);
+}
+
+.editorial-body h2 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  line-height: 0.95;
+  color: var(--color-ink);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.012em;
+}
+
+.editorial-body h3 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  line-height: 1;
+  color: var(--color-ink);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.editorial-body p {
+  margin-bottom: 1.25rem;
+}
+
+.editorial-body p:first-of-type::first-letter {
+  font-family: var(--font-display);
+  font-size: 4.5em;
+  float: left;
+  line-height: 0.85;
+  padding-right: 0.08em;
+  padding-top: 0.08em;
+  color: var(--color-ink);
+}
+
+.editorial-body ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 1rem 0 1.5rem;
+}
+
+.editorial-body ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.editorial-body ul li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+}
+
+.editorial-body strong {
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+/* Small editorial intro (no drop cap) */
+.editorial-intro {
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--color-ink-mid);
+}
+
+.editorial-intro p {
+  margin-bottom: 1rem;
+}
+
+/* Selection */
+::selection {
+  background: var(--color-ink);
+  color: var(--color-surface);
 }

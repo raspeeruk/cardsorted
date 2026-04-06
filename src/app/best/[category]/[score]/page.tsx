@@ -67,7 +67,7 @@ export default async function CategoryScorePage({ params }: Props) {
     <>
       <FAQSchema faqs={faqs} />
 
-      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <Breadcrumbs
           items={[
             { name: "Best Cards", href: "/best/cash-back" },
@@ -76,70 +76,145 @@ export default async function CategoryScorePage({ params }: Props) {
           ]}
         />
 
-        <header className="mb-8">
-          <p className="font-data text-xs font-medium uppercase tracking-widest text-brand">
-            {cat.icon} {sr.tierLabel} &middot; {cards.length} cards matched
-          </p>
-          <h1 className="mt-2 font-heading text-3xl font-extrabold text-ink sm:text-4xl">
-            Best {cat.name} Cards for {sr.score} Credit Score
-          </h1>
-          <p className="mt-3 max-w-3xl text-lg text-ink-light">
-            {cards.length > 0
-              ? `These ${cat.name.toLowerCase()} credit cards accept applicants with a ${sr.score} credit score (${sr.tierLabel}). Ranked by rewards value and approval likelihood.`
-              : `No ${cat.name.toLowerCase()} cards currently match a ${sr.score} credit score. Try a different category or check our secured card options.`}
-          </p>
-        </header>
-
-        {/* Score context box */}
-        <div className="mb-8 rounded-lg border border-ink-faint bg-white p-5">
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <p className="font-heading text-sm font-bold text-ink">
-                Your Score: <span className="font-data text-brand">{sr.score}</span>
+        {/* Money page hero — score is the monument */}
+        <header className="border-y-2 border-ink py-10 lg:py-14">
+          <div className="grid grid-cols-12 gap-6">
+            {/* Left: monumental score */}
+            <div className="col-span-12 md:col-span-5">
+              <p className="masthead-label">YOUR&nbsp;DIGIT&nbsp;&middot;&nbsp;FILED</p>
+              <p className="monumental mt-2 text-[160px] text-accent leading-[0.78] lg:text-[260px]">
+                {sr.score}
               </p>
-              <p className="text-sm text-ink-light">
-                {sr.tierLabel} &mdash; {sr.description}
+              <p className="font-mono text-xs uppercase tracking-widest text-ink-mid">
+                {sr.tierLabel}&nbsp;&middot;&nbsp;{cards.length}&nbsp;cards&nbsp;matched
               </p>
             </div>
-            <p className="text-sm text-ink-light">{sr.approvalLikelihood}</p>
+            {/* Middle: title */}
+            <div className="col-span-12 md:col-span-5">
+              <p className="masthead-label">
+                {cat.name.toUpperCase()}&nbsp;DESK&nbsp;&middot;&nbsp;APPROVAL&nbsp;ODDS
+              </p>
+              <h1 className="mt-3 font-display text-5xl leading-[0.92] text-ink lg:text-6xl">
+                Best <span className="ink-accent">{cat.name.toLowerCase()}</span> cards for a {sr.score} score.
+              </h1>
+              <p className="mt-6 font-body text-lg leading-relaxed text-ink-mid">
+                {cards.length > 0
+                  ? `These ${cat.name.toLowerCase()} credit cards accept applicants in your range. Ranked by rewards value and the likelihood you actually get approved.`
+                  : `No ${cat.name.toLowerCase()} cards currently match this score. Try a different desk or build your file with a secured option.`}
+              </p>
+            </div>
+            {/* Right: tier dossier */}
+            <div className="col-span-12 md:col-span-2">
+              <p className="masthead-label">TIER</p>
+              <p className="mt-1 font-display text-2xl leading-tight text-ink">
+                {sr.tierLabel}
+              </p>
+              <hr className="editorial-rule mt-4" />
+              <p className="masthead-label mt-4">ODDS</p>
+              <p className="mt-1 font-mono text-[11px] uppercase tracking-wider text-ink-mid">
+                {sr.approvalLikelihood}
+              </p>
+              <hr className="editorial-rule mt-4" />
+              <p className="masthead-label mt-4">DATELINE</p>
+              <p className="mt-1 font-mono text-[11px] uppercase tracking-wider text-ink-mid">
+                {new Date().toLocaleDateString("en-US", {
+                  month: "short",
+                  day: "numeric",
+                  year: "numeric",
+                })}
+              </p>
+            </div>
           </div>
-        </div>
+        </header>
+
+        {/* Score context — sunken paper panel */}
+        <section className="mt-12 panel-sunken border-y-2 border-ink py-8">
+          <div className="relative px-6 lg:px-10">
+            <div className="grid grid-cols-12 gap-6">
+              <div className="col-span-12 md:col-span-3">
+                <p className="masthead-label">DOSSIER</p>
+                <p className="mt-2 font-display text-2xl leading-tight text-ink">
+                  What {sr.score} means<span className="text-accent">.</span>
+                </p>
+              </div>
+              <div className="col-span-12 md:col-span-9">
+                <p className="font-body text-base leading-relaxed text-ink-mid">
+                  {sr.description}
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Card listing */}
-        <CardTable
-          cards={cards}
-          showScore
-          title={`${cat.name} Cards for ${sr.score}+ Score`}
-        />
+        <section className="mt-16">
+          <CardTable
+            cards={cards}
+            showScore
+            title={`${cat.name} for ${sr.score}+ Scores`}
+          />
+        </section>
 
-        {/* Other scores for this category */}
-        <section className="mt-8 rounded-lg border border-ink-faint bg-surface-dark p-4">
-          <p className="mb-2 font-heading text-sm font-semibold text-ink">
-            Try a different score
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {allScores.map((s) => (
-              <Link
-                key={s.score}
-                href={`/best/${category}/${s.score}`}
-                className={`rounded-md border px-3 py-1.5 font-data text-xs font-medium transition-all ${
-                  s.score === scoreNum
-                    ? "border-brand bg-brand text-white"
-                    : "border-ink-faint bg-white text-ink hover:border-brand hover:bg-brand-light"
-                }`}
-              >
-                {s.score}
-              </Link>
-            ))}
+        {/* Other scores — editorial numeric strip */}
+        <section className="mt-16 border-y-2 border-ink py-10">
+          <div className="grid grid-cols-12 gap-6">
+            <div className="col-span-12 md:col-span-3">
+              <p className="masthead-label">CROSS&nbsp;FILE</p>
+              <p className="mt-2 font-display text-3xl leading-tight text-ink">
+                Try another digit<span className="text-accent">.</span>
+              </p>
+            </div>
+            <div className="col-span-12 md:col-span-9">
+              <div className="grid grid-cols-3 gap-px bg-ink sm:grid-cols-4 lg:grid-cols-7">
+                {allScores.map((s) => {
+                  const isCurrent = s.score === scoreNum;
+                  return (
+                    <Link
+                      key={s.score}
+                      href={`/best/${category}/${s.score}`}
+                      className={`group block px-3 py-4 text-center transition-colors ${
+                        isCurrent
+                          ? "bg-accent text-surface"
+                          : "bg-surface-card hover:bg-accent"
+                      }`}
+                    >
+                      <p
+                        className={`monumental text-3xl leading-none lg:text-4xl ${
+                          isCurrent
+                            ? "text-surface"
+                            : "text-ink group-hover:text-surface"
+                        }`}
+                      >
+                        {s.score}
+                      </p>
+                      <p
+                        className={`mt-1 font-mono text-[9px] uppercase tracking-wider ${
+                          isCurrent
+                            ? "text-surface"
+                            : "text-ink-fade group-hover:text-surface"
+                        }`}
+                      >
+                        {s.tierLabel}
+                      </p>
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </section>
 
         {/* FAQ */}
-        <section className="mt-12">
-          <h2 className="mb-4 font-heading text-xl font-bold text-ink">
-            Frequently Asked Questions
-          </h2>
-          <FAQAccordion faqs={faqs} />
+        <section className="mt-20 grid grid-cols-12 gap-6 border-t-2 border-ink pt-12 lg:gap-10">
+          <div className="col-span-12 md:col-span-3">
+            <p className="masthead-label">QUESTIONS&nbsp;&middot;&nbsp;ANSWERS</p>
+            <p className="mt-2 font-display text-3xl leading-tight text-ink">
+              Frequently filed<span className="text-accent">.</span>
+            </p>
+          </div>
+          <div className="col-span-12 md:col-span-9">
+            <FAQAccordion faqs={faqs} />
+          </div>
         </section>
 
         <AffiliateDisclosure />

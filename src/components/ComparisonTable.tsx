@@ -25,88 +25,82 @@ const rows: { label: string; render: (card: CreditCard) => string }[] = [
   { label: "Rewards Type", render: (c) => c.rewardsType },
   { label: "Rewards Rate", render: (c) => c.rewardsRate },
   { label: "Sign-Up Bonus", render: (c) => c.signupBonus || "None" },
-  {
-    label: "Bonus Value",
-    render: (c) => c.signupBonusValue || "N/A",
-  },
-  {
-    label: "Min. Credit Score",
-    render: (c) => `${c.creditScoreMin}+`,
-  },
+  { label: "Bonus Value", render: (c) => c.signupBonusValue || "—" },
+  { label: "Min. Credit Score", render: (c) => `${c.creditScoreMin}+` },
   {
     label: "Foreign Transaction Fee",
-    render: (c) => (c.foreignTransactionFee ? "Yes (typically 3%)" : "None"),
+    render: (c) => (c.foreignTransactionFee ? "Yes (3%)" : "None"),
   },
 ];
 
 export function ComparisonTable({ cardA, cardB }: ComparisonTableProps) {
   return (
-    <div className="overflow-x-auto">
-      <table className="w-full border-collapse text-sm">
-        <thead>
-          <tr className="border-b-2 border-ink-faint">
-            <th className="py-3 pr-4 text-left font-heading text-xs font-semibold uppercase tracking-wider text-ink-lighter">
-              Feature
-            </th>
-            <th className="py-3 px-4 text-left font-heading text-sm font-bold text-ink">
-              <Link
-                href={`/cards/${cardA.slug}`}
-                className="hover:text-brand"
-              >
-                {cardA.name}
-              </Link>
-            </th>
-            <th className="py-3 pl-4 text-left font-heading text-sm font-bold text-ink">
-              <Link
-                href={`/cards/${cardB.slug}`}
-                className="hover:text-brand"
-              >
-                {cardB.name}
-              </Link>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {rows.map((row, i) => (
-            <tr
-              key={row.label}
-              className={
-                i % 2 === 0
-                  ? "bg-surface"
-                  : "bg-white"
-              }
-            >
-              <td className="py-2.5 pr-4 font-heading text-xs font-medium text-ink-light">
-                {row.label}
-              </td>
-              <td className="py-2.5 px-4 font-data text-sm text-ink">
-                {row.render(cardA)}
-              </td>
-              <td className="py-2.5 pl-4 font-data text-sm text-ink">
-                {row.render(cardB)}
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div>
+      {/* Duel header — A vs B with monumental letters */}
+      <div className="grid grid-cols-12 gap-4 border-b-2 border-ink pb-6">
+        <div className="col-span-2">
+          <p className="masthead-label">VS.</p>
+        </div>
+        <div className="col-span-5">
+          <p className="masthead-label masthead-label-accent">SIDE&nbsp;A</p>
+          <Link
+            href={`/cards/${cardA.slug}`}
+            className="mt-1 block font-display text-2xl leading-tight text-ink hover:text-accent lg:text-3xl"
+          >
+            {cardA.name}
+          </Link>
+        </div>
+        <div className="col-span-5">
+          <p className="masthead-label masthead-label-oxblood">SIDE&nbsp;B</p>
+          <Link
+            href={`/cards/${cardB.slug}`}
+            className="mt-1 block font-display text-2xl leading-tight text-ink hover:text-accent lg:text-3xl"
+          >
+            {cardB.name}
+          </Link>
+        </div>
+      </div>
+
+      {/* Data rows */}
+      <dl>
+        {rows.map((row, i) => (
+          <div
+            key={row.label}
+            className={`grid grid-cols-12 gap-4 border-b border-rule py-4 ${
+              i % 2 === 0 ? "" : "panel-sunken"
+            }`}
+          >
+            <dt className="col-span-2 masthead-label self-center">
+              {row.label.toUpperCase()}
+            </dt>
+            <dd className="col-span-5 self-center font-mono text-base text-ink">
+              {row.render(cardA)}
+            </dd>
+            <dd className="col-span-5 self-center font-mono text-base text-ink">
+              {row.render(cardB)}
+            </dd>
+          </div>
+        ))}
+      </dl>
 
       {/* CTA row */}
-      <div className="mt-6 flex gap-4">
+      <div className="mt-8 grid grid-cols-12 gap-4">
+        <div className="col-span-2" />
         <a
           href={cardA.affiliateUrl}
           target="_blank"
           rel="noopener noreferrer sponsored"
-          className="flex-1 rounded-lg bg-brand py-3 text-center font-heading text-sm font-bold text-white transition-colors hover:bg-brand-dark"
+          className="col-span-5 border-2 border-ink bg-ink py-4 text-center font-mono text-xs font-bold uppercase tracking-wider text-surface transition-colors hover:bg-accent hover:border-accent"
         >
-          Apply for {cardA.name.split(" ").slice(0, 2).join(" ")}
+          Apply for Side A&nbsp;&rarr;
         </a>
         <a
           href={cardB.affiliateUrl}
           target="_blank"
           rel="noopener noreferrer sponsored"
-          className="flex-1 rounded-lg border-2 border-brand py-3 text-center font-heading text-sm font-bold text-brand transition-colors hover:bg-brand hover:text-white"
+          className="col-span-5 border-2 border-ink py-4 text-center font-mono text-xs font-bold uppercase tracking-wider text-ink transition-colors hover:bg-accent hover:border-accent hover:text-surface"
         >
-          Apply for {cardB.name.split(" ").slice(0, 2).join(" ")}
+          Apply for Side B&nbsp;&rarr;
         </a>
       </div>
     </div>

@@ -62,7 +62,7 @@ export default async function ComparisonPage({ params }: Props) {
     <>
       <FAQSchema faqs={faqs} />
 
-      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <Breadcrumbs
           items={[
             { name: "Compare", href: "/compare" },
@@ -73,98 +73,179 @@ export default async function ComparisonPage({ params }: Props) {
           ]}
         />
 
-        <header className="mb-8">
-          <p className="font-data text-xs font-medium uppercase tracking-widest text-brand">
-            Head-to-head comparison
-          </p>
-          <h1 className="mt-2 font-heading text-3xl font-extrabold text-ink sm:text-4xl">
-            {cardA.name} vs {cardB.name}
-          </h1>
-          <p className="mt-3 max-w-3xl text-lg text-ink-light">
-            {content?.intro ??
-              `A detailed comparison of two popular ${cardA.categories[0].replace(/-/g, " ")} credit cards. See which one wins on rewards, fees, and approval odds.`}
-          </p>
-        </header>
-
-        {/* Verdict + Choose If (AI-generated) */}
-        {content && (
-          <div className="mb-8 space-y-4">
-            <div className="rounded-lg border-l-4 border-brand bg-white p-5">
-              <p className="font-heading text-sm font-bold text-ink">Our Verdict</p>
-              <p className="mt-1 text-ink-light">{content.verdict}</p>
+        {/* Duel header — A vs B with monumental letters */}
+        <header className="border-y-2 border-ink py-10 lg:py-14">
+          <div className="grid grid-cols-12 items-center gap-4">
+            {/* Side A */}
+            <div className="col-span-12 md:col-span-5">
+              <p className="masthead-label masthead-label-accent">SIDE&nbsp;A</p>
+              <p className="monumental mt-2 text-[120px] text-accent leading-[0.78] lg:text-[200px]">
+                A
+              </p>
+              <p className="mt-2 font-mono text-[10px] uppercase tracking-widest text-ink-fade">
+                {cardA.issuer}&nbsp;&middot;&nbsp;{cardA.network}
+              </p>
+              <p className="mt-1 font-display text-2xl leading-tight text-ink lg:text-3xl">
+                {cardA.name}
+              </p>
             </div>
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-lg border border-ink-faint bg-white p-5">
-                <h2 className="mb-3 font-heading text-sm font-bold text-ink">
-                  Choose {cardA.name.split(" ").slice(0, 3).join(" ")} if you...
-                </h2>
-                <ul className="space-y-2">
-                  {content.chooseAIf.map((r) => (
-                    <li key={r} className="flex items-start gap-2 text-sm text-ink-light">
-                      <span className="mt-0.5 text-brand">&#8250;</span>
-                      {r}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="rounded-lg border border-ink-faint bg-white p-5">
-                <h2 className="mb-3 font-heading text-sm font-bold text-ink">
-                  Choose {cardB.name.split(" ").slice(0, 3).join(" ")} if you...
-                </h2>
-                <ul className="space-y-2">
-                  {content.chooseBIf.map((r) => (
-                    <li key={r} className="flex items-start gap-2 text-sm text-ink-light">
-                      <span className="mt-0.5 text-brand">&#8250;</span>
-                      {r}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            {/* VS */}
+            <div className="col-span-12 text-center md:col-span-2">
+              <p className="masthead-label">VS.</p>
+              <p className="monumental mt-2 text-7xl text-ink-fade lg:text-8xl">×</p>
+            </div>
+            {/* Side B */}
+            <div className="col-span-12 text-right md:col-span-5">
+              <p className="masthead-label masthead-label-oxblood">SIDE&nbsp;B</p>
+              <p className="monumental mt-2 text-[120px] text-oxblood leading-[0.78] lg:text-[200px]">
+                B
+              </p>
+              <p className="mt-2 font-mono text-[10px] uppercase tracking-widest text-ink-fade">
+                {cardB.issuer}&nbsp;&middot;&nbsp;{cardB.network}
+              </p>
+              <p className="mt-1 font-display text-2xl leading-tight text-ink lg:text-3xl">
+                {cardB.name}
+              </p>
             </div>
           </div>
+          <hr className="editorial-rule mt-10" />
+          <div className="mt-6 grid grid-cols-12 gap-6">
+            <div className="col-span-12 md:col-span-3">
+              <p className="masthead-label">FILING</p>
+              <p className="mt-1 font-mono text-[11px] uppercase tracking-wider text-ink-mid">
+                Head-to-Head&nbsp;&middot;&nbsp;Plastic&nbsp;Quarterly
+              </p>
+            </div>
+            <div className="col-span-12 md:col-span-9">
+              <p className="font-body text-lg leading-relaxed text-ink-mid">
+                {content?.intro ??
+                  `A detailed comparison of two popular ${cardA.categories[0].replace(/-/g, " ")} credit cards. See which one wins on rewards, fees, and approval odds.`}
+              </p>
+            </div>
+          </div>
+        </header>
+
+        {/* Verdict pull-quote */}
+        {content && (
+          <section className="mt-16 grid grid-cols-12 gap-6 lg:gap-10">
+            <div className="col-span-12 md:col-span-3">
+              <p className="masthead-label masthead-label-oxblood">THE&nbsp;VERDICT</p>
+              <p className="mt-2 font-display text-2xl leading-tight text-ink">
+                Our ruling<span className="text-accent">.</span>
+              </p>
+            </div>
+            <div className="col-span-12 md:col-span-9">
+              <blockquote className="border-l-4 border-oxblood pl-6">
+                <p className="font-display text-3xl leading-tight text-ink lg:text-4xl">
+                  &ldquo;{content.verdict}&rdquo;
+                </p>
+              </blockquote>
+            </div>
+          </section>
+        )}
+
+        {/* Choose if — paper cards */}
+        {content && (
+          <section className="mt-16 grid gap-px bg-ink sm:grid-cols-2">
+            <div className="bg-surface-card p-8">
+              <p className="masthead-label masthead-label-accent">CHOOSE&nbsp;A</p>
+              <h2 className="mt-2 font-display text-3xl leading-tight text-ink">
+                Side A is for you if<span className="text-accent">…</span>
+              </h2>
+              <ul className="mt-6 space-y-3">
+                {content.chooseAIf.map((r, i) => (
+                  <li key={r} className="flex items-baseline gap-4">
+                    <span className="font-mono text-xs text-accent">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <span className="font-body text-base leading-relaxed text-ink-mid">
+                      {r}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-surface-card p-8">
+              <p className="masthead-label masthead-label-oxblood">CHOOSE&nbsp;B</p>
+              <h2 className="mt-2 font-display text-3xl leading-tight text-ink">
+                Side B is for you if<span className="text-oxblood">…</span>
+              </h2>
+              <ul className="mt-6 space-y-3">
+                {content.chooseBIf.map((r, i) => (
+                  <li key={r} className="flex items-baseline gap-4">
+                    <span className="font-mono text-xs text-oxblood">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <span className="font-body text-base leading-relaxed text-ink-mid">
+                      {r}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
         )}
 
         {/* Comparison table */}
-        <div className="rounded-lg border border-ink-faint bg-white p-6">
-          <ComparisonTable cardA={cardA} cardB={cardB} />
-        </div>
+        <section className="mt-16">
+          <p className="masthead-label">THE&nbsp;LEDGER</p>
+          <h2 className="mt-2 font-display text-4xl leading-none text-ink lg:text-5xl">
+            Side by side<span className="text-accent">.</span>
+          </h2>
+          <div className="mt-8">
+            <ComparisonTable cardA={cardA} cardB={cardB} />
+          </div>
+        </section>
 
         {/* Key features comparison */}
-        <div className="mt-8 grid gap-6 sm:grid-cols-2">
-          <div className="rounded-lg border border-ink-faint bg-white p-5">
-            <h2 className="mb-3 font-heading text-lg font-bold text-ink">
-              {cardA.name} Highlights
+        <section className="mt-16 grid gap-px bg-ink sm:grid-cols-2">
+          <div className="bg-surface-card p-8">
+            <p className="masthead-label masthead-label-accent">A&nbsp;HIGHLIGHTS</p>
+            <h2 className="mt-2 font-display text-2xl leading-tight text-ink">
+              {cardA.name}
             </h2>
-            <ul className="space-y-2">
+            <ul className="mt-6 space-y-2">
               {cardA.keyFeatures.map((f) => (
-                <li key={f} className="flex items-start gap-2 text-sm text-ink-light">
-                  <span className="mt-0.5 text-brand">&#10003;</span>
+                <li
+                  key={f}
+                  className="flex items-baseline gap-3 font-body text-base leading-relaxed text-ink-mid"
+                >
+                  <span className="font-mono text-accent">&mdash;</span>
                   {f}
                 </li>
               ))}
             </ul>
           </div>
-          <div className="rounded-lg border border-ink-faint bg-white p-5">
-            <h2 className="mb-3 font-heading text-lg font-bold text-ink">
-              {cardB.name} Highlights
+          <div className="bg-surface-card p-8">
+            <p className="masthead-label masthead-label-oxblood">B&nbsp;HIGHLIGHTS</p>
+            <h2 className="mt-2 font-display text-2xl leading-tight text-ink">
+              {cardB.name}
             </h2>
-            <ul className="space-y-2">
+            <ul className="mt-6 space-y-2">
               {cardB.keyFeatures.map((f) => (
-                <li key={f} className="flex items-start gap-2 text-sm text-ink-light">
-                  <span className="mt-0.5 text-brand">&#10003;</span>
+                <li
+                  key={f}
+                  className="flex items-baseline gap-3 font-body text-base leading-relaxed text-ink-mid"
+                >
+                  <span className="font-mono text-oxblood">&mdash;</span>
                   {f}
                 </li>
               ))}
             </ul>
           </div>
-        </div>
+        </section>
 
         {/* FAQ */}
-        <section className="mt-12">
-          <h2 className="mb-4 font-heading text-xl font-bold text-ink">
-            Frequently Asked Questions
-          </h2>
-          <FAQAccordion faqs={faqs} />
+        <section className="mt-20 grid grid-cols-12 gap-6 border-t-2 border-ink pt-12 lg:gap-10">
+          <div className="col-span-12 md:col-span-3">
+            <p className="masthead-label">QUESTIONS&nbsp;&middot;&nbsp;ANSWERS</p>
+            <p className="mt-2 font-display text-3xl leading-tight text-ink">
+              Frequently filed<span className="text-accent">.</span>
+            </p>
+          </div>
+          <div className="col-span-12 md:col-span-9">
+            <FAQAccordion faqs={faqs} />
+          </div>
         </section>
 
         <AffiliateDisclosure />

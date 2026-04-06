@@ -14,32 +14,31 @@ export function AuthorByline({
   reviewDate,
 }: AuthorBylineProps) {
   return (
-    <div className="mt-8 flex items-center gap-4 border-t border-gray-200 pt-4">
-      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-light text-sm font-bold text-brand">
-        {name
-          .split(" ")
-          .map((n) => n[0])
-          .join("")}
-      </div>
-      <div>
-        <p className="font-medium text-gray-900">
-          Reviewed by{" "}
-          <Link href={`/authors/${slug}`} className="text-brand underline">
+    <div className="mt-12 border-t-2 border-ink pt-8">
+      <p className="masthead-label">REVIEWED&nbsp;&middot;&nbsp;FILED</p>
+      <div className="mt-3 flex flex-wrap items-baseline gap-4">
+        <p className="font-display text-2xl leading-tight text-ink">
+          <Link
+            href={`/authors/${slug}`}
+            className="underline decoration-accent decoration-2 underline-offset-4 hover:text-accent"
+          >
             {name}
           </Link>
-          <span className="text-gray-500">, {credentials}</span>
         </p>
-        <p className="text-sm text-gray-500">
-          Last updated:{" "}
-          <time dateTime={reviewDate}>
-            {new Date(reviewDate).toLocaleDateString("en-US", {
-              month: "long",
-              day: "numeric",
-              year: "numeric",
-            })}
-          </time>
+        <p className="font-mono text-[11px] uppercase tracking-widest text-ink-fade">
+          {credentials}
         </p>
       </div>
+      <p className="mt-3 font-mono text-[11px] uppercase tracking-widest text-ink-fade">
+        LAST&nbsp;UPDATED&nbsp;&middot;&nbsp;
+        <time dateTime={reviewDate}>
+          {new Date(reviewDate).toLocaleDateString("en-US", {
+            month: "long",
+            day: "numeric",
+            year: "numeric",
+          })}
+        </time>
+      </p>
     </div>
   );
 }

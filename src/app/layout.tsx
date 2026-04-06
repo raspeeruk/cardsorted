@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Newsreader, IBM_Plex_Mono } from "next/font/google";
+import { Boldonse, STIX_Two_Text, Reddit_Mono } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { OrganizationSchema } from "@/components/seo/OrganizationSchema";
@@ -7,22 +7,27 @@ import { GoogleAnalytics } from "@/lib/analytics/GoogleAnalytics";
 import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from "@/lib/site.config";
 import "./globals.css";
 
-const bricolage = Bricolage_Grotesque({
+// Display: chunky condensed serif, magazine-cover feel
+const boldonse = Boldonse({
   subsets: ["latin"],
-  variable: "--font-bricolage",
+  weight: ["400"],
+  variable: "--font-display",
   display: "swap",
 });
 
-const newsreader = Newsreader({
+// Body: scholarly journal serif with old-style figures
+const stix = STIX_Two_Text({
   subsets: ["latin"],
-  variable: "--font-newsreader",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-body",
   display: "swap",
 });
 
-const ibmPlexMono = IBM_Plex_Mono({
+// Mono: distinctive monospace for data and labels
+const redditMono = Reddit_Mono({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-ibm-plex",
+  weight: ["400", "500", "700"],
+  variable: "--font-mono",
   display: "swap",
 });
 
@@ -53,7 +58,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${bricolage.variable} ${newsreader.variable} ${ibmPlexMono.variable}`}>
+    <html
+      lang="en"
+      className={`${boldonse.variable} ${stix.variable} ${redditMono.variable}`}
+    >
       <body className="flex min-h-screen flex-col antialiased">
         <GoogleAnalytics />
         <OrganizationSchema />
