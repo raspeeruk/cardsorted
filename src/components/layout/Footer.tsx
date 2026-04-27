@@ -43,6 +43,7 @@ const FOOTER_COLUMNS = [
     links: [
       { label: "About", href: "/about" },
       { label: "Editorial Policy", href: "/about/editorial-policy" },
+      { label: "Contact", href: "/contact" },
       { label: "Privacy", href: "/privacy-policy" },
       { label: "Terms", href: "/terms-of-service" },
     ],
