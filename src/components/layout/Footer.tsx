@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { siteConfig } from "@/lib/site.config";
+import { NewsletterForm } from "@/components/layout/NewsletterForm";
 
 const FOOTER_COLUMNS = [
   {
@@ -92,6 +93,21 @@ export function Footer() {
               </ul>
             </div>
           ))}
+        </div>
+
+        {/* Subscriptions desk */}
+        <div className="border-t border-rule py-10">
+          <p className="masthead-label masthead-label-oxblood mb-3">
+            SUBSCRIPTIONS&nbsp;DESK
+          </p>
+          <h3 className="mb-2 font-display text-2xl text-ink">
+            Have the next issue delivered<span className="text-accent">.</span>
+          </h3>
+          <p className="mb-5 max-w-xl font-body text-base text-ink-mid">
+            New card reviews and field guides by email, only when the desk has
+            something worth printing.
+          </p>
+          <NewsletterForm />
         </div>
 
         {/* Disclosures */}
