@@ -19,7 +19,7 @@ const SCORE_QUICK_LINKS = [
   { score: 650, label: "650", tier: "Fair" },
   { score: 700, label: "700", tier: "Good" },
   { score: 720, label: "720", tier: "Very Good" },
-  { score: 750, label: "750", tier: "Excellent" },
+  { score: 760, label: "760", tier: "Excellent" },
 ];
 
 export default function HomePage() {
