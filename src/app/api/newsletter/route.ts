@@ -3,6 +3,13 @@ import { NextRequest, NextResponse } from "next/server";
 const COLLECTOR_URL = "https://rogerson-signups.netlify.app/";
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+function clean(value: unknown): string {
+  return String(value ?? "")
+    .replace(/[\r\n\t]/g, " ")
+    .trim()
+    .slice(0, 200);
+}
+
 export async function POST(req: NextRequest) {
   let body: Record<string, string> = {};
 
@@ -22,6 +29,8 @@ export async function POST(req: NextRequest) {
 
   const email = (body.email || "").trim();
   const honeypot = (body.website || "").trim();
+  const page = clean(body.page);
+  const source = clean(body.source);
 
   // Bots fill the hidden field; pretend success and drop silently.
   if (honeypot) {
@@ -43,7 +52,8 @@ export async function POST(req: NextRequest) {
         "form-name": "newsletter",
         email,
         site: "cardsorted.com",
-        source: "footer",
+        source: source || "footer",
+        ...(page ? { page } : {}),
       }).toString(),
       signal: AbortSignal.timeout(8000),
     });
