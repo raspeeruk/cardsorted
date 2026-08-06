@@ -1,3 +1,4 @@
+import ConsentScript from "next/script";
 import type { Metadata } from "next";
 import { Boldonse, STIX_Two_Text, Reddit_Mono } from "next/font/google";
 import { Header } from "@/components/layout/Header";
@@ -62,6 +63,17 @@ export default function RootLayout({
       lang="en"
       className={`${boldonse.variable} ${stix.variable} ${redditMono.variable}`}
     >
+      <head>
+        <ConsentScript
+          id="roger-group-consent"
+          src="https://rogerson-signups.netlify.app/consent-widget.js"
+          strategy="beforeInteractive"
+          data-brand="CardSorted"
+          data-domain="cardsorted.com"
+          data-analytics="true"
+          data-marketing="false"
+        />
+      </head>
       <body className="flex min-h-screen flex-col antialiased">
         <GoogleAnalytics />
         <OrganizationSchema />
