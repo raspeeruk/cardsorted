@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const RESEND_KEY = process.env.AUTH_RESEND_KEY || process.env.RESEND_API_KEY;
-const NOTIFY_EMAIL = "andrew@twocores.com";
+const NOTIFY_EMAIL = process.env.CONTACT_TO || "cardsorted@rogergroup.xyz";
 
 export async function POST(req: NextRequest) {
   let body: Record<string, string> = {};
