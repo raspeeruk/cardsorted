@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { createMetadata } from "@/lib/seo/metadata";
-import { SITE_NAME, AUTHORS } from "@/lib/site.config";
+import { AUTHORS } from "@/lib/site.config";
 import { guides, getGuideBySlug } from "@/lib/data/guides";
 import { AuthorByline } from "@/components/content/AuthorByline";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";

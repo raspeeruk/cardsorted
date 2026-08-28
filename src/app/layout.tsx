@@ -1,90 +1,30 @@
-import ConsentScript from "next/script";
 import type { Metadata } from "next";
-import { Boldonse, STIX_Two_Text, Reddit_Mono } from "next/font/google";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
-import { OrganizationSchema } from "@/components/seo/OrganizationSchema";
-import { GoogleAnalytics } from "@/lib/analytics/GoogleAnalytics";
-import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from "@/lib/site.config";
+import { Boldonse, Reddit_Mono, STIX_Two_Text } from "next/font/google";
 import "./globals.css";
 
-// Display: chunky condensed serif, magazine-cover feel
-const boldonse = Boldonse({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-display",
-  display: "swap",
-});
-
-// Body: scholarly journal serif with old-style figures
-const stix = STIX_Two_Text({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-body",
-  display: "swap",
-});
-
-// Mono: distinctive monospace for data and labels
-const redditMono = Reddit_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-mono",
-  display: "swap",
-});
+const display = Boldonse({ subsets: ["latin"], weight: ["400"], variable: "--font-display", display: "swap" });
+const body = STIX_Two_Text({ subsets: ["latin"], weight: ["400", "500", "600"], variable: "--font-body", display: "swap" });
+const mono = Reddit_Mono({ subsets: ["latin"], weight: ["400", "500", "700"], variable: "--font-mono", display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
-  title: {
-    default: `${SITE_NAME} — Compare Credit Cards by Score, Category & Rewards`,
-    template: `%s | ${SITE_NAME}`,
-  },
-  description: SITE_DESCRIPTION,
+  metadataBase: new URL("https://cardsorted.com"),
+  title: "CardSorted.com — Domain available for acquisition",
+  description: "CardSorted.com is available for acquisition: a memorable .com for card comparison, rewards, wallet or consumer-finance products.",
+  alternates: { canonical: "/" },
+  robots: { index: true, follow: true },
   openGraph: {
+    title: "CardSorted.com — Domain available for acquisition",
+    description: "A crisp .com for a card-comparison product, rewards optimiser, wallet app or consumer-finance brand.",
+    url: "/",
+    siteName: "CardSorted.com",
     type: "website",
-    siteName: SITE_NAME,
-    url: SITE_URL,
-  },
-  twitter: {
-    card: "summary_large_image",
-  },
-  robots: {
-    index: true,
-    follow: true,
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang="en"
-      className={`${boldonse.variable} ${stix.variable} ${redditMono.variable}`}
-    >
-      <head>
-        <script
-          id="roger-group-consent-default"
-          dangerouslySetInnerHTML={{ __html: "window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){window.dataLayer.push(arguments)};window.gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',functionality_storage:'denied',personalization_storage:'denied',security_storage:'granted',wait_for_update:500});" }}
-        />
-        <ConsentScript
-          id="roger-group-consent"
-          src="https://rogerson-signups.netlify.app/consent-widget.js"
-          strategy="beforeInteractive"
-          data-brand="CardSorted"
-          data-domain="cardsorted.com"
-          data-analytics="true"
-          data-marketing="false"
-        />
-      </head>
-      <body className="flex min-h-screen flex-col antialiased">
-        <GoogleAnalytics />
-        <OrganizationSchema />
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-      </body>
+    <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }
